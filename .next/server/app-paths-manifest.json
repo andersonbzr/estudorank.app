@@ -1,12 +1,7 @@
 {
-  "/api/auth/forgot-password/route": "app/api/auth/forgot-password/route.js",
   "/api/ranking/route": "app/api/ranking/route.js",
-  "/config/page": "app/config/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/login/page": "app/login/page.js",
   "/me/page": "app/me/page.js",
-  "/me/security/page": "app/me/security/page.js",
   "/page": "app/page.js",
-  "/ranking/page": "app/ranking/page.js",
-  "/reset-password/page": "app/reset-password/page.js"
+  "/ranking/page": "app/ranking/page.js"
 }
