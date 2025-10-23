@@ -940,17 +940,20 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2d$horizontal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SendHorizonal$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/send-horizontal.js [app-client] (ecmascript) <export default as SendHorizonal>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2d$horizontal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SendHorizontal$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/send-horizontal.js [app-client] (ecmascript) <export default as SendHorizontal>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquareText$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/message-square-text.js [app-client] (ecmascript) <export default as MessageSquareText>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$supabase$2f$client$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/supabase/client.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
+;
 function ChatDock(param) {
-    let { channel, minHeight = 520 } = param;
+    let { channel, height = "clamp(420px, 70vh, 720px)" } = param;
     _s();
     const supabase = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "ChatDock.useMemo[supabase]": ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$supabase$2f$client$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabaseBrowser"])()
@@ -960,60 +963,91 @@ function ChatDock(param) {
     const [sending, setSending] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [messages, setMessages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [names, setNames] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({});
+    // Dedupe
+    const seenIds = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(new Set());
+    const seenClientIds = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(new Set());
     const listRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const inputRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    // formatador de hora (HH:mm)
     const fmt = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "ChatDock.useMemo[fmt]": ()=>new Intl.DateTimeFormat(undefined, {
                 hour: "2-digit",
                 minute: "2-digit"
             })
     }["ChatDock.useMemo[fmt]"], []);
-    // Carrega usuário atual + últimas mensagens
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+    const scrollToBottom = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "ChatDock.useCallback[scrollToBottom]": function() {
+            let behavior = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : "smooth";
+            const el = listRef.current;
+            if (!el) return;
+            el.scrollTo({
+                top: el.scrollHeight,
+                behavior
+            });
+        }
+    }["ChatDock.useCallback[scrollToBottom]"], []);
+    /* -------- carga inicial -------- */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "ChatDock.useEffect": ()=>{
+            let cancelled = false;
             ({
                 "ChatDock.useEffect": async ()=>{
                     var _u_user;
                     const { data: u } = await supabase.auth.getUser();
                     var _u_user_id;
-                    setMe((_u_user_id = (_u_user = u.user) === null || _u_user === void 0 ? void 0 : _u_user.id) !== null && _u_user_id !== void 0 ? _u_user_id : null);
-                    const { data } = await supabase.from("messages").select("*").eq("channel", channel).order("created_at", {
+                    const uid = (_u_user_id = (_u_user = u.user) === null || _u_user === void 0 ? void 0 : _u_user.id) !== null && _u_user_id !== void 0 ? _u_user_id : null;
+                    if (!cancelled) setMe(uid);
+                    const { data, error } = await supabase.from("messages").select("*").eq("channel", channel).order("created_at", {
                         ascending: true
                     }).limit(200);
-                    const list = data || [];
-                    setMessages(list);
-                    // Prefetch nomes de perfis
-                    const ids = Array.from(new Set(list.map({
-                        "ChatDock.useEffect.ids": (m)=>m.user_id
-                    }["ChatDock.useEffect.ids"])));
-                    if (ids.length) {
-                        var _this;
-                        const { data: profs } = await supabase.from("profiles").select("id, full_name, name").in("id", ids);
-                        const map = {};
-                        (_this = profs) === null || _this === void 0 ? void 0 : _this.forEach({
-                            "ChatDock.useEffect": (p)=>{
-                                map[p.id] = p.full_name && p.full_name.trim() || p.name && p.name.trim() || "Usuário";
-                            }
-                        }["ChatDock.useEffect"]);
-                        setNames(map);
+                    if (error) {
+                        console.error("[ChatDock] load error:", error);
+                        return;
                     }
-                    // foca input na primeira carga
-                    setTimeout({
-                        "ChatDock.useEffect": ()=>{
-                            var _inputRef_current;
-                            return (_inputRef_current = inputRef.current) === null || _inputRef_current === void 0 ? void 0 : _inputRef_current.focus();
+                    const list = data || [];
+                    for (const m of list){
+                        if (m === null || m === void 0 ? void 0 : m.id) seenIds.current.add(String(m.id));
+                        if (m === null || m === void 0 ? void 0 : m.client_msg_id) seenClientIds.current.add(String(m.client_msg_id));
+                    }
+                    if (!cancelled) {
+                        setMessages(list);
+                        // nomes
+                        const ids = Array.from(new Set(list.map({
+                            "ChatDock.useEffect.ids": (m)=>m.user_id
+                        }["ChatDock.useEffect.ids"]).filter(Boolean)));
+                        if (ids.length) {
+                            var _this;
+                            const { data: profs } = await supabase.from("profiles").select("id, full_name, name").in("id", ids);
+                            const map = {};
+                            (_this = profs) === null || _this === void 0 ? void 0 : _this.forEach({
+                                "ChatDock.useEffect": (p)=>{
+                                    map[p.id] = p.full_name && p.full_name.trim() || p.name && p.name.trim() || "Usuário";
+                                }
+                            }["ChatDock.useEffect"]);
+                            setNames(map);
                         }
-                    }["ChatDock.useEffect"], 60);
+                        setTimeout({
+                            "ChatDock.useEffect": ()=>{
+                                var _inputRef_current;
+                                return (_inputRef_current = inputRef.current) === null || _inputRef_current === void 0 ? void 0 : _inputRef_current.focus();
+                            }
+                        }["ChatDock.useEffect"], 60);
+                        setTimeout({
+                            "ChatDock.useEffect": ()=>scrollToBottom("auto")
+                        }["ChatDock.useEffect"], 0); // desce na 1a carga
+                    }
                 }
             })["ChatDock.useEffect"]();
+            return ({
+                "ChatDock.useEffect": ()=>{
+                    cancelled = true;
+                }
+            })["ChatDock.useEffect"];
         }
     }["ChatDock.useEffect"], [
         channel,
-        supabase
+        supabase,
+        scrollToBottom
     ]);
-    // Realtime: novas mensagens do canal
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+    /* -------- realtime sempre com auto-scroll -------- */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "ChatDock.useEffect": ()=>{
             const ch = supabase.channel("chat:".concat(channel)).on("postgres_changes", {
                 event: "INSERT",
@@ -1023,14 +1057,19 @@ function ChatDock(param) {
             }, {
                 "ChatDock.useEffect.ch": async (payload)=>{
                     const m = payload.new;
+                    // dedupe
+                    if ((m === null || m === void 0 ? void 0 : m.id) && seenIds.current.has(String(m.id))) return;
+                    if ((m === null || m === void 0 ? void 0 : m.client_msg_id) && seenClientIds.current.has(String(m.client_msg_id))) return;
+                    if (m === null || m === void 0 ? void 0 : m.id) seenIds.current.add(String(m.id));
+                    if (m === null || m === void 0 ? void 0 : m.client_msg_id) seenClientIds.current.add(String(m.client_msg_id));
                     setMessages({
                         "ChatDock.useEffect.ch": (cur)=>[
                                 ...cur,
                                 m
                             ]
                     }["ChatDock.useEffect.ch"]);
-                    // se não houver nome em cache, busca e salva
-                    if (!names[m.user_id]) {
+                    // nome do autor se faltando
+                    if (m.user_id && !names[m.user_id]) {
                         const { data: p } = await supabase.from("profiles").select("id, full_name, name").eq("id", m.user_id).single();
                         if (p) {
                             setNames({
@@ -1041,6 +1080,10 @@ function ChatDock(param) {
                             }["ChatDock.useEffect.ch"]);
                         }
                     }
+                    // 👇 sempre desce quando chega nova mensagem (estilo WhatsApp auto)
+                    setTimeout({
+                        "ChatDock.useEffect.ch": ()=>scrollToBottom("smooth")
+                    }["ChatDock.useEffect.ch"], 0);
                 }
             }["ChatDock.useEffect.ch"]).subscribe();
             return ({
@@ -1048,54 +1091,52 @@ function ChatDock(param) {
                     supabase.removeChannel(ch);
                 }
             })["ChatDock.useEffect"];
-        // importante: NÃO colocar 'names' nas deps para evitar re-subscrever
         // eslint-disable-next-line react-hooks/exhaustive-deps
         }
     }["ChatDock.useEffect"], [
         channel,
-        supabase
+        supabase,
+        names,
+        scrollToBottom
     ]);
-    // Scroll para o fim quando mensagens mudarem
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+    /* -------- desce sempre que o array cresce -------- */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "ChatDock.useEffect": ()=>{
-            var _listRef_current;
-            (_listRef_current = listRef.current) === null || _listRef_current === void 0 ? void 0 : _listRef_current.scrollTo({
-                top: listRef.current.scrollHeight,
-                behavior: "smooth"
-            });
+            scrollToBottom("smooth");
         }
     }["ChatDock.useEffect"], [
-        messages.length
+        messages.length,
+        scrollToBottom
     ]);
-    async function send() {
+    /* -------- enviar -------- */ async function send() {
         const content = text.trim();
         if (!content || !me) return;
-        if (content.length > 800) return; // proteção simples
+        if (content.length > 800) return;
         setSending(true);
+        const clientId = crypto.randomUUID();
         try {
-            // otimista (opcional)
-            const optimistic = {
-                id: crypto.randomUUID(),
+            setText("");
+            const { data, error } = await supabase.from("messages").insert({
                 user_id: me,
-                content,
                 channel,
-                created_at: new Date().toISOString()
-            };
+                content,
+                client_msg_id: clientId
+            }).select("*").single();
+            if (error) {
+                console.error("[ChatDock] insert error:", error);
+                setText(content);
+                return;
+            }
+            if (data === null || data === void 0 ? void 0 : data.id) seenIds.current.add(String(data.id));
+            if (clientId) seenClientIds.current.add(clientId);
+            const row = data;
             setMessages((cur)=>[
                     ...cur,
-                    optimistic
+                    row
                 ]);
-            setText("");
-            const { error } = await supabase.from("messages").insert({
-                user_id: me,
-                channel,
-                content
-            });
-            if (error) {
-                // rollback: remove a última se falhar
-                setMessages((cur)=>cur.filter((m)=>m.id !== optimistic.id));
-                setText(content); // devolve o texto
-            }
+            setTimeout(()=>scrollToBottom("smooth"), 0);
+        } catch (err) {
+            console.error("[ChatDock] unexpected send error:", err);
+            setText(content);
         } finally{
             setSending(false);
             setTimeout(()=>{
@@ -1110,15 +1151,40 @@ function ChatDock(param) {
             if (!sending) send();
         }
     }
+    /* -------- animação das mensagens -------- */ const itemVariants = {
+        hidden: {
+            opacity: 0,
+            y: 6,
+            filter: "blur(2px)"
+        },
+        show: {
+            opacity: 1,
+            y: 0,
+            filter: "blur(0px)",
+            transition: {
+                duration: 0.16,
+                ease: "easeOut"
+            }
+        },
+        exit: {
+            opacity: 0,
+            y: -6,
+            filter: "blur(2px)",
+            transition: {
+                duration: 0.12,
+                ease: "easeIn"
+            }
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "rounded-2xl border border-white/10 bg-[var(--surface)]/70 backdrop-blur-md shadow-xl overflow-hidden flex flex-col",
+        className: "relative rounded-2xl border border-white/10 bg-[var(--surface)]/70 backdrop-blur-md shadow-xl overflow-hidden flex flex-col min-h-0",
         style: {
-            minHeight
+            height
         },
         "aria-label": "Chat do Ranking",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "h-11 px-3 flex items-center justify-between border-b border-white/10",
+                className: "h-11 px-3 flex items-center justify-between border-b border-white/10 flex-shrink-0",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex items-center gap-2",
@@ -1127,7 +1193,7 @@ function ChatDock(param) {
                                 className: "inline-flex w-2 h-2 rounded-full bg-[var(--accent)] animate-pulse"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/chat/ChatDock.tsx",
-                                lineNumber: 198,
+                                lineNumber: 230,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1135,13 +1201,13 @@ function ChatDock(param) {
                                 children: "Chat do Ranking"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/chat/ChatDock.tsx",
-                                lineNumber: 199,
+                                lineNumber: 231,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/chat/ChatDock.tsx",
-                        lineNumber: 197,
+                        lineNumber: 229,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1152,71 +1218,75 @@ function ChatDock(param) {
                                 "aria-hidden": "true"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/chat/ChatDock.tsx",
-                                lineNumber: 202,
+                                lineNumber: 234,
                                 columnNumber: 11
                             }, this),
                             messages.length
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/chat/ChatDock.tsx",
-                        lineNumber: 201,
+                        lineNumber: 233,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/chat/ChatDock.tsx",
-                lineNumber: 196,
+                lineNumber: 228,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: listRef,
-                className: "flex-1 overflow-y-auto p-3 space-y-1.5",
+                className: "flex-1 min-h-0 overflow-y-auto p-3 space-y-1.5 no-scrollbar",
                 role: "log",
                 "aria-live": "polite",
                 "aria-relevant": "additions",
-                children: [
-                    messages.map((m, i)=>{
-                        var _name_;
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                    initial: false,
+                    children: messages.map((m, i)=>{
                         const mine = m.user_id === me;
-                        var _names_m_user_id;
-                        const name = (_names_m_user_id = names[m.user_id]) !== null && _names_m_user_id !== void 0 ? _names_m_user_id : mine ? "Você" : "Usuário ".concat(m.user_id.slice(0, 4));
+                        const name = m.user_id && names[m.user_id] || (mine ? "Você" : m.user_id ? "Usuário ".concat(m.user_id.slice(0, 4)) : "Usuário");
                         const prev = messages[i - 1];
                         const sameAsPrev = prev && prev.user_id === m.user_id;
                         const time = fmt.format(new Date(m.created_at));
-                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                            variants: itemVariants,
+                            initial: "hidden",
+                            animate: "show",
+                            exit: "exit",
+                            layout: true,
                             className: "flex ".concat(mine ? "justify-end" : "justify-start"),
                             children: [
                                 !mine && !sameAsPrev && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "mr-2 mt-5 flex-shrink-0",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "w-6 h-6 rounded-full bg-white/10 grid place-items-center text-[11px]",
-                                        children: (name === null || name === void 0 ? void 0 : (_name_ = name[0]) === null || _name_ === void 0 ? void 0 : _name_.toUpperCase()) || "U"
+                                        children: ((name === null || name === void 0 ? void 0 : name[0]) || "U").toUpperCase()
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/chat/ChatDock.tsx",
-                                        lineNumber: 229,
-                                        columnNumber: 19
+                                        lineNumber: 269,
+                                        columnNumber: 21
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/chat/ChatDock.tsx",
-                                    lineNumber: 228,
-                                    columnNumber: 17
+                                    lineNumber: 268,
+                                    columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "max-w-full flex flex-col items-start",
                                     children: [
-                                        !mine && !sameAsPrev && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        !mine && !sameAsPrev && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                            layout: true,
                                             className: "text-[11px] font-medium mb-1 ml-1 opacity-60",
                                             children: name
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/chat/ChatDock.tsx",
-                                            lineNumber: 239,
-                                            columnNumber: 19
+                                            lineNumber: 277,
+                                            columnNumber: 21
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                            layout: true,
                                             className: [
-                                                // largura máxima da bolha (mobile maior, desktop menor)
                                                 "max-w-[100%] md:max-w-[100%]",
-                                                // paddings e tipografia mais compactos
                                                 "px-3 py-1.5 rounded-2xl text-[13px] leading-snug",
                                                 "shadow-[0_1px_3px_rgba(0,0,0,0.25)]",
                                                 mine ? "self-end bg-gradient-to-r from-[#A3E635]/90 to-[#84CC16]/80 text-black rounded-br-sm" : "self-start bg-gradient-to-r from-white/10 to-white/5 text-white rounded-bl-sm"
@@ -1226,51 +1296,48 @@ function ChatDock(param) {
                                                 children: m.content
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/chat/ChatDock.tsx",
-                                                lineNumber: 257,
-                                                columnNumber: 19
+                                                lineNumber: 293,
+                                                columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/chat/ChatDock.tsx",
-                                            lineNumber: 245,
-                                            columnNumber: 17
+                                            lineNumber: 282,
+                                            columnNumber: 19
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                            layout: true,
                                             className: "text-[10px] mt-[2px] ".concat(mine ? "self-end pr-1 text-white/40" : "self-start pl-1 text-white/40"),
                                             children: time
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/chat/ChatDock.tsx",
-                                            lineNumber: 261,
-                                            columnNumber: 17
+                                            lineNumber: 296,
+                                            columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/chat/ChatDock.tsx",
-                                    lineNumber: 236,
-                                    columnNumber: 15
+                                    lineNumber: 275,
+                                    columnNumber: 17
                                 }, this)
                             ]
                         }, m.id, true, {
                             fileName: "[project]/src/components/chat/ChatDock.tsx",
-                            lineNumber: 225,
-                            columnNumber: 13
+                            lineNumber: 258,
+                            columnNumber: 15
                         }, this);
-                    }),
-                    messages.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "h-full w-full grid place-items-center text-sm opacity-70",
-                        children: "Nenhuma mensagem ainda — diga um oi 👋"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/chat/ChatDock.tsx",
-                        lineNumber: 274,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
+                    })
+                }, void 0, false, {
+                    fileName: "[project]/src/components/chat/ChatDock.tsx",
+                    lineNumber: 247,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/src/components/chat/ChatDock.tsx",
-                lineNumber: 208,
+                lineNumber: 240,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "h-14 border-top border-white/10 px-2 sm:px-3 flex items-center gap-2",
+                className: "h-14 border-t border-white/10 px-2 sm:px-3 flex items-center gap-2 flex-shrink-0",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                         ref: inputRef,
@@ -1283,7 +1350,7 @@ function ChatDock(param) {
                         "aria-label": "Escreva uma mensagem"
                     }, void 0, false, {
                         fileName: "[project]/src/components/chat/ChatDock.tsx",
-                        lineNumber: 282,
+                        lineNumber: 313,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1292,12 +1359,12 @@ function ChatDock(param) {
                         disabled: !text.trim() || sending,
                         className: "h-9 min-w-[84px] inline-flex items-center justify-center gap-2 rounded-full px-3 bg-white/10 hover:bg-white/20 disabled:opacity-60 transition",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2d$horizontal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SendHorizonal$3e$__["SendHorizonal"], {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2d$horizontal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SendHorizontal$3e$__["SendHorizontal"], {
                                 size: 16,
                                 "aria-hidden": "true"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/chat/ChatDock.tsx",
-                                lineNumber: 298,
+                                lineNumber: 329,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1305,29 +1372,29 @@ function ChatDock(param) {
                                 children: "Enviar"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/chat/ChatDock.tsx",
-                                lineNumber: 299,
+                                lineNumber: 330,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/chat/ChatDock.tsx",
-                        lineNumber: 292,
+                        lineNumber: 323,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/chat/ChatDock.tsx",
-                lineNumber: 281,
+                lineNumber: 312,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/chat/ChatDock.tsx",
-        lineNumber: 190,
+        lineNumber: 222,
         columnNumber: 5
     }, this);
 }
-_s(ChatDock, "lAsZGKWKST8E8xNfw963jv5fMPc=");
+_s(ChatDock, "LsWQDdDYhxhQYhMhVil8AU52hnY=");
 _c = ChatDock;
 var _c;
 __turbopack_context__.k.register(_c, "ChatDock");

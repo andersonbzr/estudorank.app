@@ -333,40 +333,6 @@ img, video {
   display: none;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .btn {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -826,6 +792,10 @@ input[type="checkbox"], input[type="radio"] {
 
 .h-screen {
   height: 100vh;
+}
+
+.min-h-0 {
+  min-height: 0;
 }
 
 .min-h-\[40vh\] {
@@ -2094,6 +2064,15 @@ html, body {
   background: color-mix(in oklab, rgb(var(--surface)) 78%, transparent);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .placeholder\:opacity-60::placeholder {

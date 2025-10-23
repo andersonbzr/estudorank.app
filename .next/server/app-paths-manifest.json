@@ -1,7 +1,10 @@
 {
+  "/admin/courses/page": "app/admin/courses/page.js",
   "/api/ranking/route": "app/api/ranking/route.js",
+  "/config/page": "app/config/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/me/page": "app/me/page.js",
+  "/me/security/page": "app/me/security/page.js",
   "/page": "app/page.js",
   "/ranking/page": "app/ranking/page.js"
 }

@@ -134,3 +134,18 @@ html, body {
   .stroke-accent { stroke: rgb(var(--accent)); }
   .stroke-accent-20 { stroke: color-mix(in oklab, rgb(var(--accent)) 20%, transparent); }
 }
+
+/* Esconde scrollbar mas mantém a rolagem (Chrome/Safari/Edge/Opera) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* IE/Edge Legacy (fallback inofensivo) */
+.no-scrollbar {
+  -ms-overflow-style: none;
+}
