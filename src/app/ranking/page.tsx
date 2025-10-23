@@ -2,10 +2,8 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import Link from "next/link";
 import { supabaseBrowser } from "@/lib/supabase/client";
 import Card from "@/components/ui/Card";
-import MotionButton from "@/components/ui/MotionButton";
 import AppShell from "@/components/shell/AppShell";
 import AuthGuard from "@/components/AuthGuard";
 import ChatDock from "@/components/chat/ChatDock";
@@ -26,15 +24,15 @@ function initialsFrom(nameOrEmail: string) {
 
 function RankBadge({ rank }: { rank: number }) {
   const base =
-    "inline-flex items-center justify-center w-7 h-7 rounded-full text-[13px] font-bold select-none";
+    "inline-flex items-center justify-center w-7 h-7 rounded-full text-[13px] font-bold select-none ring-1 ring-inset ring-white/15";
   if (rank === 1)
     return (
-      <span className={`${base} bg-lime-400/20 text-lime-300 drop-shadow-[0_0_6px_rgba(163,230,53,0.35)]`}>
+      <span className={`${base} bg-lime-400/25 text-lime-100 drop-shadow-[0_0_10px_rgba(132,204,22,0.45)]`}>
         1
       </span>
     );
-  if (rank === 2) return <span className={`${base} bg-indigo-400/20 text-indigo-300`}>2</span>;
-  if (rank === 3) return <span className={`${base} bg-amber-400/20 text-amber-300`}>3</span>;
+  if (rank === 2) return <span className={`${base} bg-indigo-400/20 text-indigo-100`}>2</span>;
+  if (rank === 3) return <span className={`${base} bg-amber-400/20 text-amber-100`}>3</span>;
   return <span className={`${base} bg-white/10 text-white/70`}>{rank}</span>;
 }
 
@@ -48,16 +46,12 @@ function AnimatedPoints({ value }: { value: number | null | undefined }) {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.18 }}
       className={
-        "font-semibold text-right " +
+        "font-semibold text-right tabular-nums " +
         (useGradient
-          ? "bg-gradient-to-r from-lime-400 via-green-300 to-indigo-400 bg-clip-text text-transparent"
+          ? "bg-gradient-to-r from-lime-300 via-green-300 to-indigo-300 bg-clip-text text-transparent"
           : "text-white/90")
       }
-      style={
-        useGradient
-          ? { WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }
-          : undefined
-      }
+      style={useGradient ? { WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" } : undefined}
     >
       {v.toLocaleString("pt-BR")}
     </motion.span>
@@ -68,12 +62,10 @@ function AnimatedPoints({ value }: { value: number | null | undefined }) {
 function SkeletonRow() {
   return (
     <div className="grid grid-cols-[88px_1fr_160px] md:grid-cols-[120px_1fr_180px] items-center px-4 py-3">
-      {/* posição + medalha */}
       <div className="flex items-center gap-2">
         <div className="w-7 h-7 rounded-full bg-white/10 animate-pulse" />
         <div className="w-4 h-4 rounded bg-white/10 animate-pulse" />
       </div>
-      {/* usuário (avatar + nome) */}
       <div className="flex items-center gap-3 min-w-0">
         <div className="w-8 h-8 rounded-full bg-white/10 border border-white/10 animate-pulse" />
         <div className="flex-1 min-w-0">
@@ -81,7 +73,6 @@ function SkeletonRow() {
           <div className="mt-1 h-2 w-16 bg-white/5 rounded animate-pulse" />
         </div>
       </div>
-      {/* pontos */}
       <div className="flex justify-end">
         <div className="h-3 w-16 bg-white/10 rounded animate-pulse" />
       </div>
@@ -113,6 +104,9 @@ export default function RankingPage() {
   const [names, setNames] = useState<Record<string, string>>({});
   const [currentUserId, setCurrentUserId] = useState<string | null>(null);
 
+  const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
+  const [flashUpdate, setFlashUpdate] = useState(false);
+
   const supabase = useMemo(() => supabaseBrowser(), []);
   const abortRef = useRef<AbortController | null>(null);
   const sentinelRef = useRef<HTMLDivElement | null>(null);
@@ -126,7 +120,6 @@ export default function RankingPage() {
       setErr(null);
       setLoading(true);
 
-      // usuário atual
       const { data: auth } = await supabase.auth.getUser();
       setCurrentUserId(auth.user?.id ?? null);
 
@@ -140,15 +133,18 @@ export default function RankingPage() {
       const list: Row[] = (json.leaderboard ?? []).map((r: any) => ({
         user_id: r.user_id,
         email: r.email,
-        total: Number(r.total ?? r.points ?? r.sum ?? 0), // normaliza
+        total: Number(r.total ?? r.points ?? r.sum ?? 0),
       }));
 
       setPages(json.pages ?? 1);
-      setTotal(json.total ?? list.length);
+      setTotal(json.total ?? (append ? rows.length + list.length : list.length));
       setRows((prev) => (append ? [...prev, ...list] : list));
       setPage(p);
 
-      // nomes
+      setLastUpdated(new Date());
+      setFlashUpdate(true);
+      setTimeout(() => setFlashUpdate(false), 1800);
+
       const ids = list.map((r) => r.user_id).filter(Boolean);
       if (ids.length) {
         const { data: prof } = await supabase
@@ -190,176 +186,142 @@ export default function RankingPage() {
     };
   }, [supabase, pageSize]);
 
-  // Auto-load ao chegar no fim (scroll infinito)
-  useEffect(() => {
-    if (!sentinelRef.current) return;
-    const el = sentinelRef.current;
-
-    const obs = new IntersectionObserver(
-      (entries) => {
-        const first = entries[0];
-        if (first.isIntersecting && page < pages && !loading && !err) {
-          load(page + 1, { append: true });
-        }
-      },
-      { rootMargin: "200px" }
-    );
-
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, [page, pages, loading, err]);
-
-  const isInitialLoading = loading && rows.length === 0;
-  const isAppending = loading && rows.length > 0;
+  const updatedText = lastUpdated
+    ? new Intl.RelativeTimeFormat("pt-BR", { numeric: "auto" }).format(
+        Math.round((lastUpdated.getTime() - Date.now()) / 60000),
+        "minute"
+      )
+    : "agora";
 
   return (
     <AuthGuard>
       <AppShell>
         <div className="max-w-6xl mx-auto px-4 lg:px-6 py-6 lg:py-8">
-          {/* Cabeçalho */}
-          <div className="flex items-center justify-between gap-3">
-            <h1 className="text-2xl font-semibold tracking-tight flex items-center gap-2">
-              <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-white/10 border border-white/10">
-                <Trophy size={18} />
+          {/* Header */}
+          <div className="flex items-center justify-between flex-wrap gap-3 mb-4">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-2xl grid place-items-center bg-gradient-to-br from-lime-400/20 to-green-300/15 ring-1 ring-inset ring-lime-300/20">
+                <Trophy size={22} className="text-lime-300" />
+              </div>
+              <div>
+                <h1 className="text-2xl font-semibold tracking-tight">Ranking Geral</h1>
+                <p className="text-sm text-white/60">Veja quem está subindo no topo</p>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-2">
+              <span
+                className={[
+                  "inline-flex items-center gap-2 h-8 px-3 rounded-xl text-xs bg-white/5 border border-white/10 transition",
+                  flashUpdate ? "ring-2 ring-lime-300/40 shadow-[0_0_0_6px_rgba(132,204,22,0.08)]" : "ring-0",
+                ].join(" ")}
+              >
+                <span
+                  className={[
+                    "inline-block w-1.5 h-1.5 rounded-full",
+                    flashUpdate ? "bg-lime-300 animate-pulse" : "bg-emerald-400",
+                  ].join(" ")}
+                />
+                Atualizado {updatedText}
               </span>
-              Ranking
-            </h1>
-            <div className="flex gap-2">
-              <MotionButton
-                onClick={() => load(1)}
-                className="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 transition"
-              >
-                Atualizar
-              </MotionButton>
-              <Link
-                href="/me"
-                className="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 transition"
-              >
-                Meu Painel
-              </Link>
+
+              <span className="inline-flex items-center gap-2 h-8 px-3 rounded-xl text-xs bg-white/5 border border-white/10">
+                <span className="w-1.5 h-1.5 rounded-full bg-lime-400" />
+                {total} participante{total !== 1 ? "s" : ""}
+              </span>
             </div>
           </div>
 
-          {/* Grid: ranking + chat */}
-          <div className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-5">
-            {/* Coluna Ranking */}
-            <div className="lg:col-span-8">
-              <Card className="overflow-hidden p-0">
-                {/* Cabeçalho tabela */}
-                <div className="grid grid-cols-[88px_1fr_160px] md:grid-cols-[120px_1fr_180px] items-center px-4 py-3 text-xs uppercase tracking-wider bg-gradient-to-r from-white/10 via-white/5 to-transparent text-white/60">
-                  <span>Posição</span>
-                  <span>Usuário</span>
-                  <span className="text-right">Pontos</span>
-                </div>
+          {/* Ranking + Chat */}
+          <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-7 items-start">
+            {/* Ranking */}
+            <Card className="overflow-hidden p-0 rounded-2xl border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.02] shadow-[0_10px_30px_-15px_rgba(0,0,0,0.6)]">
+              <div className="grid grid-cols-[88px_1fr_160px] md:grid-cols-[120px_1fr_180px] items-center px-4 py-3 text-[11px] uppercase tracking-wider bg-gradient-to-r from-white/10 via-white/5 to-transparent text-white/60">
+                <span>Posição</span>
+                <span>Usuário</span>
+                <span className="text-right">Pontos</span>
+              </div>
 
-                {/* Linhas */}
-                <div className="divide-y divide-white/10">
-                  {isInitialLoading ? (
-                    <SkeletonRows count={7} />
-                  ) : err && rows.length === 0 ? (
-                    <div className="px-4 py-6 text-center opacity-80">{err}</div>
-                  ) : rows.length === 0 ? (
-                    <div className="px-4 py-6 text-center opacity-80">Sem dados ainda.</div>
-                  ) : (
-                    <>
-                      <AnimatePresence initial={false}>
-                        {rows.map((r, i) => {
-                          const pos = i + 1;
-                          const display =
-                            (names[r.user_id] && names[r.user_id].trim()) ||
-                            r.email ||
-                            `User ${r.user_id.slice(0, 4)}`;
-                          const isMe = currentUserId && r.user_id === currentUserId;
+              <div className="divide-y divide-white/10">
+                {loading && rows.length === 0 ? (
+                  <SkeletonRows count={7} />
+                ) : err && rows.length === 0 ? (
+                  <div className="px-4 py-8 text-center opacity-80">{err}</div>
+                ) : rows.length === 0 ? (
+                  <div className="px-4 py-8 text-center opacity-80">Sem dados ainda.</div>
+                ) : (
+                  <AnimatePresence initial={false}>
+                    {rows.map((r, i) => {
+                      const pos = i + 1;
+                      const display =
+                        (names[r.user_id] && names[r.user_id].trim()) ||
+                        r.email ||
+                        `User ${r.user_id.slice(0, 4)}`;
+                      const isMe = currentUserId && r.user_id === currentUserId;
 
-                          const rowBg =
-                            pos === 1
-                              ? "bg-gradient-to-r from-lime-400/10 to-green-400/10"
-                              : pos === 2
-                              ? "bg-gradient-to-r from-indigo-400/10 to-blue-400/10"
-                              : pos === 3
-                              ? "bg-gradient-to-r from-amber-400/10 to-orange-400/10"
-                              : "hover:bg-white/5";
+                      const rowBg =
+                        pos === 1
+                          ? "bg-gradient-to-r from-lime-400/10 to-green-400/10"
+                          : pos === 2
+                          ? "bg-gradient-to-r from-indigo-400/10 to-blue-400/10"
+                          : pos === 3
+                          ? "bg-gradient-to-r from-amber-400/10 to-orange-400/10"
+                          : "hover:bg-white/5";
 
-                          return (
-                            <motion.div
-                              key={`${r.user_id}-${pos}`}
-                              layout
-                              initial={{ opacity: 0, y: 6 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              exit={{ opacity: 0, y: -6 }}
-                              transition={{ duration: 0.18 }}
-                              className={`grid grid-cols-[88px_1fr_160px] md:grid-cols-[120px_1fr_180px] items-center px-4 py-3 ${rowBg}`}
+                      return (
+                        <motion.div
+                          key={`${r.user_id}-${pos}`}
+                          layout
+                          initial={{ opacity: 0, y: 6 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -6 }}
+                          transition={{ duration: 0.18 }}
+                          className={`grid grid-cols-[88px_1fr_160px] md:grid-cols-[120px_1fr_180px] items-center px-4 py-3 ${rowBg}`}
+                        >
+                          <div className="flex items-center gap-2">
+                            <RankBadge rank={pos} />
+                            {pos === 1 && (
+                              <Crown size={16} className="text-lime-300 drop-shadow-[0_0_8px_rgba(132,204,22,0.5)]" />
+                            )}
+                          </div>
+
+                          <div className="flex items-center gap-3 min-w-0">
+                            <div
+                              className={`w-8 h-8 rounded-full border border-white/10 grid place-items-center text-[11px] font-semibold select-none ${
+                                isMe ? "ring-2 ring-lime-400/40" : ""
+                              } bg-white/10`}
                             >
-                              <div className="flex items-center gap-2">
-                                <RankBadge rank={pos} />
-                                {pos === 1 && <Crown size={16} className="text-lime-300" />}
-                              </div>
+                              {initialsFrom(display)}
+                            </div>
+                            <div className="flex flex-col min-w-0">
+                              <span className={`truncate ${isMe ? "font-semibold" : ""}`}>{display}</span>
+                              {isMe && <span className="text-[11px] text-lime-300/80">você</span>}
+                            </div>
+                          </div>
 
-                              <div className="flex items-center gap-3 min-w-0">
-                                <div
-                                  className={`w-8 h-8 rounded-full border border-white/10 grid place-items-center text-[11px] font-semibold select-none ${
-                                    isMe ? "ring-2 ring-lime-400/40" : ""
-                                  } bg-white/10`}
-                                >
-                                  {initialsFrom(display)}
-                                </div>
-                                <div className="flex flex-col min-w-0">
-                                  <span className={`truncate ${isMe ? "font-semibold" : ""}`}>
-                                    {display}
-                                  </span>
-                                  {isMe && (
-                                    <span className="text-[11px] text-lime-300/80">você</span>
-                                  )}
-                                </div>
-                              </div>
+                          <div className="flex justify-end">
+                            <AnimatedPoints value={r.total} />
+                          </div>
+                        </motion.div>
+                      );
+                    })}
+                  </AnimatePresence>
+                )}
+              </div>
+            </Card>
 
-                              <div className="flex justify-end">
-                                <AnimatedPoints value={r.total} />
-                              </div>
-                            </motion.div>
-                          );
-                        })}
-                      </AnimatePresence>
-
-                      {/* skeletons de append (carregando próxima página) */}
-                      {isAppending && <SkeletonRows count={4} />}
-                    </>
-                  )}
+            {/* Chat */}
+            <Card className="p-0 overflow-hidden rounded-2xl bg-white/[0.035] backdrop-blur-xl border-white/10 shadow-[0_10px_30px_-18px_rgba(0,0,0,0.7)]">
+              <div className="px-4 py-3 border-b border-white/10 flex items-center justify-between">
+                <div>
+                  <div className="text-sm font-semibold">Chat do Ranking</div>
+                  <div className="text-xs opacity-70">Conectado a <code>ranking-global</code></div>
                 </div>
-
-                {/* Rodapé */}
-                <div className="px-4 py-3 flex items-center justify-between text-sm">
-                  <div className="opacity-80">
-                    Mostrando {rows.length} de {total} usuário{total !== 1 ? "s" : ""}
-                  </div>
-                  {page < pages && (
-                    <MotionButton
-                      onClick={() => load(page + 1, { append: true })}
-                      disabled={loading}
-                      className="px-3 h-9 rounded-xl bg-white/10 hover:bg-white/20 transition disabled:opacity-60"
-                    >
-                      {loading ? "Carregando..." : "Carregar mais"}
-                    </MotionButton>
-                  )}
-                </div>
-                <div ref={sentinelRef} className="h-2 w-full" />
-              </Card>
-            </div>
-
-            {/* Coluna Chat */}
-            <div className="lg:col-span-4">
-              <Card className="p-0 overflow-hidden bg-white/[0.03] backdrop-blur-xl border-white/10">
-                <div className="px-4 py-3 border-b border-white/10 flex items-center justify-between">
-                  <div>
-                    <div className="text-sm font-semibold">Chat do Ranking</div>
-                    <div className="text-xs opacity-70">Conectado a <code>ranking-global</code></div>
-                  </div>
-                </div>
-                <div className="text-[13px] leading-5">
-                  <ChatDock channel="ranking-global" />
-                </div>
-              </Card>
-            </div>
+              </div>
+              <div className="text-[13px] leading-5">
+                <ChatDock channel="ranking-global" />
+              </div>
+            </Card>
           </div>
         </div>
       </AppShell>

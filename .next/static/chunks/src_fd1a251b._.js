@@ -83,46 +83,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/src/components/ui/MotionButton.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-// src/components/ui/MotionButton.tsx
-__turbopack_context__.s([
-    "default",
-    ()=>MotionButton
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
-"use client";
-;
-;
-function MotionButton(props) {
-    const { className = "", ...rest } = props;
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-        whileTap: {
-            scale: 0.98
-        },
-        whileHover: {
-            scale: 1.01
-        },
-        transition: {
-            duration: 0.08
-        },
-        className: "px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 transition disabled:opacity-60 ".concat(className),
-        ...rest
-    }, void 0, false, {
-        fileName: "[project]/src/components/ui/MotionButton.tsx",
-        lineNumber: 12,
-        columnNumber: 5
-    }, this);
-}
-_c = MotionButton;
-var _c;
-__turbopack_context__.k.register(_c, "MotionButton");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
-}
-}),
 "[project]/src/components/Sidebar.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1412,10 +1372,8 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$supabase$2f$client$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/supabase/client.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$Card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/Card.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$MotionButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/MotionButton.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shell$2f$AppShell$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/shell/AppShell.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AuthGuard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/AuthGuard.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$chat$2f$ChatDock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/chat/ChatDock.tsx [app-client] (ecmascript)");
@@ -1423,8 +1381,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trophy.js [app-client] (ecmascript) <export default as Trophy>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$crown$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Crown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/crown.js [app-client] (ecmascript) <export default as Crown>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.js [app-client] (ecmascript) <export default as Users>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -1436,9 +1392,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-;
-;
-function initialsFrom(nameOrEmail) {
+/* --------------------------- Helpers UI --------------------------- */ function initialsFrom(nameOrEmail) {
     var _parts_, _parts_1;
     const s = (nameOrEmail || "").trim();
     if (!s) return "U";
@@ -1449,43 +1403,31 @@ function initialsFrom(nameOrEmail) {
     const b = parts.length > 1 ? (_parts__1 = parts[parts.length - 1][0]) !== null && _parts__1 !== void 0 ? _parts__1 : "" : (_parts__2 = (_parts_1 = parts[0]) === null || _parts_1 === void 0 ? void 0 : _parts_1[1]) !== null && _parts__2 !== void 0 ? _parts__2 : "";
     return (a + b).toUpperCase();
 }
-function timeAgo(date) {
-    if (!date) return "";
-    const d = typeof date === "number" ? new Date(date) : date;
-    const diff = Math.max(0, Date.now() - d.getTime());
-    const m = Math.floor(diff / 60000);
-    if (m < 1) return "agora";
-    if (m < 60) return "".concat(m, " min");
-    const h = Math.floor(m / 60);
-    if (h < 24) return "".concat(h, " h");
-    const d2 = Math.floor(h / 24);
-    return "".concat(d2, " d");
-}
 function RankBadge(param) {
     let { rank } = param;
-    const base = "inline-flex items-center justify-center w-7 h-7 rounded-full text-[13px] font-bold select-none";
+    const base = "inline-flex items-center justify-center w-7 h-7 rounded-full text-[13px] font-bold select-none ring-1 ring-inset ring-white/15";
     if (rank === 1) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-        className: "".concat(base, " bg-lime-400/20 text-lime-300 drop-shadow-[0_0_6px_rgba(163,230,53,0.35)]"),
+        className: "".concat(base, " bg-lime-400/25 text-lime-100 drop-shadow-[0_0_10px_rgba(132,204,22,0.45)]"),
         children: "1"
     }, void 0, false, {
         fileName: "[project]/src/app/ranking/page.tsx",
-        lineNumber: 48,
+        lineNumber: 30,
         columnNumber: 7
     }, this);
     if (rank === 2) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-        className: "".concat(base, " bg-indigo-400/20 text-indigo-300"),
+        className: "".concat(base, " bg-indigo-400/20 text-indigo-100"),
         children: "2"
     }, void 0, false, {
         fileName: "[project]/src/app/ranking/page.tsx",
-        lineNumber: 52,
+        lineNumber: 34,
         columnNumber: 26
     }, this);
     if (rank === 3) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-        className: "".concat(base, " bg-amber-400/20 text-amber-300"),
+        className: "".concat(base, " bg-amber-400/20 text-amber-100"),
         children: "3"
     }, void 0, false, {
         fileName: "[project]/src/app/ranking/page.tsx",
-        lineNumber: 53,
+        lineNumber: 35,
         columnNumber: 26
     }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1493,7 +1435,7 @@ function RankBadge(param) {
         children: rank
     }, void 0, false, {
         fileName: "[project]/src/app/ranking/page.tsx",
-        lineNumber: 54,
+        lineNumber: 36,
         columnNumber: 10
     }, this);
 }
@@ -1514,7 +1456,7 @@ function AnimatedPoints(param) {
         transition: {
             duration: 0.18
         },
-        className: "font-semibold text-right " + (useGradient ? "bg-gradient-to-r from-lime-400 via-green-300 to-indigo-400 bg-clip-text text-transparent" : "text-white/90"),
+        className: "font-semibold text-right tabular-nums " + (useGradient ? "bg-gradient-to-r from-lime-300 via-green-300 to-indigo-300 bg-clip-text text-transparent" : "text-white/90"),
         style: useGradient ? {
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent"
@@ -1522,7 +1464,7 @@ function AnimatedPoints(param) {
         children: v.toLocaleString("pt-BR")
     }, void 0, false, {
         fileName: "[project]/src/app/ranking/page.tsx",
-        lineNumber: 62,
+        lineNumber: 44,
         columnNumber: 5
     }, this);
 }
@@ -1538,20 +1480,20 @@ _c1 = AnimatedPoints;
                         className: "w-7 h-7 rounded-full bg-white/10 animate-pulse"
                     }, void 0, false, {
                         fileName: "[project]/src/app/ranking/page.tsx",
-                        lineNumber: 89,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-4 h-4 rounded bg-white/10 animate-pulse"
                     }, void 0, false, {
                         fileName: "[project]/src/app/ranking/page.tsx",
-                        lineNumber: 90,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/ranking/page.tsx",
-                lineNumber: 88,
+                lineNumber: 65,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1561,7 +1503,7 @@ _c1 = AnimatedPoints;
                         className: "w-8 h-8 rounded-full bg-white/10 border border-white/10 animate-pulse"
                     }, void 0, false, {
                         fileName: "[project]/src/app/ranking/page.tsx",
-                        lineNumber: 93,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1571,26 +1513,26 @@ _c1 = AnimatedPoints;
                                 className: "h-3 w-40 max-w-[60%] bg-white/10 rounded animate-pulse"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/ranking/page.tsx",
-                                lineNumber: 95,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "mt-1 h-2 w-16 bg-white/5 rounded animate-pulse"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/ranking/page.tsx",
-                                lineNumber: 96,
+                                lineNumber: 73,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/ranking/page.tsx",
-                        lineNumber: 94,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/ranking/page.tsx",
-                lineNumber: 92,
+                lineNumber: 69,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1599,18 +1541,18 @@ _c1 = AnimatedPoints;
                     className: "h-3 w-16 bg-white/10 rounded animate-pulse"
                 }, void 0, false, {
                     fileName: "[project]/src/app/ranking/page.tsx",
-                    lineNumber: 100,
+                    lineNumber: 77,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/ranking/page.tsx",
-                lineNumber: 99,
+                lineNumber: 76,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/ranking/page.tsx",
-        lineNumber: 87,
+        lineNumber: 64,
         columnNumber: 5
     }, this);
 }
@@ -1623,12 +1565,12 @@ function SkeletonRows(param) {
             length: count
         }).map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SkeletonRow, {}, i, false, {
                 fileName: "[project]/src/app/ranking/page.tsx",
-                lineNumber: 110,
+                lineNumber: 87,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/app/ranking/page.tsx",
-        lineNumber: 108,
+        lineNumber: 85,
         columnNumber: 5
     }, this);
 }
@@ -1644,7 +1586,8 @@ function RankingPage() {
     const [total, setTotal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [names, setNames] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({});
     const [currentUserId, setCurrentUserId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    const [lastLoadedAt, setLastLoadedAt] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [lastUpdated, setLastUpdated] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [flashUpdate, setFlashUpdate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const supabase = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "RankingPage.useMemo[supabase]": ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$supabase$2f$client$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabaseBrowser"])()
     }["RankingPage.useMemo[supabase]"], []);
@@ -1681,13 +1624,15 @@ function RankingPage() {
             var _json_pages;
             setPages((_json_pages = json.pages) !== null && _json_pages !== void 0 ? _json_pages : 1);
             var _json_total;
-            setTotal((_json_total = json.total) !== null && _json_total !== void 0 ? _json_total : list.length);
+            setTotal((_json_total = json.total) !== null && _json_total !== void 0 ? _json_total : append ? rows.length + list.length : list.length);
             setRows((prev)=>append ? [
                     ...prev,
                     ...list
                 ] : list);
             setPage(p);
-            setLastLoadedAt(Date.now());
+            setLastUpdated(new Date());
+            setFlashUpdate(true);
+            setTimeout(()=>setFlashUpdate(false), 1800);
             const ids = list.map((r)=>r.user_id).filter(Boolean);
             if (ids.length) {
                 const { data: prof } = await supabase.from("profiles").select("id, full_name, name").in("id", ids);
@@ -1711,7 +1656,6 @@ function RankingPage() {
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "RankingPage.useEffect": ()=>{
             load(1);
-            // realtime: qualquer mudança em progress recarrega
             const channel = supabase.channel("ranking-progress").on("postgres_changes", {
                 event: "*",
                 schema: "public",
@@ -1731,565 +1675,398 @@ function RankingPage() {
         supabase,
         pageSize
     ]);
-    // scroll infinito
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "RankingPage.useEffect": ()=>{
-            if (!sentinelRef.current) return;
-            const el = sentinelRef.current;
-            const obs = new IntersectionObserver({
-                "RankingPage.useEffect": (entries)=>{
-                    const first = entries[0];
-                    if (first.isIntersecting && page < pages && !loading && !err) {
-                        load(page + 1, {
-                            append: true
-                        });
-                    }
-                }
-            }["RankingPage.useEffect"], {
-                rootMargin: "200px"
-            });
-            obs.observe(el);
-            return ({
-                "RankingPage.useEffect": ()=>obs.disconnect()
-            })["RankingPage.useEffect"];
-        }
-    }["RankingPage.useEffect"], [
-        page,
-        pages,
-        loading,
-        err
-    ]);
-    const isInitialLoading = loading && rows.length === 0;
-    const isAppending = loading && rows.length > 0;
-    /* ------------------------------------------------------------------ */ /* UI                                                                  */ /* ------------------------------------------------------------------ */ return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AuthGuard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+    const updatedText = lastUpdated ? new Intl.RelativeTimeFormat("pt-BR", {
+        numeric: "auto"
+    }).format(Math.round((lastUpdated.getTime() - Date.now()) / 60000), "minute") : "agora";
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AuthGuard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shell$2f$AppShell$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative",
+                className: "max-w-6xl mx-auto px-4 lg:px-6 py-6 lg:py-8",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-lime-400/10 blur-3xl"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/ranking/page.tsx",
-                        lineNumber: 243,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "pointer-events-none absolute top-20 -right-24 h-72 w-72 rounded-full bg-indigo-400/10 blur-3xl"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/ranking/page.tsx",
-                        lineNumber: 244,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "max-w-6xl mx-auto px-4 lg:px-6 py-6 lg:py-8",
+                        className: "flex items-center justify-between flex-wrap gap-3 mb-4",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                initial: {
-                                    opacity: 0,
-                                    y: 10
-                                },
-                                animate: {
-                                    opacity: 1,
-                                    y: 0
-                                },
-                                transition: {
-                                    duration: 0.35
-                                },
-                                className: "flex items-center justify-between gap-4",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center gap-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-3",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "w-10 h-10 rounded-xl bg-gradient-to-br from-lime-400/20 to-green-300/10 border border-white/10 grid place-items-center",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__["Trophy"], {
-                                                    size: 20,
-                                                    className: "text-lime-300"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/ranking/page.tsx",
-                                                    lineNumber: 256,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/ranking/page.tsx",
-                                                lineNumber: 255,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                                        className: "text-2xl font-semibold tracking-tight",
-                                                        children: "Ranking Geral"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/ranking/page.tsx",
-                                                        lineNumber: 259,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-sm text-white/60",
-                                                        children: [
-                                                            "Veja quem está subindo no topo •",
-                                                            " ",
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-white/50",
-                                                                children: lastLoadedAt ? "Atualizado há ".concat(timeAgo(lastLoadedAt)) : "carregando..."
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/app/ranking/page.tsx",
-                                                                lineNumber: 262,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/app/ranking/page.tsx",
-                                                        lineNumber: 260,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/app/ranking/page.tsx",
-                                                lineNumber: 258,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                        className: "w-12 h-12 rounded-2xl grid place-items-center bg-gradient-to-br from-lime-400/20 to-green-300/15 ring-1 ring-inset ring-lime-300/20",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__["Trophy"], {
+                                            size: 22,
+                                            className: "text-lime-300"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/ranking/page.tsx",
+                                            lineNumber: 204,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
                                         fileName: "[project]/src/app/ranking/page.tsx",
-                                        lineNumber: 254,
+                                        lineNumber: 203,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-2",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "hidden sm:inline-flex items-center gap-2 px-3 h-9 rounded-xl bg-white/5 border border-white/10 text-sm",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
-                                                        size: 16,
-                                                        className: "opacity-80"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/ranking/page.tsx",
-                                                        lineNumber: 271,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    " ",
-                                                    total,
-                                                    " participante",
-                                                    total !== 1 ? "s" : ""
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/app/ranking/page.tsx",
-                                                lineNumber: 270,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$MotionButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                onClick: ()=>load(1),
-                                                className: "px-4 h-9 rounded-xl bg-gradient-to-r from-lime-400/20 to-green-400/10 hover:from-lime-400/35 hover:to-green-400/25 shadow-[inset_0_0_0_1px_rgba(163,230,53,0.35)]",
-                                                children: "Atualizar"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                                className: "text-2xl font-semibold tracking-tight",
+                                                children: "Ranking Geral"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/ranking/page.tsx",
-                                                lineNumber: 273,
+                                                lineNumber: 207,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                href: "/me",
-                                                className: "px-4 h-9 rounded-xl bg-white/10 hover:bg-white/20 transition grid place-items-center",
-                                                children: "Meu Painel"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-sm text-white/60",
+                                                children: "Veja quem está subindo no topo"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/ranking/page.tsx",
-                                                lineNumber: 279,
+                                                lineNumber: 208,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/ranking/page.tsx",
-                                        lineNumber: 269,
+                                        lineNumber: 206,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/ranking/page.tsx",
-                                lineNumber: 248,
+                                lineNumber: 202,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mt-6 grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 items-start",
+                                className: "flex flex-wrap items-center gap-2",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        initial: {
-                                            opacity: 0,
-                                            y: 12
-                                        },
-                                        animate: {
-                                            opacity: 1,
-                                            y: 0
-                                        },
-                                        transition: {
-                                            duration: 0.35
-                                        },
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$Card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            className: "overflow-hidden p-0 bg-gradient-to-b from-white/[0.02] to-white/[0.04] backdrop-blur-sm border-white/10 rounded-2xl shadow-xl",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "grid grid-cols-[88px_1fr_160px] md:grid-cols-[120px_1fr_180px] items-center px-4 py-3 text-xs uppercase tracking-wider bg-gradient-to-r from-white/10 via-white/5 to-transparent text-white/60",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: "Posição"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/ranking/page.tsx",
-                                                            lineNumber: 299,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: "Usuário"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/ranking/page.tsx",
-                                                            lineNumber: 300,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-right",
-                                                            children: "Pontos"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/ranking/page.tsx",
-                                                            lineNumber: 301,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/app/ranking/page.tsx",
-                                                    lineNumber: 298,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "divide-y divide-white/10",
-                                                    children: isInitialLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SkeletonRows, {
-                                                        count: 7
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/ranking/page.tsx",
-                                                        lineNumber: 307,
-                                                        columnNumber: 23
-                                                    }, this) : err && rows.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "px-4 py-6 text-center opacity-80",
-                                                        children: err
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/ranking/page.tsx",
-                                                        lineNumber: 309,
-                                                        columnNumber: 23
-                                                    }, this) : rows.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "px-4 py-6 text-center opacity-80",
-                                                        children: "Sem dados ainda."
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/ranking/page.tsx",
-                                                        lineNumber: 311,
-                                                        columnNumber: 23
-                                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                                                                initial: false,
-                                                                children: rows.map((r, i)=>{
-                                                                    const pos = i + 1;
-                                                                    const display = names[r.user_id] && names[r.user_id].trim() || r.email || "User ".concat(r.user_id.slice(0, 4));
-                                                                    const isMe = currentUserId && r.user_id === currentUserId;
-                                                                    const baseRow = "grid grid-cols-[88px_1fr_160px] md:grid-cols-[120px_1fr_180px] items-center px-4 py-3 transition-all duration-200";
-                                                                    const palette = pos === 1 ? "bg-gradient-to-r from-lime-400/10 to-green-400/10 ring-1 ring-lime-400/15" : pos === 2 ? "bg-gradient-to-r from-indigo-400/10 to-blue-400/10" : pos === 3 ? "bg-gradient-to-r from-amber-400/10 to-orange-400/10" : "hover:bg-white/5";
-                                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                                        layout: true,
-                                                                        initial: {
-                                                                            opacity: 0,
-                                                                            y: 6
-                                                                        },
-                                                                        animate: {
-                                                                            opacity: 1,
-                                                                            y: 0
-                                                                        },
-                                                                        exit: {
-                                                                            opacity: 0,
-                                                                            y: -6
-                                                                        },
-                                                                        transition: {
-                                                                            duration: 0.18
-                                                                        },
-                                                                        className: "".concat(baseRow, " ").concat(palette),
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "flex items-center gap-2",
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(RankBadge, {
-                                                                                        rank: pos
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/src/app/ranking/page.tsx",
-                                                                                        lineNumber: 346,
-                                                                                        columnNumber: 35
-                                                                                    }, this),
-                                                                                    pos === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$crown$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Crown$3e$__["Crown"], {
-                                                                                        size: 16,
-                                                                                        className: "text-lime-300"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/src/app/ranking/page.tsx",
-                                                                                        lineNumber: 347,
-                                                                                        columnNumber: 49
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/src/app/ranking/page.tsx",
-                                                                                lineNumber: 345,
-                                                                                columnNumber: 33
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "flex items-center gap-3 min-w-0",
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        className: "w-8 h-8 rounded-full border border-white/10 grid place-items-center text-[11px] font-semibold select-none ".concat(isMe ? "ring-2 ring-lime-400/40" : "", " bg-white/10"),
-                                                                                        children: initialsFrom(display)
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/src/app/ranking/page.tsx",
-                                                                                        lineNumber: 352,
-                                                                                        columnNumber: 35
-                                                                                    }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        className: "flex flex-col min-w-0",
-                                                                                        children: [
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                                className: "truncate ".concat(isMe ? "font-semibold" : ""),
-                                                                                                children: display
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/src/app/ranking/page.tsx",
-                                                                                                lineNumber: 360,
-                                                                                                columnNumber: 37
-                                                                                            }, this),
-                                                                                            isMe && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                                className: "text-[11px] text-lime-300/80",
-                                                                                                children: "você"
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/src/app/ranking/page.tsx",
-                                                                                                lineNumber: 364,
-                                                                                                columnNumber: 39
-                                                                                            }, this)
-                                                                                        ]
-                                                                                    }, void 0, true, {
-                                                                                        fileName: "[project]/src/app/ranking/page.tsx",
-                                                                                        lineNumber: 359,
-                                                                                        columnNumber: 35
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/src/app/ranking/page.tsx",
-                                                                                lineNumber: 351,
-                                                                                columnNumber: 33
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "flex justify-end",
-                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AnimatedPoints, {
-                                                                                    value: r.total
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/app/ranking/page.tsx",
-                                                                                    lineNumber: 371,
-                                                                                    columnNumber: 35
-                                                                                }, this)
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/ranking/page.tsx",
-                                                                                lineNumber: 370,
-                                                                                columnNumber: 33
-                                                                            }, this)
-                                                                        ]
-                                                                    }, "".concat(r.user_id, "-").concat(pos), true, {
-                                                                        fileName: "[project]/src/app/ranking/page.tsx",
-                                                                        lineNumber: 335,
-                                                                        columnNumber: 31
-                                                                    }, this);
-                                                                })
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/app/ranking/page.tsx",
-                                                                lineNumber: 314,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            isAppending && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SkeletonRows, {
-                                                                count: 4
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/app/ranking/page.tsx",
-                                                                lineNumber: 379,
-                                                                columnNumber: 41
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/ranking/page.tsx",
-                                                    lineNumber: 305,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "px-4 py-3 flex items-center justify-between text-sm",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex items-center gap-2 opacity-80",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                                                    size: 14,
-                                                                    className: "opacity-70"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/ranking/page.tsx",
-                                                                    lineNumber: 387,
-                                                                    columnNumber: 23
-                                                                }, this),
-                                                                "Mostrando ",
-                                                                rows.length,
-                                                                " de ",
-                                                                total,
-                                                                " usuário",
-                                                                total !== 1 ? "s" : ""
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/ranking/page.tsx",
-                                                            lineNumber: 386,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        page < pages && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$MotionButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                            onClick: ()=>load(page + 1, {
-                                                                    append: true
-                                                                }),
-                                                            disabled: loading,
-                                                            className: "px-3 h-9 rounded-xl bg-white/10 hover:bg-white/20 transition disabled:opacity-60",
-                                                            children: loading ? "Carregando..." : "Carregar mais"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/ranking/page.tsx",
-                                                            lineNumber: 392,
-                                                            columnNumber: 23
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/app/ranking/page.tsx",
-                                                    lineNumber: 385,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    ref: sentinelRef,
-                                                    className: "h-2 w-full"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/ranking/page.tsx",
-                                                    lineNumber: 401,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/ranking/page.tsx",
-                                            lineNumber: 296,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: [
+                                            "inline-flex items-center gap-2 h-8 px-3 rounded-xl text-xs bg-white/5 border border-white/10 transition",
+                                            flashUpdate ? "ring-2 ring-lime-300/40 shadow-[0_0_0_6px_rgba(132,204,22,0.08)]" : "ring-0"
+                                        ].join(" "),
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: [
+                                                    "inline-block w-1.5 h-1.5 rounded-full",
+                                                    flashUpdate ? "bg-lime-300 animate-pulse" : "bg-emerald-400"
+                                                ].join(" ")
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/ranking/page.tsx",
+                                                lineNumber: 219,
+                                                columnNumber: 17
+                                            }, this),
+                                            "Atualizado ",
+                                            updatedText
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/src/app/ranking/page.tsx",
-                                        lineNumber: 291,
+                                        lineNumber: 213,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        initial: {
-                                            opacity: 0,
-                                            y: 12
-                                        },
-                                        animate: {
-                                            opacity: 1,
-                                            y: 0
-                                        },
-                                        transition: {
-                                            duration: 0.35,
-                                            delay: 0.05
-                                        },
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$Card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            className: "p-0 overflow-hidden bg-white/[0.03] backdrop-blur-xl border-white/10 rounded-2xl shadow-md",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "px-4 py-3 border-b border-white/10 flex items-center justify-between",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "text-sm font-semibold",
-                                                                children: "Chat do Ranking"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/app/ranking/page.tsx",
-                                                                lineNumber: 414,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "text-xs opacity-70",
-                                                                children: [
-                                                                    "Conectado a ",
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
-                                                                        children: "ranking-global"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/ranking/page.tsx",
-                                                                        lineNumber: 416,
-                                                                        columnNumber: 37
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/ranking/page.tsx",
-                                                                lineNumber: 415,
-                                                                columnNumber: 23
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/app/ranking/page.tsx",
-                                                        lineNumber: 413,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/ranking/page.tsx",
-                                                    lineNumber: 412,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "text-[13px] leading-5",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$chat$2f$ChatDock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                        channel: "ranking-global"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/ranking/page.tsx",
-                                                        lineNumber: 421,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/ranking/page.tsx",
-                                                    lineNumber: 420,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/ranking/page.tsx",
-                                            lineNumber: 411,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "inline-flex items-center gap-2 h-8 px-3 rounded-xl text-xs bg-white/5 border border-white/10",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "w-1.5 h-1.5 rounded-full bg-lime-400"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/ranking/page.tsx",
+                                                lineNumber: 229,
+                                                columnNumber: 17
+                                            }, this),
+                                            total,
+                                            " participante",
+                                            total !== 1 ? "s" : ""
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/src/app/ranking/page.tsx",
-                                        lineNumber: 406,
+                                        lineNumber: 228,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/ranking/page.tsx",
-                                lineNumber: 289,
+                                lineNumber: 212,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/ranking/page.tsx",
-                        lineNumber: 246,
+                        lineNumber: 201,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-7 items-start",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$Card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                className: "overflow-hidden p-0 rounded-2xl border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.02] shadow-[0_10px_30px_-15px_rgba(0,0,0,0.6)]",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "grid grid-cols-[88px_1fr_160px] md:grid-cols-[120px_1fr_180px] items-center px-4 py-3 text-[11px] uppercase tracking-wider bg-gradient-to-r from-white/10 via-white/5 to-transparent text-white/60",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                children: "Posição"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/ranking/page.tsx",
+                                                lineNumber: 240,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                children: "Usuário"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/ranking/page.tsx",
+                                                lineNumber: 241,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-right",
+                                                children: "Pontos"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/ranking/page.tsx",
+                                                lineNumber: 242,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/ranking/page.tsx",
+                                        lineNumber: 239,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "divide-y divide-white/10",
+                                        children: loading && rows.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SkeletonRows, {
+                                            count: 7
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/ranking/page.tsx",
+                                            lineNumber: 247,
+                                            columnNumber: 19
+                                        }, this) : err && rows.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "px-4 py-8 text-center opacity-80",
+                                            children: err
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/ranking/page.tsx",
+                                            lineNumber: 249,
+                                            columnNumber: 19
+                                        }, this) : rows.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "px-4 py-8 text-center opacity-80",
+                                            children: "Sem dados ainda."
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/ranking/page.tsx",
+                                            lineNumber: 251,
+                                            columnNumber: 19
+                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                            initial: false,
+                                            children: rows.map((r, i)=>{
+                                                const pos = i + 1;
+                                                const display = names[r.user_id] && names[r.user_id].trim() || r.email || "User ".concat(r.user_id.slice(0, 4));
+                                                const isMe = currentUserId && r.user_id === currentUserId;
+                                                const rowBg = pos === 1 ? "bg-gradient-to-r from-lime-400/10 to-green-400/10" : pos === 2 ? "bg-gradient-to-r from-indigo-400/10 to-blue-400/10" : pos === 3 ? "bg-gradient-to-r from-amber-400/10 to-orange-400/10" : "hover:bg-white/5";
+                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                    layout: true,
+                                                    initial: {
+                                                        opacity: 0,
+                                                        y: 6
+                                                    },
+                                                    animate: {
+                                                        opacity: 1,
+                                                        y: 0
+                                                    },
+                                                    exit: {
+                                                        opacity: 0,
+                                                        y: -6
+                                                    },
+                                                    transition: {
+                                                        duration: 0.18
+                                                    },
+                                                    className: "grid grid-cols-[88px_1fr_160px] md:grid-cols-[120px_1fr_180px] items-center px-4 py-3 ".concat(rowBg),
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex items-center gap-2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(RankBadge, {
+                                                                    rank: pos
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/ranking/page.tsx",
+                                                                    lineNumber: 282,
+                                                                    columnNumber: 29
+                                                                }, this),
+                                                                pos === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$crown$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Crown$3e$__["Crown"], {
+                                                                    size: 16,
+                                                                    className: "text-lime-300 drop-shadow-[0_0_8px_rgba(132,204,22,0.5)]"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/ranking/page.tsx",
+                                                                    lineNumber: 284,
+                                                                    columnNumber: 31
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/ranking/page.tsx",
+                                                            lineNumber: 281,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex items-center gap-3 min-w-0",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "w-8 h-8 rounded-full border border-white/10 grid place-items-center text-[11px] font-semibold select-none ".concat(isMe ? "ring-2 ring-lime-400/40" : "", " bg-white/10"),
+                                                                    children: initialsFrom(display)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/ranking/page.tsx",
+                                                                    lineNumber: 289,
+                                                                    columnNumber: 29
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex flex-col min-w-0",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "truncate ".concat(isMe ? "font-semibold" : ""),
+                                                                            children: display
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/ranking/page.tsx",
+                                                                            lineNumber: 297,
+                                                                            columnNumber: 31
+                                                                        }, this),
+                                                                        isMe && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-[11px] text-lime-300/80",
+                                                                            children: "você"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/ranking/page.tsx",
+                                                                            lineNumber: 298,
+                                                                            columnNumber: 40
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/ranking/page.tsx",
+                                                                    lineNumber: 296,
+                                                                    columnNumber: 29
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/ranking/page.tsx",
+                                                            lineNumber: 288,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex justify-end",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AnimatedPoints, {
+                                                                value: r.total
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/ranking/page.tsx",
+                                                                lineNumber: 303,
+                                                                columnNumber: 29
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/ranking/page.tsx",
+                                                            lineNumber: 302,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    ]
+                                                }, "".concat(r.user_id, "-").concat(pos), true, {
+                                                    fileName: "[project]/src/app/ranking/page.tsx",
+                                                    lineNumber: 272,
+                                                    columnNumber: 25
+                                                }, this);
+                                            })
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/ranking/page.tsx",
+                                            lineNumber: 253,
+                                            columnNumber: 19
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/ranking/page.tsx",
+                                        lineNumber: 245,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/ranking/page.tsx",
+                                lineNumber: 238,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$Card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                className: "p-0 overflow-hidden rounded-2xl bg-white/[0.035] backdrop-blur-xl border-white/10 shadow-[0_10px_30px_-18px_rgba(0,0,0,0.7)]",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "px-4 py-3 border-b border-white/10 flex items-center justify-between",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-sm font-semibold",
+                                                    children: "Chat do Ranking"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/ranking/page.tsx",
+                                                    lineNumber: 317,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-xs opacity-70",
+                                                    children: [
+                                                        "Conectado a ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
+                                                            children: "ranking-global"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/ranking/page.tsx",
+                                                            lineNumber: 318,
+                                                            columnNumber: 67
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/ranking/page.tsx",
+                                                    lineNumber: 318,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/ranking/page.tsx",
+                                            lineNumber: 316,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/ranking/page.tsx",
+                                        lineNumber: 315,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-[13px] leading-5",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$chat$2f$ChatDock$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            channel: "ranking-global"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/ranking/page.tsx",
+                                            lineNumber: 322,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/ranking/page.tsx",
+                                        lineNumber: 321,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/ranking/page.tsx",
+                                lineNumber: 314,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/ranking/page.tsx",
+                        lineNumber: 236,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/ranking/page.tsx",
-                lineNumber: 241,
+                lineNumber: 199,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/ranking/page.tsx",
-            lineNumber: 240,
+            lineNumber: 198,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/ranking/page.tsx",
-        lineNumber: 239,
+        lineNumber: 197,
         columnNumber: 5
     }, this);
 }
-_s(RankingPage, "qaqqJt1OzbXg+BW/ifQE7sm5NBA=");
+_s(RankingPage, "lyEpYKLOMIhI2xgjBZM8nN3NPGQ=");
 _c4 = RankingPage;
 var _c, _c1, _c2, _c3, _c4;
 __turbopack_context__.k.register(_c, "RankBadge");
@@ -2303,4 +2080,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=src_578acfa3._.js.map
+//# sourceMappingURL=src_fd1a251b._.js.map
