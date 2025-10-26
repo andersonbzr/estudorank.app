@@ -1,6 +1,8 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/admin/courses/page": "app/admin/courses/page.js",
+  "/api/admin/chat/clear/route": "app/api/admin/chat/clear/route.js",
+  "/api/admin/users/list/route": "app/api/admin/users/list/route.js",
   "/api/ranking/route": "app/api/ranking/route.js",
   "/config/page": "app/config/page.js",
   "/curso/[id]/page": "app/curso/[id]/page.js",
