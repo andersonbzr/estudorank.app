@@ -1,9 +1,13 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/courses/page": "app/admin/courses/page.js",
   "/api/ranking/route": "app/api/ranking/route.js",
+  "/config/page": "app/config/page.js",
   "/curso/[id]/page": "app/curso/[id]/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/login/page": "app/login/page.js",
   "/me/page": "app/me/page.js",
+  "/me/security/page": "app/me/security/page.js",
   "/page": "app/page.js",
   "/ranking/page": "app/ranking/page.js"
 }

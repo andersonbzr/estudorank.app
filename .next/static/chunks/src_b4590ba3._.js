@@ -785,20 +785,24 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/book-open.js [app-client] (ecmascript) <export default as BookOpen>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/file-text.js [app-client] (ecmascript) <export default as FileText>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/plus.js [app-client] (ecmascript) <export default as Plus>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pen$2d$line$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Edit3$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/pen-line.js [app-client] (ecmascript) <export default as Edit3>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/search.js [app-client] (ecmascript) <export default as Search>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$funnel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Filter$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/funnel.js [app-client] (ecmascript) <export default as Filter>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pencil$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Pencil$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/pencil.js [app-client] (ecmascript) <export default as Pencil>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$copy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Copy$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/copy.js [app-client] (ecmascript) <export default as Copy>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trash-2.js [app-client] (ecmascript) <export default as Trash2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$power$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Power$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/power.js [app-client] (ecmascript) <export default as Power>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-client] (ecmascript) <export default as ChevronDown>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$supabase$2f$client$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/supabase/client.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/file-text.js [app-client] (ecmascript) <export default as FileText>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-client] (ecmascript) <export default as ChevronRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AdminGuard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/AdminGuard.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shell$2f$AppShell$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/shell/AppShell.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$supabase$2f$client$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/supabase/client.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Toast$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Toast.tsx [app-client] (ecmascript)");
 ;
-var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature();
+var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature(), _s3 = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -810,34 +814,34 @@ function AdminCoursesPage() {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shell$2f$AppShell$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Content, {}, void 0, false, {
                 fileName: "[project]/src/app/admin/courses/page.tsx",
-                lineNumber: 39,
+                lineNumber: 34,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/admin/courses/page.tsx",
-            lineNumber: 38,
+            lineNumber: 33,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/admin/courses/page.tsx",
-        lineNumber: 37,
+        lineNumber: 32,
         columnNumber: 5
     }, this);
 }
 _c = AdminCoursesPage;
 function Content() {
     _s();
-    const supabase = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
-        "Content.useMemo[supabase]": ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$supabase$2f$client$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabaseBrowser"])()
-    }["Content.useMemo[supabase]"], []);
+    const sb = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "Content.useMemo[sb]": ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$supabase$2f$client$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabaseBrowser"])()
+    }["Content.useMemo[sb]"], []);
+    const toast = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Toast$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"])();
+    const [q, setQ] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const [courses, setCourses] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [modules, setModules] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
-    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
-    const [busy, setBusy] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [msg, setMsg] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    // novo curso
-    const [newCourseTitle, setNewCourseTitle] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [newCourseDesc, setNewCourseDesc] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [showNew, setShowNew] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [editing, setEditing] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Content.useEffect": ()=>{
             loadAll();
@@ -848,10 +852,10 @@ function Content() {
         setLoading(true);
         setMsg(null);
         const [c1, m1] = await Promise.all([
-            supabase.from("courses").select("*").order("created_at", {
+            sb.from("courses").select("id,title,description,is_active,created_at").order("created_at", {
                 ascending: false
             }),
-            supabase.from("modules").select("*").order("sort_order", {
+            sb.from("modules").select("id,course_id,title,sort_order,is_active").order("sort_order", {
                 ascending: true
             })
         ]);
@@ -863,729 +867,1166 @@ function Content() {
         setModules((_ref1 = m1.data) !== null && _ref1 !== void 0 ? _ref1 : []);
         setLoading(false);
     }
-    async function seedDemo() {
-        setBusy("seedDemo");
-        setMsg(null);
+    /* ------- Ações de curso ------- */ async function createCourse(title, description) {
         try {
-            const coursesToCreate = [
+            const { error } = await sb.from("courses").insert([
                 {
-                    title: "Onboarding EstudoRank",
-                    description: "Aprenda a usar a plataforma",
-                    is_active: true
-                },
-                {
-                    title: "Lógica de Programação",
-                    description: "Variáveis, condicionais e laços",
-                    is_active: true
-                },
-                {
-                    title: "Git e GitHub",
-                    description: "Fluxo básico de versionamento",
-                    is_active: true
-                },
-                {
-                    title: "Next.js 15 — Fundamentos",
-                    description: "App Router, SSR, rotas e dados",
-                    is_active: true
-                }
-            ];
-            await supabase.from("courses").insert(coursesToCreate).select();
-            const { data: allCourses } = await supabase.from("courses").select("*");
-            const getId = (title)=>{
-                var _allCourses_find;
-                return allCourses === null || allCourses === void 0 ? void 0 : (_allCourses_find = allCourses.find((c)=>c.title === title)) === null || _allCourses_find === void 0 ? void 0 : _allCourses_find.id;
-            };
-            const mods = [
-                // Onboarding
-                {
-                    course_id: getId("Onboarding EstudoRank"),
-                    title: "Tour pela plataforma",
-                    sort_order: 1,
-                    is_active: true
-                },
-                {
-                    course_id: getId("Onboarding EstudoRank"),
-                    title: "Perfil e segurança",
-                    sort_order: 2,
-                    is_active: true
-                },
-                {
-                    course_id: getId("Onboarding EstudoRank"),
-                    title: "Metas e Ranking",
-                    sort_order: 3,
-                    is_active: true
-                },
-                // Lógica
-                {
-                    course_id: getId("Lógica de Programação"),
-                    title: "Variáveis e tipos",
-                    sort_order: 1,
-                    is_active: true
-                },
-                {
-                    course_id: getId("Lógica de Programação"),
-                    title: "If/Else e Operadores",
-                    sort_order: 2,
-                    is_active: true
-                },
-                {
-                    course_id: getId("Lógica de Programação"),
-                    title: "Laços e Arrays",
-                    sort_order: 3,
-                    is_active: true
-                },
-                // Git
-                {
-                    course_id: getId("Git e GitHub"),
-                    title: "Configuração inicial",
-                    sort_order: 1,
-                    is_active: true
-                },
-                {
-                    course_id: getId("Git e GitHub"),
-                    title: "Commits e Branches",
-                    sort_order: 2,
-                    is_active: true
-                },
-                {
-                    course_id: getId("Git e GitHub"),
-                    title: "Pull Request (PR)",
-                    sort_order: 3,
-                    is_active: true
-                },
-                // Next.js
-                {
-                    course_id: getId("Next.js 15 — Fundamentos"),
-                    title: "App Router e Layouts",
-                    sort_order: 1,
-                    is_active: true
-                },
-                {
-                    course_id: getId("Next.js 15 — Fundamentos"),
-                    title: "Server vs Client Components",
-                    sort_order: 2,
-                    is_active: true
-                },
-                {
-                    course_id: getId("Next.js 15 — Fundamentos"),
-                    title: "Data Fetching e Rotas",
-                    sort_order: 3,
-                    is_active: true
-                }
-            ].filter((m)=>!!m.course_id);
-            if (mods.length) await supabase.from("modules").insert(mods).select();
-            await loadAll();
-        } catch (e) {
-            var _e_message;
-            setMsg((_e_message = e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao popular demo.");
-        } finally{
-            setBusy(null);
-        }
-    }
-    async function createCourse() {
-        if (!newCourseTitle.trim()) return;
-        setBusy("createCourse");
-        setMsg(null);
-        try {
-            const { error } = await supabase.from("courses").insert([
-                {
-                    title: newCourseTitle.trim(),
-                    description: newCourseDesc.trim() || null,
+                    title: title.trim(),
+                    description: description.trim() || null,
                     is_active: true
                 }
             ]);
             if (error) throw error;
-            setNewCourseTitle("");
-            setNewCourseDesc("");
+            toast.push("Curso criado.");
             await loadAll();
         } catch (e) {
             var _e_message;
-            setMsg((_e_message = e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao criar curso.");
-        } finally{
-            setBusy(null);
+            toast.push((_e_message = e === null || e === void 0 ? void 0 : e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao criar curso.");
         }
     }
     async function toggleCourseActive(id, current) {
-        setBusy("course:".concat(id));
-        setMsg(null);
         try {
-            const { error } = await supabase.from("courses").update({
+            const { error } = await sb.from("courses").update({
                 is_active: !current
             }).eq("id", id);
             if (error) throw error;
+            toast.push(!current ? "Curso ativado." : "Curso desativado.");
             await loadAll();
         } catch (e) {
             var _e_message;
-            setMsg((_e_message = e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao atualizar curso.");
-        } finally{
-            setBusy(null);
+            toast.push((_e_message = e === null || e === void 0 ? void 0 : e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao atualizar curso.");
         }
     }
-    async function updateCourseTitle(id, title) {
-        setBusy("courseTitle:".concat(id));
-        setMsg(null);
+    async function renameCourse(id, title) {
         try {
-            const { error } = await supabase.from("courses").update({
+            const { error } = await sb.from("courses").update({
                 title
             }).eq("id", id);
             if (error) throw error;
+            toast.push("Título do curso atualizado.");
             await loadAll();
         } catch (e) {
             var _e_message;
-            setMsg((_e_message = e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao renomear curso.");
-        } finally{
-            setBusy(null);
+            toast.push((_e_message = e === null || e === void 0 ? void 0 : e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao renomear curso.");
+        }
+    }
+    async function saveCourseDesc(id, description) {
+        try {
+            const { error } = await sb.from("courses").update({
+                description
+            }).eq("id", id);
+            if (error) throw error;
+            toast.push("Descrição atualizada.");
+            await loadAll();
+        } catch (e) {
+            var _e_message;
+            toast.push((_e_message = e === null || e === void 0 ? void 0 : e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao salvar descrição.");
+        }
+    }
+    async function duplicateCourse(course) {
+        try {
+            const { data: created, error } = await sb.from("courses").insert([
+                {
+                    title: "".concat(course.title, " (cópia)"),
+                    description: course.description,
+                    is_active: course.is_active
+                }
+            ]).select("*").single();
+            if (error) throw error;
+            const srcMods = modules.filter((m)=>m.course_id === course.id);
+            if (srcMods.length) {
+                const payload = srcMods.map((m)=>({
+                        course_id: created.id,
+                        title: m.title,
+                        sort_order: m.sort_order,
+                        is_active: m.is_active
+                    }));
+                const { error: me } = await sb.from("modules").insert(payload);
+                if (me) throw me;
+            }
+            toast.push("Curso duplicado.");
+            await loadAll();
+        } catch (e) {
+            var _e_message;
+            toast.push((_e_message = e === null || e === void 0 ? void 0 : e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao duplicar curso.");
         }
     }
     async function deleteCourse(id) {
         if (!confirm("Excluir curso e seus módulos?")) return;
-        setBusy("courseDel:".concat(id));
-        setMsg(null);
         try {
-            const { error } = await supabase.from("courses").delete().eq("id", id);
+            const { error } = await sb.from("courses").delete().eq("id", id);
             if (error) throw error;
+            toast.push("Curso excluído.");
             await loadAll();
         } catch (e) {
             var _e_message;
-            setMsg((_e_message = e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao excluir curso.");
-        } finally{
-            setBusy(null);
+            toast.push((_e_message = e === null || e === void 0 ? void 0 : e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao excluir curso.");
         }
     }
-    async function addModule(courseId, title) {
-        if (!title.trim()) return;
-        setBusy("addModule:".concat(courseId));
-        setMsg(null);
+    /* ------- Ações de módulo (Drawer) ------- */ async function addModule(courseId, title) {
         try {
-            var _current_at;
-            const current = modules.filter((m)=>m.course_id === courseId);
-            var _current_at_sort_order;
-            const nextOrder = ((_current_at_sort_order = (_current_at = current.at(-1)) === null || _current_at === void 0 ? void 0 : _current_at.sort_order) !== null && _current_at_sort_order !== void 0 ? _current_at_sort_order : 0) + 1;
-            const { error } = await supabase.from("modules").insert([
+            var _list_at;
+            const list = modules.filter((m)=>m.course_id === courseId);
+            var _list_at_sort_order;
+            const nextOrder = ((_list_at_sort_order = (_list_at = list.at(-1)) === null || _list_at === void 0 ? void 0 : _list_at.sort_order) !== null && _list_at_sort_order !== void 0 ? _list_at_sort_order : 0) + 1;
+            const { error } = await sb.from("modules").insert([
                 {
                     course_id: courseId,
-                    title: title.trim(),
+                    title,
                     sort_order: nextOrder,
                     is_active: true
                 }
             ]);
             if (error) throw error;
+            toast.push("Módulo adicionado.");
             await loadAll();
         } catch (e) {
             var _e_message;
-            setMsg((_e_message = e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao criar módulo.");
-        } finally{
-            setBusy(null);
+            toast.push((_e_message = e === null || e === void 0 ? void 0 : e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao adicionar módulo.");
         }
     }
-    async function updateModuleTitle(id, title) {
-        setBusy("modTitle:".concat(id));
-        setMsg(null);
+    async function renameModule(id, title) {
         try {
-            const { error } = await supabase.from("modules").update({
+            const { error } = await sb.from("modules").update({
                 title
             }).eq("id", id);
             if (error) throw error;
+            toast.push("Módulo atualizado.");
             await loadAll();
         } catch (e) {
             var _e_message;
-            setMsg((_e_message = e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao renomear módulo.");
-        } finally{
-            setBusy(null);
+            toast.push((_e_message = e === null || e === void 0 ? void 0 : e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao renomear módulo.");
         }
     }
     async function toggleModuleActive(id, current) {
-        setBusy("modActive:".concat(id));
-        setMsg(null);
         try {
-            const { error } = await supabase.from("modules").update({
+            const { error } = await sb.from("modules").update({
                 is_active: !current
             }).eq("id", id);
             if (error) throw error;
+            toast.push(!current ? "Módulo ativado." : "Módulo desativado.");
             await loadAll();
         } catch (e) {
             var _e_message;
-            setMsg((_e_message = e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao atualizar módulo.");
-        } finally{
-            setBusy(null);
+            toast.push((_e_message = e === null || e === void 0 ? void 0 : e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao atualizar módulo.");
         }
     }
     async function deleteModule(id) {
         if (!confirm("Excluir este módulo?")) return;
-        setBusy("modDel:".concat(id));
-        setMsg(null);
         try {
-            const { error } = await supabase.from("modules").delete().eq("id", id);
+            const { error } = await sb.from("modules").delete().eq("id", id);
             if (error) throw error;
+            toast.push("Módulo excluído.");
             await loadAll();
         } catch (e) {
             var _e_message;
-            setMsg((_e_message = e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao excluir módulo.");
-        } finally{
-            setBusy(null);
+            toast.push((_e_message = e === null || e === void 0 ? void 0 : e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao excluir módulo.");
         }
     }
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-        className: "max-w-6xl mx-auto px-6 lg:px-8 py-8",
+    const filtered = courses.filter((c)=>{
+        var _c_description;
+        return (c.title + " " + ((_c_description = c.description) !== null && _c_description !== void 0 ? _c_description : "")).toLowerCase().includes(q.toLowerCase());
+    });
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].main, {
+        initial: {
+            opacity: 0,
+            y: 8
+        },
+        animate: {
+            opacity: 1,
+            y: 0
+        },
+        transition: {
+            duration: 0.35
+        },
+        className: "px-5 md:px-8 py-8 text-white",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mb-6 flex items-center justify-between",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-3xl font-semibold tracking-tight",
-                                children: "Admin • Cursos & Módulos"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 251,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-sm opacity-70 mt-1",
-                                children: "Crie cursos, adicione módulos, ative/desative e edite títulos. Somente administradores podem alterar."
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 252,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/admin/courses/page.tsx",
-                        lineNumber: 250,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: seedDemo,
-                        disabled: busy === "seedDemo",
-                        "aria-busy": busy === "seedDemo",
-                        className: "btn",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                size: 16
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 262,
-                                columnNumber: 11
-                            }, this),
-                            busy === "seedDemo" ? "Populando..." : "Popular demo"
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/admin/courses/page.tsx",
-                        lineNumber: 256,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/app/admin/courses/page.tsx",
-                lineNumber: 249,
-                columnNumber: 7
-            }, this),
-            msg && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mb-6 p-3 rounded-2xl border border-white/10 bg-white/10 text-sm",
-                children: msg
-            }, void 0, false, {
-                fileName: "[project]/src/app/admin/courses/page.tsx",
-                lineNumber: 269,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "p-5 rounded-2xl bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-[0_4px_12px_rgba(0,0,0,0.25)] hover:bg-white/[0.05] transition",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-2 text-sm opacity-80",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__["BookOpen"], {
-                                size: 16
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 277,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "Novo curso"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 278,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/admin/courses/page.tsx",
-                        lineNumber: 276,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                value: newCourseTitle,
-                                onChange: (e)=>setNewCourseTitle(e.target.value),
-                                placeholder: "Título do curso",
-                                className: "field w-full"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 282,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                value: newCourseDesc,
-                                onChange: (e)=>setNewCourseDesc(e.target.value),
-                                placeholder: "Descrição (opcional)",
-                                className: "field w-full"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 288,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/admin/courses/page.tsx",
-                        lineNumber: 281,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-3",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: createCourse,
-                            disabled: busy === "createCourse" || !newCourseTitle.trim(),
-                            "aria-busy": busy === "createCourse",
-                            className: "btn",
+                className: "max-w-6xl mx-auto",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "relative overflow-hidden rounded-3xl p-6 md:p-7 bg-gradient-to-b from-neutral-900/95 to-black/90 backdrop-blur-md border border-white/10 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)]",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                            className: "pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 h-64 w-64 rounded-full blur-3xl",
+                            style: {
+                                background: "radial-gradient(circle, rgba(163,230,53,0.22), transparent)"
+                            },
+                            animate: {
+                                opacity: [
+                                    0.25,
+                                    0.4,
+                                    0.25
+                                ],
+                                scale: [
+                                    0.95,
+                                    1.05,
+                                    0.95
+                                ]
+                            },
+                            transition: {
+                                duration: 6,
+                                repeat: Infinity
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                            lineNumber: 225,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative z-10 flex items-center justify-between gap-3",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__["Plus"], {
-                                    size: 16
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                            className: "text-xl md:text-2xl font-semibold text-lime-300 drop-shadow-[0_0_10px_rgba(163,230,53,0.25)]",
+                                            children: "Cursos"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                            lineNumber: 235,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-sm text-white/70",
+                                            children: "Gerencie cursos e módulos."
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                            lineNumber: 238,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/app/admin/courses/page.tsx",
-                                    lineNumber: 303,
+                                    lineNumber: 234,
                                     columnNumber: 13
                                 }, this),
-                                " ",
-                                busy === "createCourse" ? "Criando..." : "Criar curso"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>setShowNew(true),
+                                    className: "h-10 px-3 rounded-xl bg-lime-400/10 text-lime-300 hover:bg-lime-400/20 hover:shadow-[0_0_10px_rgba(163,230,53,0.25)] transition inline-flex items-center gap-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__["Plus"], {
+                                            size: 16
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                            lineNumber: 244,
+                                            columnNumber: 15
+                                        }, this),
+                                        " Adicionar curso"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                    lineNumber: 240,
+                                    columnNumber: 13
+                                }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/admin/courses/page.tsx",
-                            lineNumber: 297,
+                            lineNumber: 233,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative z-10 mt-6 flex flex-col sm:flex-row gap-3",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex-1 relative",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
+                                            className: "absolute left-3 top-1/2 -translate-y-1/2 opacity-60",
+                                            size: 16
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                            lineNumber: 251,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                            value: q,
+                                            onChange: (e)=>setQ(e.target.value),
+                                            placeholder: "Buscar curso…",
+                                            className: "w-full h-11 pl-9 pr-3 rounded-xl bg-white/5 border border-white/10 outline-none focus:ring-2 focus:ring-lime-400/25"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                            lineNumber: 252,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                    lineNumber: 250,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: "h-11 px-3 rounded-xl bg-white/5 border border-white/10 inline-flex items-center gap-2 hover:bg-white/10 transition",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$funnel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Filter$3e$__["Filter"], {
+                                            size: 16
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                            lineNumber: 260,
+                                            columnNumber: 15
+                                        }, this),
+                                        " Filtros"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                    lineNumber: 259,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                            lineNumber: 249,
+                            columnNumber: 11
+                        }, this),
+                        msg && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative z-10 mt-4 p-3 rounded-xl border border-white/10 bg-white/10 text-sm",
+                            children: msg
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                            lineNumber: 265,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative z-10 mt-6 rounded-2xl overflow-hidden bg-white/[0.03] border border-white/10",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "hidden md:grid grid-cols-[1fr,120px,140px,160px,140px] px-6 py-3 text-xs uppercase tracking-wide text-white/60 border-b border-white/10",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: "Curso"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                            lineNumber: 273,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: "Módulos"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                            lineNumber: 274,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: "Status"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                            lineNumber: 275,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: "Criado"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                            lineNumber: 276,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: "Ações"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                            lineNumber: 277,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                    lineNumber: 272,
+                                    columnNumber: 13
+                                }, this),
+                                loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                    className: "divide-y divide-white/10 animate-pulse",
+                                    children: Array.from({
+                                        length: 4
+                                    }).map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            className: "grid md:grid-cols-[1fr,120px,140px,160px,140px] grid-cols-1 gap-3 px-6 py-5",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "h-4 w-64 bg-white/10 rounded"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                    lineNumber: 284,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "h-4 w-10 bg-white/10 rounded"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                    lineNumber: 285,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "h-4 w-20 bg-white/10 rounded"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                    lineNumber: 286,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "h-4 w-24 bg-white/10 rounded"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                    lineNumber: 287,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "h-8 w-24 bg-white/10 rounded"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                    lineNumber: 288,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, i, true, {
+                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                            lineNumber: 283,
+                                            columnNumber: 19
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                    lineNumber: 281,
+                                    columnNumber: 15
+                                }, this) : filtered.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "px-6 py-10 text-center text-white/70",
+                                    children: "Nenhum curso encontrado."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                    lineNumber: 293,
+                                    columnNumber: 15
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                    className: "divide-y divide-white/10",
+                                    children: filtered.map((c)=>{
+                                        const count = modules.filter((m)=>m.course_id === c.id).length;
+                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            className: "grid md:grid-cols-[1fr,120px,140px,160px,140px] grid-cols-1 gap-3 px-6 py-5 hover:bg-white/[0.04] transition-colors",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "font-medium text-white/90 line-clamp-1",
+                                                            children: c.title
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                            lineNumber: 306,
+                                                            columnNumber: 25
+                                                        }, this),
+                                                        c.description && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "text-sm text-white/60 line-clamp-2",
+                                                            children: c.description
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                            lineNumber: 308,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                    lineNumber: 305,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "self-center text-sm text-white/80",
+                                                    children: count
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                    lineNumber: 313,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "self-center",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-[11px] font-semibold px-2 py-1 rounded-md border\n                            ".concat(c.is_active ? "text-lime-300 border-lime-400/30 bg-lime-400/10" : "text-white/60 border-white/15 bg-white/5"),
+                                                        children: c.is_active ? "Ativo" : "Inativo"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                        lineNumber: 315,
+                                                        columnNumber: 25
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                    lineNumber: 314,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "self-center text-sm text-white/70",
+                                                    children: c.created_at ? new Date(c.created_at).toLocaleDateString("pt-BR", {
+                                                        day: "2-digit",
+                                                        month: "short",
+                                                        year: "numeric"
+                                                    }).replace(".", "") : "—"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                    lineNumber: 325,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "self-center flex items-center gap-2",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                            className: "h-8 w-8 grid place-items-center rounded-lg bg-white/5 border border-white/10 hover:bg-white/10",
+                                                            title: "Editar",
+                                                            onClick: ()=>setEditing(c),
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pencil$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Pencil$3e$__["Pencil"], {
+                                                                size: 16
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                                lineNumber: 338,
+                                                                columnNumber: 27
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                            lineNumber: 333,
+                                                            columnNumber: 25
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                            className: "h-8 w-8 grid place-items-center rounded-lg bg-white/5 border border-white/10 hover:bg-white/10",
+                                                            title: "Duplicar",
+                                                            onClick: ()=>duplicateCourse(c),
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$copy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Copy$3e$__["Copy"], {
+                                                                size: 16
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                                lineNumber: 345,
+                                                                columnNumber: 27
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                            lineNumber: 340,
+                                                            columnNumber: 25
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                            className: "h-8 w-8 grid place-items-center rounded-lg bg-white/5 border border-white/10 hover:bg-white/10",
+                                                            title: c.is_active ? "Desativar" : "Ativar",
+                                                            onClick: ()=>toggleCourseActive(c.id, c.is_active),
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$power$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Power$3e$__["Power"], {
+                                                                size: 16,
+                                                                className: c.is_active ? "" : "opacity-60"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                                lineNumber: 352,
+                                                                columnNumber: 27
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                            lineNumber: 347,
+                                                            columnNumber: 25
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                            className: "h-8 w-8 grid place-items-center rounded-lg bg-red-500/15 border border-red-400/30 text-red-300 hover:bg-red-500/25",
+                                                            title: "Excluir",
+                                                            onClick: ()=>deleteCourse(c.id),
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
+                                                                size: 16
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                                lineNumber: 359,
+                                                                columnNumber: 27
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                            lineNumber: 354,
+                                                            columnNumber: 25
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                            className: "h-8 px-3 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 inline-flex items-center gap-1",
+                                                            onClick: ()=>setEditing(c),
+                                                            title: "Abrir detalhes",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "text-xs",
+                                                                    children: "Detalhes"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                                    lineNumber: 366,
+                                                                    columnNumber: 27
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
+                                                                    size: 14
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                                    lineNumber: 367,
+                                                                    columnNumber: 27
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                            lineNumber: 361,
+                                                            columnNumber: 25
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                    lineNumber: 332,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, c.id, true, {
+                                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                                            lineNumber: 301,
+                                            columnNumber: 21
+                                        }, this);
+                                    })
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                    lineNumber: 297,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/admin/courses/page.tsx",
+                            lineNumber: 271,
                             columnNumber: 11
                         }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/admin/courses/page.tsx",
-                        lineNumber: 296,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/app/admin/courses/page.tsx",
-                lineNumber: 275,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-6 grid gap-4",
-                children: loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "p-5 rounded-2xl bg-white/[0.03] border border-white/10",
-                    children: "Carregando…"
-                }, void 0, false, {
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/src/app/admin/courses/page.tsx",
-                    lineNumber: 311,
-                    columnNumber: 11
-                }, this) : courses.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "p-5 rounded-2xl bg-white/[0.03] border border-white/10",
-                    children: "Nenhum curso. Crie um acima."
-                }, void 0, false, {
-                    fileName: "[project]/src/app/admin/courses/page.tsx",
-                    lineNumber: 313,
-                    columnNumber: 11
-                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                    initial: false,
-                    children: courses.map((c)=>{
-                        const mods = modules.filter((m)=>m.course_id === c.id);
-                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            initial: {
-                                opacity: 0,
-                                y: 8
-                            },
-                            animate: {
-                                opacity: 1,
-                                y: 0
-                            },
-                            exit: {
-                                opacity: 0,
-                                y: -8
-                            },
-                            transition: {
-                                duration: 0.18
-                            },
-                            className: "rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl shadow-[0_4px_12px_rgba(0,0,0,0.25)]",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CourseCard, {
-                                course: c,
-                                modules: mods,
-                                busy: busy,
-                                onToggleCourse: toggleCourseActive,
-                                onDeleteCourse: deleteCourse,
-                                onRenameCourse: updateCourseTitle,
-                                onAddModule: addModule,
-                                onRenameModule: updateModuleTitle,
-                                onToggleModule: toggleModuleActive,
-                                onDeleteModule: deleteModule
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 329,
-                                columnNumber: 19
-                            }, this)
-                        }, c.id, false, {
-                            fileName: "[project]/src/app/admin/courses/page.tsx",
-                            lineNumber: 321,
-                            columnNumber: 17
-                        }, this);
-                    })
-                }, void 0, false, {
-                    fileName: "[project]/src/app/admin/courses/page.tsx",
-                    lineNumber: 317,
-                    columnNumber: 11
+                    lineNumber: 223,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/admin/courses/page.tsx",
-                lineNumber: 309,
+                lineNumber: 222,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(NewCourseModal, {
+                open: showNew,
+                onClose: ()=>setShowNew(false),
+                onCreate: async (t, d)=>{
+                    await createCourse(t, d);
+                    setShowNew(false);
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/app/admin/courses/page.tsx",
+                lineNumber: 380,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(EditCourseDrawer, {
+                course: editing,
+                modules: modules.filter((m)=>{
+                    var _editing_id;
+                    return m.course_id === ((_editing_id = editing === null || editing === void 0 ? void 0 : editing.id) !== null && _editing_id !== void 0 ? _editing_id : "");
+                }),
+                onClose: ()=>setEditing(null),
+                onRenameCourse: renameCourse,
+                onSaveDesc: saveCourseDesc,
+                onToggleCourse: toggleCourseActive,
+                onAddModule: addModule,
+                onRenameModule: renameModule,
+                onToggleModule: toggleModuleActive,
+                onDeleteModule: deleteModule,
+                onDeleteCourse: async (id)=>{
+                    await deleteCourse(id);
+                    setEditing(null);
+                }
+            }, (editing === null || editing === void 0 ? void 0 : editing.id) || "drawer-none", false, {
+                fileName: "[project]/src/app/admin/courses/page.tsx",
+                lineNumber: 390,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/admin/courses/page.tsx",
-        lineNumber: 247,
+        lineNumber: 216,
         columnNumber: 5
     }, this);
 }
-_s(Content, "VXLNFgrENVBrRPIzVN5F54f9NnU=");
+_s(Content, "tn5LHfrqR5xL4UKIQEdtT1gEZA4=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Toast$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"]
+    ];
+});
 _c1 = Content;
-/* ---------- Componentes de UI ---------- */ function CourseCard(param) {
-    let { course, modules, busy, onToggleCourse, onDeleteCourse, onRenameCourse, onAddModule, onRenameModule, onToggleModule, onDeleteModule } = param;
+/* ---------------- Components ---------------- */ function NewCourseModal(param) {
+    let { open, onClose, onCreate } = param;
     _s1();
-    const [open, setOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
-    const [draftTitle, setDraftTitle] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(course.title);
-    const [addingTitle, setAddingTitle] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const savingCourseTitle = busy === "courseTitle:".concat(course.id);
-    const togglingCourse = busy === "course:".concat(course.id);
-    const deletingCourse = busy === "courseDel:".concat(course.id);
-    const addingModule = busy === "addModule:".concat(course.id);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "overflow-hidden",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-start justify-between gap-3 p-4 border-b border-white/10",
+    const [title, setTitle] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [desc, setDesc] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [busy, setBusy] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "NewCourseModal.useEffect": ()=>{
+            if (open) {
+                setTitle("");
+                setDesc("");
+            }
+        }
+    }["NewCourseModal.useEffect"], [
+        open
+    ]);
+    if (!open) return null;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            className: "fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm grid place-items-center p-4",
+            initial: {
+                opacity: 0
+            },
+            animate: {
+                opacity: 1
+            },
+            exit: {
+                opacity: 0
+            },
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "w-full max-w-lg rounded-2xl p-5 bg-gradient-to-b from-neutral-900/95 to-black/90 border border-white/10 shadow-2xl",
+                initial: {
+                    scale: 0.96,
+                    opacity: 0
+                },
+                animate: {
+                    scale: 1,
+                    opacity: 1
+                },
+                exit: {
+                    scale: 0.96,
+                    opacity: 0
+                },
+                onClick: (e)=>e.stopPropagation(),
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex-1",
+                        className: "flex items-center justify-between",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-2 text-sm opacity-80",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__["BookOpen"], {
-                                        size: 16
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/admin/courses/page.tsx",
-                                        lineNumber: 391,
-                                        columnNumber: 13
-                                    }, this),
-                                    " ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        children: "Curso"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/admin/courses/page.tsx",
-                                        lineNumber: 391,
-                                        columnNumber: 36
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 390,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mt-1 flex items-center gap-2",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                        value: draftTitle,
-                                        onChange: (e)=>setDraftTitle(e.target.value),
-                                        onBlur: ()=>draftTitle.trim() && draftTitle !== course.title && onRenameCourse(course.id, draftTitle.trim()),
-                                        disabled: savingCourseTitle,
-                                        className: "field field-inline w-full max-w-[420px] font-semibold tracking-tight"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/admin/courses/page.tsx",
-                                        lineNumber: 395,
-                                        columnNumber: 13
-                                    }, this),
-                                    savingCourseTitle && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-xs opacity-70",
-                                        children: "Salvando…"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/admin/courses/page.tsx",
-                                        lineNumber: 407,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-xs px-2 py-0.5 rounded-md border border-white/10 bg-white/5",
-                                        children: [
-                                            modules.length,
-                                            " módulo(s)"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/admin/courses/page.tsx",
-                                        lineNumber: 409,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 394,
-                                columnNumber: 11
-                            }, this),
-                            course.description && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "opacity-70 text-sm mt-1",
-                                children: course.description
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "text-lg font-semibold text-lime-300",
+                                children: "Novo curso"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 414,
-                                columnNumber: 34
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/admin/courses/page.tsx",
-                        lineNumber: 389,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-2",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>setOpen((v)=>!v),
-                                className: "btn-icon",
-                                "aria-expanded": open,
-                                title: open ? "Recolher" : "Expandir",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                    size: 16,
-                                    className: "transition-transform ".concat(open ? "" : "-rotate-90")
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/admin/courses/page.tsx",
-                                    lineNumber: 424,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 418,
-                                columnNumber: 11
+                                lineNumber: 449,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>onToggleCourse(course.id, course.is_active),
-                                disabled: togglingCourse,
-                                className: "btn-icon",
-                                title: course.is_active ? "Desativar" : "Ativar",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$power$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Power$3e$__["Power"], {
-                                    size: 16,
-                                    className: course.is_active ? "" : "opacity-60"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/admin/courses/page.tsx",
-                                    lineNumber: 435,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 429,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>onDeleteCourse(course.id),
-                                disabled: deletingCourse,
-                                className: "btn-danger px-2 py-1.5",
-                                title: "Excluir curso",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
+                                className: "p-1 rounded-lg hover:bg-white/10",
+                                onClick: onClose,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                                     size: 16
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/admin/courses/page.tsx",
-                                    lineNumber: 443,
+                                    lineNumber: 451,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                lineNumber: 450,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                        lineNumber: 448,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-4 grid gap-3",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        className: "block text-sm opacity-70 mb-1",
+                                        children: "Título"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                                        lineNumber: 457,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        value: title,
+                                        onChange: (e)=>setTitle(e.target.value),
+                                        className: "w-full h-11 rounded-xl bg-white/5 border border-white/10 px-3 outline-none focus:ring-2 focus:ring-lime-400/25",
+                                        placeholder: "Ex.: Next.js 15 — Fundamentos"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                                        lineNumber: 458,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                lineNumber: 456,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        className: "block text-sm opacity-70 mb-1",
+                                        children: "Descrição (opcional)"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                                        lineNumber: 466,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                                        value: desc,
+                                        onChange: (e)=>setDesc(e.target.value),
+                                        className: "w-full h-24 rounded-xl bg-white/5 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-lime-400/25 resize-none",
+                                        placeholder: "Resumo curto…"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                                        lineNumber: 467,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                lineNumber: 465,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                        lineNumber: 455,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-5 flex items-center justify-end gap-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: "h-10 px-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10",
+                                onClick: onClose,
+                                children: "Cancelar"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                lineNumber: 477,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: "h-10 px-3 rounded-xl bg-lime-400/10 text-lime-300 hover:bg-lime-400/20 hover:shadow-[0_0_10px_rgba(163,230,53,0.25)]",
+                                disabled: !title.trim() || busy,
+                                onClick: async ()=>{
+                                    setBusy(true);
+                                    await onCreate(title, desc);
+                                    setBusy(false);
+                                },
+                                children: busy ? "Criando…" : "Criar curso"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                lineNumber: 480,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                        lineNumber: 476,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, "newcourse-modal", true, {
+                fileName: "[project]/src/app/admin/courses/page.tsx",
+                lineNumber: 442,
+                columnNumber: 9
+            }, this)
+        }, "newcourse-overlay", false, {
+            fileName: "[project]/src/app/admin/courses/page.tsx",
+            lineNumber: 437,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/app/admin/courses/page.tsx",
+        lineNumber: 436,
+        columnNumber: 5
+    }, this);
+}
+_s1(NewCourseModal, "VdVzyF3KAJlNafglcNm2E1ZGa/M=");
+_c2 = NewCourseModal;
+function EditCourseDrawer(param) {
+    let { course, modules, onClose, onRenameCourse, onSaveDesc, onToggleCourse, onAddModule, onRenameModule, onToggleModule, onDeleteModule, onDeleteCourse } = param;
+    _s2();
+    const [tab, setTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("geral");
+    var _course_title;
+    const [title, setTitle] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])((_course_title = course === null || course === void 0 ? void 0 : course.title) !== null && _course_title !== void 0 ? _course_title : "");
+    var _course_description;
+    const [desc, setDesc] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])((_course_description = course === null || course === void 0 ? void 0 : course.description) !== null && _course_description !== void 0 ? _course_description : "");
+    const [newMod, setNewMod] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "EditCourseDrawer.useEffect": ()=>{
+            var _course_title;
+            setTitle((_course_title = course === null || course === void 0 ? void 0 : course.title) !== null && _course_title !== void 0 ? _course_title : "");
+            var _course_description;
+            setDesc((_course_description = course === null || course === void 0 ? void 0 : course.description) !== null && _course_description !== void 0 ? _course_description : "");
+            setTab("geral");
+        }
+    }["EditCourseDrawer.useEffect"], [
+        course
+    ]);
+    if (!course) return null;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+        mode: "wait",
+        initial: false,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "fixed inset-0 z-[60] bg-black/50",
+                initial: {
+                    opacity: 0
+                },
+                animate: {
+                    opacity: 1
+                },
+                exit: {
+                    opacity: 0
+                },
+                onClick: onClose
+            }, "drawer-overlay", false, {
+                fileName: "[project]/src/app/admin/courses/page.tsx",
+                lineNumber: 538,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].aside, {
+                className: "fixed right-0 top-0 bottom-0 z-[61] w-full max-w-xl p-6 overflow-auto   bg-gradient-to-b from-neutral-900/95 to-black/90 border-l border-white/10",
+                initial: {
+                    x: "100%"
+                },
+                animate: {
+                    x: 0
+                },
+                exit: {
+                    x: "100%"
+                },
+                transition: {
+                    type: "tween",
+                    duration: 0.25
+                },
+                onClick: (e)=>e.stopPropagation(),
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center justify-between",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "text-lg font-semibold text-lime-300",
+                                        children: "Editar curso"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                                        lineNumber: 554,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-sm text-white/70",
+                                        children: course.title
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                                        lineNumber: 555,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                lineNumber: 553,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: "p-1 rounded-lg hover:bg-white/10",
+                                onClick: onClose,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                    size: 16
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                                    lineNumber: 558,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 437,
+                                lineNumber: 557,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/admin/courses/page.tsx",
-                        lineNumber: 417,
+                        lineNumber: 552,
                         columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/app/admin/courses/page.tsx",
-                lineNumber: 388,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                initial: false,
-                children: open && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                    initial: {
-                        height: 0,
-                        opacity: 0
-                    },
-                    animate: {
-                        height: "auto",
-                        opacity: 1
-                    },
-                    exit: {
-                        height: 0,
-                        opacity: 0
-                    },
-                    transition: {
-                        duration: 0.18
-                    },
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "p-4",
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-5 flex items-center gap-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: "h-9 px-3 rounded-xl border ".concat(tab === "geral" ? "border-lime-400/40 bg-lime-400/10 text-lime-300" : "border-white/10 bg-white/5"),
+                                onClick: ()=>setTab("geral"),
+                                children: "Geral"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                lineNumber: 564,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: "h-9 px-3 rounded-xl border ".concat(tab === "modulos" ? "border-lime-400/40 bg-lime-400/10 text-lime-300" : "border-white/10 bg-white/5"),
+                                onClick: ()=>setTab("modulos"),
+                                children: "Módulos"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                lineNumber: 570,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                        lineNumber: 563,
+                        columnNumber: 9
+                    }, this),
+                    tab === "geral" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-5 grid gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        className: "block text-sm opacity-70 mb-1",
+                                        children: "Título"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                                        lineNumber: 581,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        value: title,
+                                        onChange: (e)=>setTitle(e.target.value),
+                                        onBlur: async ()=>{
+                                            const v = title.trim();
+                                            if (v && v !== course.title) await onRenameCourse(course.id, v);
+                                        },
+                                        className: "w-full h-11 rounded-xl bg-white/5 border border-white/10 px-3 outline-none focus:ring-2 focus:ring-lime-400/25"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                                        lineNumber: 582,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                lineNumber: 580,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        className: "block text-sm opacity-70 mb-1",
+                                        children: "Descrição"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                                        lineNumber: 593,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                                        value: desc,
+                                        onChange: (e)=>setDesc(e.target.value),
+                                        onBlur: async ()=>{
+                                            var _course_description;
+                                            if ((desc !== null && desc !== void 0 ? desc : "") !== ((_course_description = course.description) !== null && _course_description !== void 0 ? _course_description : "")) {
+                                                await onSaveDesc(course.id, desc.trim() ? desc : null);
+                                            }
+                                        },
+                                        className: "w-full h-28 rounded-xl bg-white/5 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-lime-400/25 resize-none"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                                        lineNumber: 594,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                lineNumber: 592,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center justify-between mt-2",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-sm text-white/70",
+                                        children: [
+                                            "Status:",
+                                            " ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "font-semibold ".concat(course.is_active ? "text-lime-300" : "text-white/60"),
+                                                children: course.is_active ? "Ativo" : "Inativo"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                lineNumber: 609,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                                        lineNumber: 607,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                className: "h-9 px-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10",
+                                                onClick: ()=>onToggleCourse(course.id, course.is_active),
+                                                children: course.is_active ? "Desativar" : "Ativar"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                lineNumber: 614,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                className: "h-9 px-3 rounded-xl bg-red-500/15 border border-red-400/30 text-red-300 hover:bg-red-500/25",
+                                                onClick: ()=>onDeleteCourse(course.id),
+                                                children: "Excluir curso"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                                lineNumber: 620,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                                        lineNumber: 613,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/admin/courses/page.tsx",
+                                lineNumber: 606,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/admin/courses/page.tsx",
+                        lineNumber: 579,
+                        columnNumber: 11
+                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-5",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex items-center gap-2",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                        value: addingTitle,
-                                        onChange: (e)=>setAddingTitle(e.target.value),
+                                        value: newMod,
+                                        onChange: (e)=>setNewMod(e.target.value),
                                         placeholder: "Novo módulo…",
-                                        className: "field flex-1"
+                                        className: "flex-1 h-11 rounded-xl bg-white/5 border border-white/10 px-3 outline-none focus:ring-2 focus:ring-lime-400/25"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/courses/page.tsx",
-                                        lineNumber: 460,
-                                        columnNumber: 17
+                                        lineNumber: 632,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: ()=>{
-                                            if (addingTitle.trim()) {
-                                                onAddModule(course.id, addingTitle.trim());
-                                                setAddingTitle("");
-                                            }
+                                        className: "h-11 px-3 rounded-xl bg-lime-400/10 text-lime-300 hover:bg-lime-400/20 hover:shadow-[0_0_10px_rgba(163,230,53,0.25)]",
+                                        disabled: !newMod.trim(),
+                                        onClick: async ()=>{
+                                            const v = newMod.trim();
+                                            if (!v) return;
+                                            await onAddModule(course.id, v);
+                                            setNewMod("");
                                         },
-                                        disabled: addingModule,
-                                        className: "btn",
-                                        children: addingModule ? "Adicionando…" : "Adicionar módulo"
+                                        children: "Adicionar"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/courses/page.tsx",
-                                        lineNumber: 466,
-                                        columnNumber: 17
+                                        lineNumber: 638,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 459,
-                                columnNumber: 15
+                                lineNumber: 631,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mt-3 pl-3 border-l border-white/10 space-y-2",
+                                className: "mt-4 space-y-2",
                                 children: modules.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-sm opacity-70 px-2",
-                                    children: "—"
+                                    className: "text-sm text-white/70",
+                                    children: "Nenhum módulo."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/admin/courses/page.tsx",
-                                    lineNumber: 483,
-                                    columnNumber: 19
+                                    lineNumber: 654,
+                                    columnNumber: 17
                                 }, this) : modules.map((m)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center justify-between rounded-xl border border-white/10 px-3 py-2 bg-black/10",
+                                        className: "flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-3 py-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-center gap-2",
@@ -1595,107 +2036,100 @@ _c1 = Content;
                                                         className: "opacity-80"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/courses/page.tsx",
-                                                        lineNumber: 491,
-                                                        columnNumber: 25
+                                                        lineNumber: 662,
+                                                        columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(InlineEdit, {
                                                         value: m.title,
-                                                        saving: busy === "modTitle:".concat(m.id),
-                                                        onSave: (val)=>onRenameModule(m.id, val)
+                                                        onSave: (v)=>onRenameModule(m.id, v)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/courses/page.tsx",
-                                                        lineNumber: 492,
-                                                        columnNumber: 25
+                                                        lineNumber: 663,
+                                                        columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/admin/courses/page.tsx",
-                                                lineNumber: 490,
-                                                columnNumber: 23
+                                                lineNumber: 661,
+                                                columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-center gap-2",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                        onClick: ()=>onToggleModule(m.id, m.is_active),
-                                                        disabled: busy === "modActive:".concat(m.id),
-                                                        className: "btn-icon",
+                                                        className: "h-8 w-8 grid place-items-center rounded-lg bg-white/5 border border-white/10 hover:bg-white/10",
                                                         title: m.is_active ? "Desativar" : "Ativar",
+                                                        onClick: ()=>onToggleModule(m.id, m.is_active),
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$power$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Power$3e$__["Power"], {
                                                             size: 16,
                                                             className: m.is_active ? "" : "opacity-60"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/admin/courses/page.tsx",
-                                                            lineNumber: 505,
-                                                            columnNumber: 27
+                                                            lineNumber: 671,
+                                                            columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/courses/page.tsx",
-                                                        lineNumber: 499,
-                                                        columnNumber: 25
+                                                        lineNumber: 666,
+                                                        columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        className: "h-8 w-8 grid place-items-center rounded-lg bg-red-500/15 border border-red-400/30 text-red-300 hover:bg-red-500/25",
+                                                        title: "Excluir",
                                                         onClick: ()=>onDeleteModule(m.id),
-                                                        disabled: busy === "modDel:".concat(m.id),
-                                                        className: "btn-danger px-2 py-1.5",
-                                                        title: "Excluir módulo",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
                                                             size: 16
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/admin/courses/page.tsx",
-                                                            lineNumber: 513,
-                                                            columnNumber: 27
+                                                            lineNumber: 678,
+                                                            columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/courses/page.tsx",
-                                                        lineNumber: 507,
-                                                        columnNumber: 25
+                                                        lineNumber: 673,
+                                                        columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/admin/courses/page.tsx",
-                                                lineNumber: 498,
-                                                columnNumber: 23
+                                                lineNumber: 665,
+                                                columnNumber: 21
                                             }, this)
                                         ]
                                     }, m.id, true, {
                                         fileName: "[project]/src/app/admin/courses/page.tsx",
-                                        lineNumber: 486,
-                                        columnNumber: 21
+                                        lineNumber: 657,
+                                        columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/app/admin/courses/page.tsx",
-                                lineNumber: 481,
-                                columnNumber: 15
+                                lineNumber: 652,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/admin/courses/page.tsx",
-                        lineNumber: 457,
-                        columnNumber: 13
+                        lineNumber: 630,
+                        columnNumber: 11
                     }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/app/admin/courses/page.tsx",
-                    lineNumber: 451,
-                    columnNumber: 11
-                }, this)
-            }, void 0, false, {
+                ]
+            }, "drawer-".concat(course.id), true, {
                 fileName: "[project]/src/app/admin/courses/page.tsx",
-                lineNumber: 449,
+                lineNumber: 544,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/admin/courses/page.tsx",
-        lineNumber: 386,
+        lineNumber: 537,
         columnNumber: 5
     }, this);
 }
-_s1(CourseCard, "UM0ADLkQIlrte15+ieFaSWNzGXA=");
-_c2 = CourseCard;
+_s2(EditCourseDrawer, "OZ1va/LSpnU78tKYjKdFupId7mE=");
+_c3 = EditCourseDrawer;
 function InlineEdit(param) {
-    let { value, onSave, saving } = param;
-    _s2();
+    let { value, onSave } = param;
+    _s3();
     const [editing, setEditing] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [draft, setDraft] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(value);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
@@ -1703,40 +2137,59 @@ function InlineEdit(param) {
     }["InlineEdit.useEffect"], [
         value
     ]);
-    return editing ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    if (!editing) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+            onClick: ()=>setEditing(true),
+            className: "btn-ghost px-2 py-1 text-sm inline-flex items-center gap-2",
+            title: "Editar título",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "line-clamp-1",
+                    children: value
+                }, void 0, false, {
+                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                    lineNumber: 710,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pencil$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Pencil$3e$__["Pencil"], {
+                    size: 14,
+                    className: "opacity-70"
+                }, void 0, false, {
+                    fileName: "[project]/src/app/admin/courses/page.tsx",
+                    lineNumber: 711,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/app/admin/courses/page.tsx",
+            lineNumber: 705,
+            columnNumber: 7
+        }, this);
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex items-center gap-2",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                 value: draft,
                 onChange: (e)=>setDraft(e.target.value),
-                className: "field w-[24rem] max-w-full",
+                className: "h-10 w-[24rem] max-w-full rounded-xl bg-white/5 border border-white/10 px-3 outline-none focus:ring-2 focus:ring-lime-400/25",
                 autoFocus: true
             }, void 0, false, {
                 fileName: "[project]/src/app/admin/courses/page.tsx",
-                lineNumber: 543,
+                lineNumber: 718,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                onClick: ()=>{
+                onClick: async ()=>{
                     const v = draft.trim();
-                    if (v && v !== value) onSave(v);
+                    if (v && v !== value) await onSave(v);
                     setEditing(false);
                 },
-                disabled: saving,
-                className: "btn h-10 px-3",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pen$2d$line$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Edit3$3e$__["Edit3"], {
-                        size: 14
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/admin/courses/page.tsx",
-                        lineNumber: 558,
-                        columnNumber: 9
-                    }, this),
-                    " Salvar"
-                ]
-            }, void 0, true, {
+                className: "h-10 px-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10",
+                children: "Salvar"
+            }, void 0, false, {
                 fileName: "[project]/src/app/admin/courses/page.tsx",
-                lineNumber: 549,
+                lineNumber: 724,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1744,47 +2197,28 @@ function InlineEdit(param) {
                     setDraft(value);
                     setEditing(false);
                 },
-                className: "btn-ghost h-10 px-3",
+                className: "h-10 px-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10",
                 children: "Cancelar"
             }, void 0, false, {
                 fileName: "[project]/src/app/admin/courses/page.tsx",
-                lineNumber: 560,
+                lineNumber: 734,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/admin/courses/page.tsx",
-        lineNumber: 542,
-        columnNumber: 5
-    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-        onClick: ()=>setEditing(true),
-        className: "btn-ghost px-2 py-1 text-sm inline-flex items-center gap-2",
-        title: "Editar título",
-        children: [
-            value,
-            " ",
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pen$2d$line$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Edit3$3e$__["Edit3"], {
-                size: 14,
-                className: "opacity-70"
-            }, void 0, false, {
-                fileName: "[project]/src/app/admin/courses/page.tsx",
-                lineNumber: 576,
-                columnNumber: 15
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/src/app/admin/courses/page.tsx",
-        lineNumber: 571,
+        lineNumber: 717,
         columnNumber: 5
     }, this);
 }
-_s2(InlineEdit, "Z6crpJriAYePaP6Mq7kgIsjksGQ=");
-_c3 = InlineEdit;
-var _c, _c1, _c2, _c3;
+_s3(InlineEdit, "Z6crpJriAYePaP6Mq7kgIsjksGQ=");
+_c4 = InlineEdit;
+var _c, _c1, _c2, _c3, _c4;
 __turbopack_context__.k.register(_c, "AdminCoursesPage");
 __turbopack_context__.k.register(_c1, "Content");
-__turbopack_context__.k.register(_c2, "CourseCard");
-__turbopack_context__.k.register(_c3, "InlineEdit");
+__turbopack_context__.k.register(_c2, "NewCourseModal");
+__turbopack_context__.k.register(_c3, "EditCourseDrawer");
+__turbopack_context__.k.register(_c4, "InlineEdit");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }

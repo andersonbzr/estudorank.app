@@ -4,18 +4,12 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  BookOpen,
-  FileText,
-  Plus,
-  Edit3,
-  Trash2,
-  Power,
-  ChevronDown,
-  Sparkles,
+  Plus, Search, Filter, Pencil, Copy, Trash2, Power, FileText, X, ChevronRight,
 } from "lucide-react";
-import { supabaseBrowser } from "@/lib/supabase/client";
 import AdminGuard from "@/components/AdminGuard";
 import AppShell from "@/components/shell/AppShell";
+import { supabaseBrowser } from "@/lib/supabase/client";
+import { useToast } from "@/components/Toast";
 
 /* Tipos */
 type Course = {
@@ -23,6 +17,7 @@ type Course = {
   title: string;
   description: string | null;
   is_active: boolean;
+  created_at?: string | null; // usamos created_at
 };
 type Module = {
   id: string;
@@ -43,17 +38,17 @@ export default function AdminCoursesPage() {
 }
 
 function Content() {
-  const supabase = useMemo(() => supabaseBrowser(), []);
+  const sb = useMemo(() => supabaseBrowser(), []);
+  const toast = useToast();
 
+  const [q, setQ] = useState("");
+  const [loading, setLoading] = useState(true);
   const [courses, setCourses] = useState<Course[]>([]);
   const [modules, setModules] = useState<Module[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [busy, setBusy] = useState<string | null>(null);
   const [msg, setMsg] = useState<string | null>(null);
 
-  // novo curso
-  const [newCourseTitle, setNewCourseTitle] = useState("");
-  const [newCourseDesc, setNewCourseDesc] = useState("");
+  const [showNew, setShowNew] = useState(false);
+  const [editing, setEditing] = useState<Course | null>(null);
 
   useEffect(() => {
     loadAll();
@@ -64,8 +59,12 @@ function Content() {
     setLoading(true);
     setMsg(null);
     const [c1, m1] = await Promise.all([
-      supabase.from("courses").select("*").order("created_at", { ascending: false }),
-      supabase.from("modules").select("*").order("sort_order", { ascending: true }),
+      sb.from("courses")
+        .select("id,title,description,is_active,created_at")
+        .order("created_at", { ascending: false }),
+      sb.from("modules")
+        .select("id,course_id,title,sort_order,is_active")
+        .order("sort_order", { ascending: true }),
     ]);
 
     if (c1.error) setMsg(c1.error.message);
@@ -76,504 +75,671 @@ function Content() {
     setLoading(false);
   }
 
-  async function seedDemo() {
-    setBusy("seedDemo");
-    setMsg(null);
+  /* ------- Ações de curso ------- */
+  async function createCourse(title: string, description: string) {
     try {
-      const coursesToCreate: Omit<Course, "id">[] = [
-        { title: "Onboarding EstudoRank", description: "Aprenda a usar a plataforma", is_active: true },
-        { title: "Lógica de Programação", description: "Variáveis, condicionais e laços", is_active: true },
-        { title: "Git e GitHub", description: "Fluxo básico de versionamento", is_active: true },
-        { title: "Next.js 15 — Fundamentos", description: "App Router, SSR, rotas e dados", is_active: true },
-      ];
-      await supabase.from("courses").insert(coursesToCreate).select();
-
-      const { data: allCourses } = await supabase.from("courses").select("*");
-      const getId = (title: string) => allCourses?.find((c) => c.title === title)?.id;
-
-      const mods = [
-        // Onboarding
-        { course_id: getId("Onboarding EstudoRank"), title: "Tour pela plataforma", sort_order: 1, is_active: true },
-        { course_id: getId("Onboarding EstudoRank"), title: "Perfil e segurança", sort_order: 2, is_active: true },
-        { course_id: getId("Onboarding EstudoRank"), title: "Metas e Ranking", sort_order: 3, is_active: true },
-        // Lógica
-        { course_id: getId("Lógica de Programação"), title: "Variáveis e tipos", sort_order: 1, is_active: true },
-        { course_id: getId("Lógica de Programação"), title: "If/Else e Operadores", sort_order: 2, is_active: true },
-        { course_id: getId("Lógica de Programação"), title: "Laços e Arrays", sort_order: 3, is_active: true },
-        // Git
-        { course_id: getId("Git e GitHub"), title: "Configuração inicial", sort_order: 1, is_active: true },
-        { course_id: getId("Git e GitHub"), title: "Commits e Branches", sort_order: 2, is_active: true },
-        { course_id: getId("Git e GitHub"), title: "Pull Request (PR)", sort_order: 3, is_active: true },
-        // Next.js
-        { course_id: getId("Next.js 15 — Fundamentos"), title: "App Router e Layouts", sort_order: 1, is_active: true },
-        { course_id: getId("Next.js 15 — Fundamentos"), title: "Server vs Client Components", sort_order: 2, is_active: true },
-        { course_id: getId("Next.js 15 — Fundamentos"), title: "Data Fetching e Rotas", sort_order: 3, is_active: true },
-      ].filter((m) => !!m.course_id);
-
-      if (mods.length) await supabase.from("modules").insert(mods as any[]).select();
-      await loadAll();
-    } catch (e: any) {
-      setMsg(e.message ?? "Falha ao popular demo.");
-    } finally {
-      setBusy(null);
-    }
-  }
-
-  async function createCourse() {
-    if (!newCourseTitle.trim()) return;
-    setBusy("createCourse");
-    setMsg(null);
-    try {
-      const { error } = await supabase.from("courses").insert([
-        { title: newCourseTitle.trim(), description: newCourseDesc.trim() || null, is_active: true },
-      ]);
+      const { error } = await sb
+        .from("courses")
+        .insert([{ title: title.trim(), description: description.trim() || null, is_active: true }]);
       if (error) throw error;
-      setNewCourseTitle("");
-      setNewCourseDesc("");
+      toast.push("Curso criado.");
       await loadAll();
     } catch (e: any) {
-      setMsg(e.message ?? "Falha ao criar curso.");
-    } finally {
-      setBusy(null);
+      toast.push(e?.message ?? "Falha ao criar curso.");
     }
   }
 
   async function toggleCourseActive(id: string, current: boolean) {
-    setBusy(`course:${id}`);
-    setMsg(null);
     try {
-      const { error } = await supabase.from("courses").update({ is_active: !current }).eq("id", id);
+      const { error } = await sb.from("courses").update({ is_active: !current }).eq("id", id);
       if (error) throw error;
+      toast.push(!current ? "Curso ativado." : "Curso desativado.");
       await loadAll();
     } catch (e: any) {
-      setMsg(e.message ?? "Falha ao atualizar curso.");
-    } finally {
-      setBusy(null);
+      toast.push(e?.message ?? "Falha ao atualizar curso.");
     }
   }
 
-  async function updateCourseTitle(id: string, title: string) {
-    setBusy(`courseTitle:${id}`);
-    setMsg(null);
+  async function renameCourse(id: string, title: string) {
     try {
-      const { error } = await supabase.from("courses").update({ title }).eq("id", id);
+      const { error } = await sb.from("courses").update({ title }).eq("id", id);
       if (error) throw error;
+      toast.push("Título do curso atualizado.");
       await loadAll();
     } catch (e: any) {
-      setMsg(e.message ?? "Falha ao renomear curso.");
-    } finally {
-      setBusy(null);
+      toast.push(e?.message ?? "Falha ao renomear curso.");
+    }
+  }
+
+  async function saveCourseDesc(id: string, description: string | null) {
+    try {
+      const { error } = await sb.from("courses").update({ description }).eq("id", id);
+      if (error) throw error;
+      toast.push("Descrição atualizada.");
+      await loadAll();
+    } catch (e: any) {
+      toast.push(e?.message ?? "Falha ao salvar descrição.");
+    }
+  }
+
+  async function duplicateCourse(course: Course) {
+    try {
+      const { data: created, error } = await sb
+        .from("courses")
+        .insert([{ title: `${course.title} (cópia)`, description: course.description, is_active: course.is_active }])
+        .select("*").single();
+      if (error) throw error;
+
+      const srcMods = modules.filter((m) => m.course_id === course.id);
+      if (srcMods.length) {
+        const payload = srcMods.map((m) => ({
+          course_id: (created as any).id,
+          title: m.title,
+          sort_order: m.sort_order,
+          is_active: m.is_active,
+        }));
+        const { error: me } = await sb.from("modules").insert(payload);
+        if (me) throw me;
+      }
+
+      toast.push("Curso duplicado.");
+      await loadAll();
+    } catch (e: any) {
+      toast.push(e?.message ?? "Falha ao duplicar curso.");
     }
   }
 
   async function deleteCourse(id: string) {
     if (!confirm("Excluir curso e seus módulos?")) return;
-    setBusy(`courseDel:${id}`);
-    setMsg(null);
     try {
-      const { error } = await supabase.from("courses").delete().eq("id", id);
+      const { error } = await sb.from("courses").delete().eq("id", id);
       if (error) throw error;
+      toast.push("Curso excluído.");
       await loadAll();
     } catch (e: any) {
-      setMsg(e.message ?? "Falha ao excluir curso.");
-    } finally {
-      setBusy(null);
+      toast.push(e?.message ?? "Falha ao excluir curso.");
     }
   }
 
+  /* ------- Ações de módulo (Drawer) ------- */
   async function addModule(courseId: string, title: string) {
-    if (!title.trim()) return;
-    setBusy(`addModule:${courseId}`);
-    setMsg(null);
     try {
-      const current = modules.filter((m) => m.course_id === courseId);
-      const nextOrder = (current.at(-1)?.sort_order ?? 0) + 1;
-      const { error } = await supabase
+      const list = modules.filter((m) => m.course_id === courseId);
+      const nextOrder = (list.at(-1)?.sort_order ?? 0) + 1;
+      const { error } = await sb
         .from("modules")
-        .insert([{ course_id: courseId, title: title.trim(), sort_order: nextOrder, is_active: true }]);
+        .insert([{ course_id: courseId, title, sort_order: nextOrder, is_active: true }]);
       if (error) throw error;
+      toast.push("Módulo adicionado.");
       await loadAll();
     } catch (e: any) {
-      setMsg(e.message ?? "Falha ao criar módulo.");
-    } finally {
-      setBusy(null);
+      toast.push(e?.message ?? "Falha ao adicionar módulo.");
     }
   }
-
-  async function updateModuleTitle(id: string, title: string) {
-    setBusy(`modTitle:${id}`);
-    setMsg(null);
+  async function renameModule(id: string, title: string) {
     try {
-      const { error } = await supabase.from("modules").update({ title }).eq("id", id);
+      const { error } = await sb.from("modules").update({ title }).eq("id", id);
       if (error) throw error;
+      toast.push("Módulo atualizado.");
       await loadAll();
     } catch (e: any) {
-      setMsg(e.message ?? "Falha ao renomear módulo.");
-    } finally {
-      setBusy(null);
+      toast.push(e?.message ?? "Falha ao renomear módulo.");
     }
   }
-
   async function toggleModuleActive(id: string, current: boolean) {
-    setBusy(`modActive:${id}`);
-    setMsg(null);
     try {
-      const { error } = await supabase.from("modules").update({ is_active: !current }).eq("id", id);
+      const { error } = await sb.from("modules").update({ is_active: !current }).eq("id", id);
       if (error) throw error;
+      toast.push(!current ? "Módulo ativado." : "Módulo desativado.");
       await loadAll();
     } catch (e: any) {
-      setMsg(e.message ?? "Falha ao atualizar módulo.");
-    } finally {
-      setBusy(null);
+      toast.push(e?.message ?? "Falha ao atualizar módulo.");
     }
   }
-
   async function deleteModule(id: string) {
     if (!confirm("Excluir este módulo?")) return;
-    setBusy(`modDel:${id}`);
-    setMsg(null);
     try {
-      const { error } = await supabase.from("modules").delete().eq("id", id);
+      const { error } = await sb.from("modules").delete().eq("id", id);
       if (error) throw error;
+      toast.push("Módulo excluído.");
       await loadAll();
     } catch (e: any) {
-      setMsg(e.message ?? "Falha ao excluir módulo.");
-    } finally {
-      setBusy(null);
+      toast.push(e?.message ?? "Falha ao excluir módulo.");
     }
   }
 
+  const filtered = courses.filter((c) =>
+    (c.title + " " + (c.description ?? "")).toLowerCase().includes(q.toLowerCase()),
+  );
+
   return (
-    <main className="max-w-6xl mx-auto px-6 lg:px-8 py-8">
-      {/* Hero */}
-      <div className="mb-6 flex items-center justify-between">
-        <div>
-          <h1 className="text-3xl font-semibold tracking-tight">Admin • Cursos & Módulos</h1>
-          <p className="text-sm opacity-70 mt-1">
-            Crie cursos, adicione módulos, ative/desative e edite títulos. Somente administradores podem alterar.
-          </p>
-        </div>
-        <button
-          onClick={seedDemo}
-          disabled={busy === "seedDemo"}
-          aria-busy={busy === "seedDemo"}
-          className="btn"
-        >
-          <Sparkles size={16} />
-          {busy === "seedDemo" ? "Populando..." : "Popular demo"}
-        </button>
-      </div>
-
-      {/* Mensagem de erro */}
-      {msg && (
-        <div className="mb-6 p-3 rounded-2xl border border-white/10 bg-white/10 text-sm">
-          {msg}
-        </div>
-      )}
-
-      {/* Novo curso */}
-      <section className="p-5 rounded-2xl bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-[0_4px_12px_rgba(0,0,0,0.25)] hover:bg-white/[0.05] transition">
-        <div className="flex items-center gap-2 text-sm opacity-80">
-          <BookOpen size={16} />
-          <span>Novo curso</span>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
-          <input
-            value={newCourseTitle}
-            onChange={(e) => setNewCourseTitle(e.target.value)}
-            placeholder="Título do curso"
-            className="field w-full"
+    <motion.main
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.35 }}
+      className="px-5 md:px-8 py-8 text-white"
+    >
+      <div className="max-w-6xl mx-auto">
+        <div className="relative overflow-hidden rounded-3xl p-6 md:p-7 bg-gradient-to-b from-neutral-900/95 to-black/90 backdrop-blur-md border border-white/10 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)]">
+          {/* aurora */}
+          <motion.div
+            className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 h-64 w-64 rounded-full blur-3xl"
+            style={{ background: "radial-gradient(circle, rgba(163,230,53,0.22), transparent)" }}
+            animate={{ opacity: [0.25, 0.4, 0.25], scale: [0.95, 1.05, 0.95] }}
+            transition={{ duration: 6, repeat: Infinity }}
           />
-          <input
-            value={newCourseDesc}
-            onChange={(e) => setNewCourseDesc(e.target.value)}
-            placeholder="Descrição (opcional)"
-            className="field w-full"
-          />
-        </div>
 
-        <div className="mt-3">
-          <button
-            onClick={createCourse}
-            disabled={busy === "createCourse" || !newCourseTitle.trim()}
-            aria-busy={busy === "createCourse"}
-            className="btn"
-          >
-            <Plus size={16} /> {busy === "createCourse" ? "Criando..." : "Criar curso"}
-          </button>
-        </div>
-      </section>
-
-      {/* Lista de cursos */}
-      <div className="mt-6 grid gap-4">
-        {loading ? (
-          <div className="p-5 rounded-2xl bg-white/[0.03] border border-white/10">Carregando…</div>
-        ) : courses.length === 0 ? (
-          <div className="p-5 rounded-2xl bg-white/[0.03] border border-white/10">
-            Nenhum curso. Crie um acima.
+          {/* header */}
+          <div className="relative z-10 flex items-center justify-between gap-3">
+            <div>
+              <h1 className="text-xl md:text-2xl font-semibold text-lime-300 drop-shadow-[0_0_10px_rgba(163,230,53,0.25)]">
+                Cursos
+              </h1>
+              <p className="text-sm text-white/70">Gerencie cursos e módulos.</p>
+            </div>
+            <button
+              onClick={() => setShowNew(true)}
+              className="h-10 px-3 rounded-xl bg-lime-400/10 text-lime-300 hover:bg-lime-400/20 hover:shadow-[0_0_10px_rgba(163,230,53,0.25)] transition inline-flex items-center gap-2"
+            >
+              <Plus size={16} /> Adicionar curso
+            </button>
           </div>
-        ) : (
-          <AnimatePresence initial={false}>
-            {courses.map((c) => {
-              const mods = modules.filter((m) => m.course_id === c.id);
-              return (
-                <motion.div
-                  key={c.id}
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -8 }}
-                  transition={{ duration: 0.18 }}
-                  className="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl shadow-[0_4px_12px_rgba(0,0,0,0.25)]"
-                >
-                  <CourseCard
-                    course={c}
-                    modules={mods}
-                    busy={busy}
-                    onToggleCourse={toggleCourseActive}
-                    onDeleteCourse={deleteCourse}
-                    onRenameCourse={updateCourseTitle}
-                    onAddModule={addModule}
-                    onRenameModule={updateModuleTitle}
-                    onToggleModule={toggleModuleActive}
-                    onDeleteModule={deleteModule}
-                  />
-                </motion.div>
-              );
-            })}
-          </AnimatePresence>
-        )}
+
+          {/* toolbar */}
+          <div className="relative z-10 mt-6 flex flex-col sm:flex-row gap-3">
+            <div className="flex-1 relative">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 opacity-60" size={16} />
+              <input
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+                placeholder="Buscar curso…"
+                className="w-full h-11 pl-9 pr-3 rounded-xl bg-white/5 border border-white/10 outline-none focus:ring-2 focus:ring-lime-400/25"
+              />
+            </div>
+            <button className="h-11 px-3 rounded-xl bg-white/5 border border-white/10 inline-flex items-center gap-2 hover:bg-white/10 transition">
+              <Filter size={16} /> Filtros
+            </button>
+          </div>
+
+          {msg && (
+            <div className="relative z-10 mt-4 p-3 rounded-xl border border-white/10 bg-white/10 text-sm">
+              {msg}
+            </div>
+          )}
+
+          {/* tabela */}
+          <div className="relative z-10 mt-6 rounded-2xl overflow-hidden bg-white/[0.03] border border-white/10">
+            <div className="hidden md:grid grid-cols-[1fr,120px,140px,160px,140px] px-6 py-3 text-xs uppercase tracking-wide text-white/60 border-b border-white/10">
+              <div>Curso</div>
+              <div>Módulos</div>
+              <div>Status</div>
+              <div>Criado</div>
+              <div>Ações</div>
+            </div>
+
+            {loading ? (
+              <ul className="divide-y divide-white/10 animate-pulse">
+                {Array.from({ length: 4 }).map((_, i) => (
+                  <li key={i} className="grid md:grid-cols-[1fr,120px,140px,160px,140px] grid-cols-1 gap-3 px-6 py-5">
+                    <div className="h-4 w-64 bg-white/10 rounded" />
+                    <div className="h-4 w-10 bg-white/10 rounded" />
+                    <div className="h-4 w-20 bg-white/10 rounded" />
+                    <div className="h-4 w-24 bg-white/10 rounded" />
+                    <div className="h-8 w-24 bg-white/10 rounded" />
+                  </li>
+                ))}
+              </ul>
+            ) : filtered.length === 0 ? (
+              <div className="px-6 py-10 text-center text-white/70">
+                Nenhum curso encontrado.
+              </div>
+            ) : (
+              <ul className="divide-y divide-white/10">
+                {filtered.map((c) => {
+                  const count = modules.filter((m) => m.course_id === c.id).length;
+                  return (
+                    <li
+                      key={c.id}
+                      className="grid md:grid-cols-[1fr,120px,140px,160px,140px] grid-cols-1 gap-3 px-6 py-5 hover:bg-white/[0.04] transition-colors"
+                    >
+                      <div>
+                        <div className="font-medium text-white/90 line-clamp-1">{c.title}</div>
+                        {c.description && (
+                          <div className="text-sm text-white/60 line-clamp-2">
+                            {c.description}
+                          </div>
+                        )}
+                      </div>
+                      <div className="self-center text-sm text-white/80">{count}</div>
+                      <div className="self-center">
+                        <span
+                          className={`text-[11px] font-semibold px-2 py-1 rounded-md border
+                            ${c.is_active
+                              ? "text-lime-300 border-lime-400/30 bg-lime-400/10"
+                              : "text-white/60 border-white/15 bg-white/5"
+                            }`}
+                        >
+                          {c.is_active ? "Ativo" : "Inativo"}
+                        </span>
+                      </div>
+                      <div className="self-center text-sm text-white/70">
+                        {c.created_at
+                          ? new Date(c.created_at).toLocaleDateString("pt-BR", {
+                              day: "2-digit", month: "short", year: "numeric",
+                            }).replace(".", "")
+                          : "—"}
+                      </div>
+                      <div className="self-center flex items-center gap-2">
+                        <button
+                          className="h-8 w-8 grid place-items-center rounded-lg bg-white/5 border border-white/10 hover:bg-white/10"
+                          title="Editar"
+                          onClick={() => setEditing(c)}
+                        >
+                          <Pencil size={16} />
+                        </button>
+                        <button
+                          className="h-8 w-8 grid place-items-center rounded-lg bg-white/5 border border-white/10 hover:bg-white/10"
+                          title="Duplicar"
+                          onClick={() => duplicateCourse(c)}
+                        >
+                          <Copy size={16} />
+                        </button>
+                        <button
+                          className="h-8 w-8 grid place-items-center rounded-lg bg-white/5 border border-white/10 hover:bg-white/10"
+                          title={c.is_active ? "Desativar" : "Ativar"}
+                          onClick={() => toggleCourseActive(c.id, c.is_active)}
+                        >
+                          <Power size={16} className={c.is_active ? "" : "opacity-60"} />
+                        </button>
+                        <button
+                          className="h-8 w-8 grid place-items-center rounded-lg bg-red-500/15 border border-red-400/30 text-red-300 hover:bg-red-500/25"
+                          title="Excluir"
+                          onClick={() => deleteCourse(c.id)}
+                        >
+                          <Trash2 size={16} />
+                        </button>
+                        <button
+                          className="h-8 px-3 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 inline-flex items-center gap-1"
+                          onClick={() => setEditing(c)}
+                          title="Abrir detalhes"
+                        >
+                          <span className="text-xs">Detalhes</span>
+                          <ChevronRight size={14} />
+                        </button>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
+        </div>
       </div>
-    </main>
+
+      {/* Modal Novo Curso */}
+      <NewCourseModal
+        open={showNew}
+        onClose={() => setShowNew(false)}
+        onCreate={async (t, d) => {
+          await createCourse(t, d);
+          setShowNew(false);
+        }}
+      />
+
+      {/* Drawer Editar Curso */}
+      <EditCourseDrawer
+        key={editing?.id || "drawer-none"}
+        course={editing}
+        modules={modules.filter((m) => m.course_id === (editing?.id ?? ""))}
+        onClose={() => setEditing(null)}
+        onRenameCourse={renameCourse}
+        onSaveDesc={saveCourseDesc}
+        onToggleCourse={toggleCourseActive}
+        onAddModule={addModule}
+        onRenameModule={renameModule}
+        onToggleModule={toggleModuleActive}
+        onDeleteModule={deleteModule}
+        onDeleteCourse={async (id) => {
+          await deleteCourse(id);
+          setEditing(null);
+        }}
+      />
+    </motion.main>
   );
 }
 
-/* ---------- Componentes de UI ---------- */
+/* ---------------- Components ---------------- */
 
-function CourseCard({
+function NewCourseModal({
+  open,
+  onClose,
+  onCreate,
+}: {
+  open: boolean;
+  onClose: () => void;
+  onCreate: (title: string, desc: string) => Promise<void>;
+}) {
+  const [title, setTitle] = useState("");
+  const [desc, setDesc] = useState("");
+  const [busy, setBusy] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      setTitle("");
+      setDesc("");
+    }
+  }, [open]);
+
+  if (!open) return null;
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        key="newcourse-overlay"
+        className="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm grid place-items-center p-4"
+        initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+      >
+        <motion.div
+          key="newcourse-modal"
+          className="w-full max-w-lg rounded-2xl p-5 bg-gradient-to-b from-neutral-900/95 to-black/90 border border-white/10 shadow-2xl"
+          initial={{ scale: 0.96, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.96, opacity: 0 }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="flex items-center justify-between">
+            <h3 className="text-lg font-semibold text-lime-300">Novo curso</h3>
+            <button className="p-1 rounded-lg hover:bg-white/10" onClick={onClose}>
+              <X size={16} />
+            </button>
+          </div>
+
+          <div className="mt-4 grid gap-3">
+            <div>
+              <label className="block text-sm opacity-70 mb-1">Título</label>
+              <input
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+                className="w-full h-11 rounded-xl bg-white/5 border border-white/10 px-3 outline-none focus:ring-2 focus:ring-lime-400/25"
+                placeholder="Ex.: Next.js 15 — Fundamentos"
+              />
+            </div>
+            <div>
+              <label className="block text-sm opacity-70 mb-1">Descrição (opcional)</label>
+              <textarea
+                value={desc}
+                onChange={(e) => setDesc(e.target.value)}
+                className="w-full h-24 rounded-xl bg-white/5 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-lime-400/25 resize-none"
+                placeholder="Resumo curto…"
+              />
+            </div>
+          </div>
+
+          <div className="mt-5 flex items-center justify-end gap-2">
+            <button className="h-10 px-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10" onClick={onClose}>
+              Cancelar
+            </button>
+            <button
+              className="h-10 px-3 rounded-xl bg-lime-400/10 text-lime-300 hover:bg-lime-400/20 hover:shadow-[0_0_10px_rgba(163,230,53,0.25)]"
+              disabled={!title.trim() || busy}
+              onClick={async () => {
+                setBusy(true);
+                await onCreate(title, desc);
+                setBusy(false);
+              }}
+            >
+              {busy ? "Criando…" : "Criar curso"}
+            </button>
+          </div>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
+  );
+}
+
+function EditCourseDrawer({
   course,
   modules,
-  busy,
-  onToggleCourse,
-  onDeleteCourse,
+  onClose,
   onRenameCourse,
+  onSaveDesc,
+  onToggleCourse,
   onAddModule,
   onRenameModule,
   onToggleModule,
   onDeleteModule,
+  onDeleteCourse,
 }: {
-  course: Course;
+  course: Course | null;
   modules: Module[];
-  busy: string | null;
-  onToggleCourse: (id: string, current: boolean) => void;
-  onDeleteCourse: (id: string) => void;
-  onRenameCourse: (id: string, title: string) => void;
-  onAddModule: (courseId: string, title: string) => void;
-  onRenameModule: (id: string, title: string) => void;
-  onToggleModule: (id: string, current: boolean) => void;
-  onDeleteModule: (id: string) => void;
+  onClose: () => void;
+  onRenameCourse: (id: string, title: string) => Promise<void>;
+  onSaveDesc: (id: string, desc: string | null) => Promise<void>;
+  onToggleCourse: (id: string, current: boolean) => Promise<void>;
+  onAddModule: (courseId: string, title: string) => Promise<void>;
+  onRenameModule: (id: string, title: string) => Promise<void>;
+  onToggleModule: (id: string, cur: boolean) => Promise<void>;
+  onDeleteModule: (id: string) => Promise<void>;
+  onDeleteCourse: (id: string) => Promise<void>;
 }) {
-  const [open, setOpen] = useState(true);
-  const [draftTitle, setDraftTitle] = useState(course.title);
-  const [addingTitle, setAddingTitle] = useState("");
+  const [tab, setTab] = useState<"geral" | "modulos">("geral");
+  const [title, setTitle] = useState(course?.title ?? "");
+  const [desc, setDesc] = useState(course?.description ?? "");
+  const [newMod, setNewMod] = useState("");
 
-  const savingCourseTitle = busy === `courseTitle:${course.id}`;
-  const togglingCourse = busy === `course:${course.id}`;
-  const deletingCourse = busy === `courseDel:${course.id}`;
-  const addingModule = busy === `addModule:${course.id}`;
+  useEffect(() => {
+    setTitle(course?.title ?? "");
+    setDesc(course?.description ?? "");
+    setTab("geral");
+  }, [course]);
+
+  if (!course) return null;
 
   return (
-    <div className="overflow-hidden">
-      {/* Header do curso (sem nesting de <button>) */}
-      <div className="flex items-start justify-between gap-3 p-4 border-b border-white/10">
-        <div className="flex-1">
-          <div className="flex items-center gap-2 text-sm opacity-80">
-            <BookOpen size={16} /> <span>Curso</span>
+    <AnimatePresence mode="wait" initial={false}>
+      <motion.div
+        key="drawer-overlay"
+        className="fixed inset-0 z-[60] bg-black/50"
+        initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+        onClick={onClose}
+      />
+      <motion.aside
+        key={`drawer-${course.id}`}
+        className="fixed right-0 top-0 bottom-0 z-[61] w-full max-w-xl p-6 overflow-auto
+                   bg-gradient-to-b from-neutral-900/95 to-black/90 border-l border-white/10"
+        initial={{ x: "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }}
+        transition={{ type: "tween", duration: 0.25 }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex items-center justify-between">
+          <div>
+            <h3 className="text-lg font-semibold text-lime-300">Editar curso</h3>
+            <p className="text-sm text-white/70">{course.title}</p>
           </div>
-
-          <div className="mt-1 flex items-center gap-2">
-            <input
-              value={draftTitle}
-              onChange={(e) => setDraftTitle(e.target.value)}
-              onBlur={() =>
-                draftTitle.trim() &&
-                draftTitle !== course.title &&
-                onRenameCourse(course.id, draftTitle.trim())
-              }
-              disabled={savingCourseTitle}
-              className="field field-inline w-full max-w-[420px] font-semibold tracking-tight"
-            />
-            {savingCourseTitle && (
-              <span className="text-xs opacity-70">Salvando…</span>
-            )}
-            <span className="text-xs px-2 py-0.5 rounded-md border border-white/10 bg-white/5">
-              {modules.length} módulo(s)
-            </span>
-          </div>
-
-          {course.description && <p className="opacity-70 text-sm mt-1">{course.description}</p>}
+          <button className="p-1 rounded-lg hover:bg-white/10" onClick={onClose}>
+            <X size={16} />
+          </button>
         </div>
 
-        <div className="flex items-center gap-2">
+        {/* tabs */}
+        <div className="mt-5 flex items-center gap-2">
           <button
-            onClick={() => setOpen((v) => !v)}
-            className="btn-icon"
-            aria-expanded={open}
-            title={open ? "Recolher" : "Expandir"}
+            className={`h-9 px-3 rounded-xl border ${tab === "geral" ? "border-lime-400/40 bg-lime-400/10 text-lime-300" : "border-white/10 bg-white/5"}`}
+            onClick={() => setTab("geral")}
           >
-            <ChevronDown
-              size={16}
-              className={`transition-transform ${open ? "" : "-rotate-90"}`}
-            />
+            Geral
           </button>
           <button
-            onClick={() => onToggleCourse(course.id, course.is_active)}
-            disabled={togglingCourse}
-            className="btn-icon"
-            title={course.is_active ? "Desativar" : "Ativar"}
+            className={`h-9 px-3 rounded-xl border ${tab === "modulos" ? "border-lime-400/40 bg-lime-400/10 text-lime-300" : "border-white/10 bg-white/5"}`}
+            onClick={() => setTab("modulos")}
           >
-            <Power size={16} className={course.is_active ? "" : "opacity-60"} />
-          </button>
-          <button
-            onClick={() => onDeleteCourse(course.id)}
-            disabled={deletingCourse}
-            className="btn-danger px-2 py-1.5"
-            title="Excluir curso"
-          >
-            <Trash2 size={16} />
+            Módulos
           </button>
         </div>
-      </div>
 
-      {/* Body do curso */}
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.18 }}
-          >
-            <div className="p-4">
-              {/* Adicionar módulo */}
+        {tab === "geral" ? (
+          <div className="mt-5 grid gap-4">
+            <div>
+              <label className="block text-sm opacity-70 mb-1">Título</label>
+              <input
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+                onBlur={async () => {
+                  const v = title.trim();
+                  if (v && v !== course.title) await onRenameCourse(course.id, v);
+                }}
+                className="w-full h-11 rounded-xl bg-white/5 border border-white/10 px-3 outline-none focus:ring-2 focus:ring-lime-400/25"
+              />
+            </div>
+            <div>
+              <label className="block text-sm opacity-70 mb-1">Descrição</label>
+              <textarea
+                value={desc}
+                onChange={(e) => setDesc(e.target.value)}
+                onBlur={async () => {
+                  if ((desc ?? "") !== (course.description ?? "")) {
+                    await onSaveDesc(course.id, desc.trim() ? desc : null);
+                  }
+                }}
+                className="w-full h-28 rounded-xl bg-white/5 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-lime-400/25 resize-none"
+              />
+            </div>
+
+            <div className="flex items-center justify-between mt-2">
+              <div className="text-sm text-white/70">
+                Status:{" "}
+                <span className={`font-semibold ${course.is_active ? "text-lime-300" : "text-white/60"}`}>
+                  {course.is_active ? "Ativo" : "Inativo"}
+                </span>
+              </div>
               <div className="flex items-center gap-2">
-                <input
-                  value={addingTitle}
-                  onChange={(e) => setAddingTitle(e.target.value)}
-                  placeholder="Novo módulo…"
-                  className="field flex-1"
-                />
                 <button
-                  onClick={() => {
-                    if (addingTitle.trim()) {
-                      onAddModule(course.id, addingTitle.trim());
-                      setAddingTitle("");
-                    }
-                  }}
-                  disabled={addingModule}
-                  className="btn"
+                  className="h-9 px-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10"
+                  onClick={() => onToggleCourse(course.id, course.is_active)}
                 >
-                  {addingModule ? "Adicionando…" : "Adicionar módulo"}
+                  {course.is_active ? "Desativar" : "Ativar"}
+                </button>
+                <button
+                  className="h-9 px-3 rounded-xl bg-red-500/15 border border-red-400/30 text-red-300 hover:bg-red-500/25"
+                  onClick={() => onDeleteCourse(course.id)}
+                >
+                  Excluir curso
                 </button>
               </div>
-
-              {/* Lista de módulos */}
-              <div className="mt-3 pl-3 border-l border-white/10 space-y-2">
-                {modules.length === 0 ? (
-                  <div className="text-sm opacity-70 px-2">—</div>
-                ) : (
-                  modules.map((m) => (
-                    <div
-                      key={m.id}
-                      className="flex items-center justify-between rounded-xl border border-white/10 px-3 py-2 bg-black/10"
-                    >
-                      <div className="flex items-center gap-2">
-                        <FileText size={16} className="opacity-80" />
-                        <InlineEdit
-                          value={m.title}
-                          saving={busy === `modTitle:${m.id}`}
-                          onSave={(val) => onRenameModule(m.id, val)}
-                        />
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <button
-                          onClick={() => onToggleModule(m.id, m.is_active)}
-                          disabled={busy === `modActive:${m.id}`}
-                          className="btn-icon"
-                          title={m.is_active ? "Desativar" : "Ativar"}
-                        >
-                          <Power size={16} className={m.is_active ? "" : "opacity-60"} />
-                        </button>
-                        <button
-                          onClick={() => onDeleteModule(m.id)}
-                          disabled={busy === `modDel:${m.id}`}
-                          className="btn-danger px-2 py-1.5"
-                          title="Excluir módulo"
-                        >
-                          <Trash2 size={16} />
-                        </button>
-                      </div>
-                    </div>
-                  ))
-                )}
-              </div>
             </div>
-          </motion.div>
+          </div>
+        ) : (
+          <div className="mt-5">
+            <div className="flex items-center gap-2">
+              <input
+                value={newMod}
+                onChange={(e) => setNewMod(e.target.value)}
+                placeholder="Novo módulo…"
+                className="flex-1 h-11 rounded-xl bg-white/5 border border-white/10 px-3 outline-none focus:ring-2 focus:ring-lime-400/25"
+              />
+              <button
+                className="h-11 px-3 rounded-xl bg-lime-400/10 text-lime-300 hover:bg-lime-400/20 hover:shadow-[0_0_10px_rgba(163,230,53,0.25)]"
+                disabled={!newMod.trim()}
+                onClick={async () => {
+                  const v = newMod.trim();
+                  if (!v) return;
+                  await onAddModule(course.id, v);
+                  setNewMod("");
+                }}
+              >
+                Adicionar
+              </button>
+            </div>
+
+            <div className="mt-4 space-y-2">
+              {modules.length === 0 ? (
+                <div className="text-sm text-white/70">Nenhum módulo.</div>
+              ) : (
+                modules.map((m) => (
+                  <div
+                    key={m.id}
+                    className="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-3 py-2"
+                  >
+                    <div className="flex items-center gap-2">
+                      <FileText size={16} className="opacity-80" />
+                      <InlineEdit value={m.title} onSave={(v) => onRenameModule(m.id, v)} />
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <button
+                        className="h-8 w-8 grid place-items-center rounded-lg bg-white/5 border border-white/10 hover:bg-white/10"
+                        title={m.is_active ? "Desativar" : "Ativar"}
+                        onClick={() => onToggleModule(m.id, m.is_active)}
+                      >
+                        <Power size={16} className={m.is_active ? "" : "opacity-60"} />
+                      </button>
+                      <button
+                        className="h-8 w-8 grid place-items-center rounded-lg bg-red-500/15 border border-red-400/30 text-red-300 hover:bg-red-500/25"
+                        title="Excluir"
+                        onClick={() => onDeleteModule(m.id)}
+                      >
+                        <Trash2 size={16} />
+                      </button>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
         )}
-      </AnimatePresence>
-    </div>
+      </motion.aside>
+    </AnimatePresence>
   );
 }
 
 function InlineEdit({
   value,
   onSave,
-  saving,
 }: {
   value: string;
-  onSave: (v: string) => void;
-  saving?: boolean;
+  onSave: (v: string) => void | Promise<void>;
 }) {
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState(value);
   useEffect(() => setDraft(value), [value]);
 
-  return editing ? (
+  if (!editing) {
+    return (
+      <button
+        onClick={() => setEditing(true)}
+        className="btn-ghost px-2 py-1 text-sm inline-flex items-center gap-2"
+        title="Editar título"
+      >
+        <span className="line-clamp-1">{value}</span>
+        <Pencil size={14} className="opacity-70" />
+      </button>
+    );
+  }
+
+  return (
     <div className="flex items-center gap-2">
       <input
         value={draft}
         onChange={(e) => setDraft(e.target.value)}
-        className="field w-[24rem] max-w-full"
+        className="h-10 w-[24rem] max-w-full rounded-xl bg-white/5 border border-white/10 px-3 outline-none focus:ring-2 focus:ring-lime-400/25"
         autoFocus
       />
       <button
-        onClick={() => {
+        onClick={async () => {
           const v = draft.trim();
-          if (v && v !== value) onSave(v);
+          if (v && v !== value) await onSave(v);
           setEditing(false);
         }}
-        disabled={saving}
-        className="btn h-10 px-3"
+        className="h-10 px-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10"
       >
-        <Edit3 size={14} /> Salvar
+        Salvar
       </button>
       <button
         onClick={() => {
           setDraft(value);
           setEditing(false);
         }}
-        className="btn-ghost h-10 px-3"
+        className="h-10 px-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10"
       >
         Cancelar
       </button>
     </div>
-  ) : (
-    <button
-      onClick={() => setEditing(true)}
-      className="btn-ghost px-2 py-1 text-sm inline-flex items-center gap-2"
-      title="Editar título"
-    >
-      {value} <Edit3 size={14} className="opacity-70" />
-    </button>
   );
 }

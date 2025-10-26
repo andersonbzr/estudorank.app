@@ -149,7 +149,7 @@ function parseIntSafe(v, def) {
     const n = Number.parseInt(v, 10);
     return Number.isFinite(n) && n > 0 ? n : def;
 }
-/** Preferimos um client admin (service role) para evitar RLS na listagem global. */ async function getServerClient() {
+async function getServerClient() {
     const url = ("TURBOPACK compile-time value", "https://mmrzhazdbqrwipxpygbn.supabase.co");
     const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
     if (url && serviceKey) {
@@ -164,15 +164,14 @@ function parseIntSafe(v, def) {
             isAdmin: true
         };
     }
-    // fallback: cookie-based (pode sofrer com RLS dependendo das policies)
     const client = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$supabase$2f$server$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["supabaseServer"])();
-    // @ts-expect-error: nosso helper retorna SupabaseClient
+    // @ts-expect-error helper retorna SupabaseClient
     return {
         client,
         isAdmin: false
     };
 }
-/** Utilitário para ordenar/recortar página em memória. */ function paginate(arr, page, pageSize) {
+function paginate(arr, page, pageSize) {
     const total = arr.length;
     const pages = Math.max(1, Math.ceil(total / pageSize));
     const from = (page - 1) * pageSize;
@@ -184,30 +183,90 @@ function parseIntSafe(v, def) {
         pages
     };
 }
+function chooseName(p) {
+    return p?.full_name && String(p.full_name).trim() || p?.name && String(p.name).trim() || p?.email || null;
+}
+async function fillNames(supabase, ids, opts) {
+    const map = new Map();
+    if (!ids.length) return map;
+    // 1) profiles (somente colunas existentes)
+    try {
+        const { data: profs } = await supabase.from("profiles").select("id,full_name,name,email").in("id", ids);
+        if (Array.isArray(profs)) {
+            for (const p of profs){
+                if (!p?.id) continue;
+                map.set(p.id, {
+                    name: chooseName(p),
+                    email: p?.email ?? null
+                });
+            }
+        }
+    } catch  {
+    // RLS pode bloquear; seguimos para fallback se houver service role
+    }
+    const missing = ids.filter((id)=>!map.has(id));
+    if (!missing.length) return map;
+    // 2) auth.users (somente se houver service role)
+    if (opts.isAdmin) {
+        try {
+            const { data: users } = await supabase.schema("auth").from("users").select("id, email, raw_user_meta_data").in("id", missing);
+            if (Array.isArray(users)) {
+                for (const u of users){
+                    const meta = u?.raw_user_meta_data || {};
+                    const nm = chooseName({
+                        full_name: meta.full_name,
+                        name: meta.name,
+                        email: u?.email
+                    }) || u?.email || null;
+                    if (u?.id) map.set(u.id, {
+                        name: nm,
+                        email: u?.email ?? null
+                    });
+                }
+            }
+        } catch  {
+        // ignora
+        }
+    }
+    return map;
+}
 async function GET(req) {
     const url = new URL(req.url);
     const page = Math.max(1, parseIntSafe(url.searchParams.get("page"), 1));
     const pageSize = Math.min(100, Math.max(1, parseIntSafe(url.searchParams.get("pageSize"), 25)));
     try {
         const { client: supabase, isAdmin } = await getServerClient();
-        /** ---------- 1) Tenta pela VIEW 'user_points_view' ---------- */ try {
-            const { data, error, count } = await supabase.from("user_points_view").select("user_id,total,points,name,display_name,username,email", {
+        // 1) VIEW
+        try {
+            const { data, error, count } = await supabase.from("user_points_view").select("user_id,total,points,name,full_name,email", {
                 count: "exact"
             }).order("total", {
                 ascending: false
             }).range((page - 1) * pageSize, page * pageSize - 1);
             if (!error && Array.isArray(data)) {
-                const leaderboard = data.filter((r)=>!!r.user_id).map((r)=>{
-                    const val = typeof r.total === "number" && Number.isFinite(r.total) ? r.total : typeof r.points === "number" && Number.isFinite(r.points) ? r.points : 0;
-                    const display = r.display_name || r.username || r.name || r.email || null;
+                let leaderboard = data.filter((r)=>!!r.user_id).map((r)=>{
+                    const pts = (typeof r.total === "number" && Number.isFinite(r.total) ? r.total : null) ?? (typeof r.points === "number" && Number.isFinite(r.points) ? r.points : 0);
+                    const display = chooseName(r);
                     return {
                         user_id: r.user_id,
                         name: display,
                         email: r.email ?? null,
-                        points: val,
-                        total: val
+                        points: pts,
+                        total: pts
                     };
                 });
+                // backfill nomes faltantes
+                const missingIds = leaderboard.filter((i)=>!i.name).map((i)=>i.user_id);
+                if (missingIds.length) {
+                    const names = await fillNames(supabase, missingIds, {
+                        isAdmin
+                    });
+                    leaderboard = leaderboard.map((row)=>row.name ? row : {
+                            ...row,
+                            name: names.get(row.user_id)?.name ?? row.name ?? null,
+                            email: names.get(row.user_id)?.email ?? row.email ?? null
+                        });
+                }
                 return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                     ok: true,
                     leaderboard,
@@ -223,45 +282,29 @@ async function GET(req) {
                     }
                 });
             }
-        // cai para fallback
-        } catch  {
-        // segue para fallback
-        }
-        /** ---------- 2) Fallback: agrega a partir de 'progress' ---------- */ try {
+        } catch  {}
+        // 2) Fallback progress
+        try {
             const { data, error } = await supabase.from("progress").select("user_id,points").returns();
             if (!error && Array.isArray(data)) {
                 const totals = new Map();
                 for (const r of data){
                     if (!r.user_id) continue;
-                    const add = Number.isFinite(r.points) ? r.points : 0;
-                    totals.set(r.user_id, (totals.get(r.user_id) ?? 0) + add);
+                    totals.set(r.user_id, (totals.get(r.user_id) ?? 0) + (Number(r.points) || 0));
                 }
-                // Ordena por pontos desc
                 const rows = [
                     ...totals.entries()
                 ].map(([user_id, total])=>({
                         user_id,
                         total
                     })).sort((a, b)=>b.total - a.total);
-                // Pagina em memória
                 const { slice, total, pages } = paginate(rows, page, pageSize);
-                // Busca perfis só dos usuários da página
                 const ids = slice.map((r)=>r.user_id);
-                let profiles = new Map();
-                if (ids.length) {
-                    const { data: profs } = await supabase.from("profiles").select("id,display_name,username,name,email").in("id", ids);
-                    if (Array.isArray(profs)) {
-                        profiles = new Map(profs.map((p)=>[
-                                p.id,
-                                {
-                                    name: p.display_name || p.username || p.name || p.email || null,
-                                    email: p.email ?? null
-                                }
-                            ]));
-                    }
-                }
+                const names = await fillNames(supabase, ids, {
+                    isAdmin
+                });
                 const leaderboard = slice.map((r)=>{
-                    const p = profiles.get(r.user_id);
+                    const p = names.get(r.user_id);
                     const val = r.total ?? 0;
                     return {
                         user_id: r.user_id,
@@ -286,17 +329,14 @@ async function GET(req) {
                     }
                 });
             }
-        // cai para 3º fallback
-        } catch  {
-        // segue
-        }
-        /** ---------- 3) Último fallback: agrega a partir de 'points' ---------- */ const { data: pointsRows, error: pointsErr } = await supabase.from("points").select("user_id,value").returns();
+        } catch  {}
+        // 3) Fallback points
+        const { data: pointsRows, error: pointsErr } = await supabase.from("points").select("user_id,value").returns();
         if (pointsErr) throw pointsErr;
         const totals = new Map();
         for (const r of pointsRows ?? []){
             if (!r.user_id) continue;
-            const add = Number.isFinite(r.value) ? r.value : 0;
-            totals.set(r.user_id, (totals.get(r.user_id) ?? 0) + add);
+            totals.set(r.user_id, (totals.get(r.user_id) ?? 0) + (Number(r.value) || 0));
         }
         const rows = [
             ...totals.entries()
@@ -306,21 +346,11 @@ async function GET(req) {
             })).sort((a, b)=>b.total - a.total);
         const { slice, total, pages } = paginate(rows, page, pageSize);
         const ids = slice.map((r)=>r.user_id);
-        let profiles = new Map();
-        if (ids.length) {
-            const { data: profs } = await supabase.from("profiles").select("id,display_name,username,name,email").in("id", ids);
-            if (Array.isArray(profs)) {
-                profiles = new Map(profs.map((p)=>[
-                        p.id,
-                        {
-                            name: p.display_name || p.username || p.name || p.email || null,
-                            email: p.email ?? null
-                        }
-                    ]));
-            }
-        }
+        const names = await fillNames(supabase, ids, {
+            isAdmin
+        });
         const leaderboard = slice.map((r)=>{
-            const p = profiles.get(r.user_id);
+            const p = names.get(r.user_id);
             const val = r.total ?? 0;
             return {
                 user_id: r.user_id,
