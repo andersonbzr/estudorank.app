@@ -2,150 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* -------------------- Tokens (em RGB "r g b") -------------------- */
-/* DARK */
-:root,
-:root.dark {
-  --bg: 11 15 20;        /* #0b0f14 */
-  --surface: 15 20 26;   /* #0f141a */
-  --text: 231 231 234;   /* #e7e7ea */
-  --muted: 162 168 179;  /* #a2a8b3 */
-  --accent: 163 230 53;  /* #a3e635 (lime) */
-  --primary: 30 58 138;  /* #1e3a8a */
+/* ---------- Base Global (Dark Mode Fixo) ---------- */
+html {
+  color-scheme: dark;
+  background-color: #000;
 }
 
-/* LIGHT */
-:root.light {
-  --bg: 247 249 252;     /* #f7f9fc */
-  --surface: 255 255 255;/* #ffffff */
-  --text: 31 41 55;      /* #1f2937 */
-  --muted: 107 114 128;  /* #6b7280 */
-  --accent: 99 102 241;  /* #6366f1 (violet no claro) */
-  --primary: 2 132 199;  /* #0284c7 */
+body {
+  @apply bg-black text-white antialiased;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
 }
 
-/* Base */
-html, body {
-  @apply h-full antialiased;
-  background-color: rgb(var(--bg));
-  color: rgb(var(--text));
-  font-family: var(--font-plusjakarta), var(--font-inter), system-ui, sans-serif;
-}
-* { -webkit-tap-highlight-color: transparent; }
-
-/* Efeito vidro */
-.glass {
-  background: color-mix(in oklab, rgb(var(--surface)) 78%, transparent);
-  backdrop-filter: blur(10px);
+/* ---------- Ajustes de UI ---------- */
+a {
+  @apply text-lime-400 hover:text-lime-300 transition-colors;
 }
 
-/* -------------------- Componentes -------------------- */
-@layer components {
-  /* Cartões */
-  .card {
-    @apply rounded-2xl border border-white/10 backdrop-blur-xl;
-    background-color: color-mix(in oklab, rgb(var(--surface)) 95%, transparent);
-    box-shadow: 0 4px 12px rgba(0,0,0,.25);
-  }
-
-  /* Botões */
-  .btn {
-    @apply inline-flex items-center justify-center gap-2 px-3 py-2 text-sm font-medium transition select-none;
-    @apply border border-white/10;
-    border-radius: 9999px;
-    background-color: color-mix(in oklab, rgb(var(--surface)) 90%, transparent);
-  }
-  .btn:hover { background-color: color-mix(in oklab, rgb(var(--surface)) 100%, transparent); }
-  .btn:disabled { @apply opacity-60 cursor-not-allowed; }
-
-  .btn-primary {
-    @apply border border-white/10 text-[rgb(var(--text))];
-    border-radius: 9999px;
-    background-color: color-mix(in oklab, rgb(var(--accent)) 18%, transparent);
-  }
-  .btn-primary:hover { background-color: color-mix(in oklab, rgb(var(--accent)) 28%, transparent); }
-
-  .btn-outline {
-    @apply bg-transparent border border-white/15;
-    border-radius: 9999px;
-  }
-  .btn-ghost {
-    @apply border border-white/10;
-    border-radius: 9999px;
-    background-color: rgba(255,255,255,.06);
-  }
-  .btn-ghost:hover { background-color: rgba(255,255,255,.12); }
-
-  .btn-danger {
-    @apply border border-white/10 text-[rgb(var(--text))];
-    border-radius: 9999px;
-    background-color: rgba(239, 68, 68, .20);
-  }
-  .btn-danger:hover { background-color: rgba(239, 68, 68, .30); }
-
-  .btn-icon {
-    @apply inline-flex items-center justify-center border border-white/10 transition;
-    width: 36px; height: 36px; border-radius: 9999px;
-    background-color: rgba(255,255,255,.08);
-  }
-  .btn-icon:hover { background-color: rgba(255,255,255,.16); }
-  .btn-icon-sm { width: 30px; height: 30px; }
-
-  /* -------- Campos (inputs/selects/textarea) com foco verde global -------- */
-  .field {
-    @apply rounded-xl px-3 py-2.5 outline-none transition;
-    @apply border border-white/10;
-    background-color: rgba(255,255,255,.05);
-  }
-  .field-sm { @apply px-2.5 py-2 rounded-lg; }
-  .field-inline { @apply bg-transparent; }
-
-  /* aplica em TODOS os campos por padrão */
-  input:not([type="checkbox"]):not([type="radio"]),
-  select, textarea {
-    @apply border border-white/10 rounded-xl outline-none transition;
-    background-color: rgba(255,255,255,.05);
-  }
-  input:focus, select:focus, textarea:focus,
-  input:focus-visible, select:focus-visible, textarea:focus-visible {
-    /* contorno “ring” verde-limão */
-    box-shadow: 0 0 0 2px rgba(var(--accent), .40);
-    border-color: color-mix(in oklab, rgb(var(--accent)) 35%, transparent);
-  }
-
-  /* checkboxes & radios com accent color global */
-  input[type="checkbox"], input[type="radio"] {
-    accent-color: rgb(var(--accent));
-  }
-
-  /* Tabelas */
-  .table { @apply w-full text-sm overflow-hidden rounded-xl border border-white/10; }
-  .table thead tr { background-color: rgba(255,255,255,.06); }
-  .table th, .table td { @apply px-4 py-3; }
-  .table tbody tr { @apply border-t border-white/5; }
-  .table tbody tr:hover { background-color: rgba(255,255,255,.06); }
+button {
+  @apply bg-white/10 hover:bg-white/15 text-white rounded-lg px-4 py-2 transition-all;
 }
 
-/* ---- Accent helpers (usam a var --accent em RGB) ---- */
-@layer components {
-  .text-accent { color: rgb(var(--accent)); }
-  .bg-accent-10 { background-color: color-mix(in oklab, rgb(var(--accent)) 10%, transparent); }
-  .bg-accent-20 { background-color: color-mix(in oklab, rgb(var(--accent)) 20%, transparent); }
-  .stroke-accent { stroke: rgb(var(--accent)); }
-  .stroke-accent-20 { stroke: color-mix(in oklab, rgb(var(--accent)) 20%, transparent); }
+input, textarea, select {
+  @apply bg-white/5 border border-white/10 text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-lime-400/30;
 }
 
-/* Esconde scrollbar mas mantém a rolagem (Chrome/Safari/Edge/Opera) */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+::selection {
+  background: rgba(132, 204, 22, 0.25); /* lime-400/25 */
+  color: #fff;
 }
 
-/* Firefox */
-.no-scrollbar {
-  scrollbar-width: none;
+::-webkit-scrollbar {
+  width: 8px;
 }
-
-/* IE/Edge Legacy (fallback inofensivo) */
-.no-scrollbar {
-  -ms-overflow-style: none;
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.25);
 }

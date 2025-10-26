@@ -1,0 +1,25 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  // Mantemos "class" porque no layout usamos <html className="dark"> para forçar o escuro.
+  darkMode: "class",
+  content: [
+    "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      // (Opcional) tokens mínimos p/ manter identidade visual
+      colors: {
+        brand: {
+          DEFAULT: "#a3e635", // lime-400
+          soft: "rgba(163, 230, 53, .18)",
+        },
+      },
+      borderRadius: {
+        xl: "0.75rem",
+        "2xl": "1rem",
+      },
+    },
+  },
+  plugins: [],
+};

@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}}]
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/middleware.ts"],"sourcesContent":["// middleware.ts\r\nimport { NextResponse } from \"next/server\";\r\nimport type { NextRequest } from \"next/server\";\r\n\r\nexport function middleware(req: NextRequest) {\r\n  const { pathname } = req.nextUrl;\r\n\r\n  // só quando acessar exatamente \"/\"\r\n  if (pathname === \"/\") {\r\n    const url = req.nextUrl.clone();\r\n    url.pathname = \"/login\";\r\n    return NextResponse.redirect(url);\r\n  }\r\n\r\n  return NextResponse.next();\r\n}\r\n\r\n// Opcional: limitar onde a middleware roda\r\nexport const config = {\r\n  matcher: [\"/\"], // roda só na raiz\r\n};\r\n"],"names":[],"mappings":"AAAA,gBAAgB;;;;;;;AAChB;AAAA;;AAGO,SAAS,WAAW,GAAgB;IACzC,MAAM,EAAE,QAAQ,EAAE,GAAG,IAAI,OAAO;IAEhC,mCAAmC;IACnC,IAAI,aAAa,KAAK;QACpB,MAAM,MAAM,IAAI,OAAO,CAAC,KAAK;QAC7B,IAAI,QAAQ,GAAG;QACf,OAAO,gMAAY,CAAC,QAAQ,CAAC;IAC/B;IAEA,OAAO,gMAAY,CAAC,IAAI;AAC1B;AAGO,MAAM,SAAS;IACpB,SAAS;QAAC;KAAI;AAChB"}}]
 }

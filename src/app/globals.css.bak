@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Base Global (Dark Mode Fixo) ---------- */
+html {
+  color-scheme: dark;
+  background-color: #000;
+}
+
+body {
+  @apply bg-black text-white antialiased;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ---------- Ajustes de UI ---------- */
+a {
+  @apply text-lime-400 hover:text-lime-300 transition-colors;
+}
+
+button {
+  @apply bg-white/10 hover:bg-white/15 text-white rounded-lg px-4 py-2 transition-all;
+}
+
+/* Inputs, scrollbars, seleções, etc */
+input, textarea, select {
+  @apply bg-white/5 border border-white/10 text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-lime-400/30;
+}
+
+::selection {
+  background: rgba(132, 204, 22, 0.25); /* lime-400/25 */
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
