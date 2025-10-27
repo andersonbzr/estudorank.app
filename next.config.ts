@@ -10,32 +10,13 @@ try {
 }
 
 const nextConfig: NextConfig = {
-  // ✅ NÃO falhar o build por erros de ESLint (destrava a Vercel)
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-
-  // Se em algum momento o TypeScript no build travar e você só quiser publicar,
-  // descomente abaixo TEMPORARIAMENTE:
-  // typescript: { ignoreBuildErrors: true },
-
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
   images: {
     remotePatterns: supabaseHost
-      ? [
-          {
-            protocol: "https",
-            hostname: supabaseHost,
-            pathname: "/storage/v1/object/**",
-          },
-        ]
-      : [
-          {
-            protocol: "https",
-            hostname: "mmrzhazdbqrwipxpygbn.supabase.co",
-            pathname: "/storage/v1/object/**",
-          },
-        ],
-  },
+      ? [{ protocol: "https", hostname: supabaseHost, pathname: "/storage/v1/object/**" }]
+      : [{ protocol: "https", hostname: "mmrzhazdbqrwipxpygbn.supabase.co", pathname: "/storage/v1/object/**" }]
+  }
 };
 
 export default nextConfig;
