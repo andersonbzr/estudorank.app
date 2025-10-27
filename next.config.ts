@@ -10,18 +10,32 @@ try {
 }
 
 const nextConfig: NextConfig = {
-  // ⬇️ Ignore ESLint e TypeScript no build de produção
+  images: {
+    remotePatterns: supabaseHost
+      ? [
+          {
+            protocol: "https",
+            hostname: supabaseHost,
+            pathname: "/storage/v1/object/**",
+          },
+        ]
+      : [
+          {
+            protocol: "https",
+            hostname: "mmrzhazdbqrwipxpygbn.supabase.co",
+            pathname: "/storage/v1/object/**",
+          },
+        ],
+  },
+
+  // 🔴 DESABILITA FALHA DE ESLINT NO BUILD (ainda roda, mas não quebra)
   eslint: {
     ignoreDuringBuilds: true,
   },
+
+  // 🔴 DESABILITA FALHA DE TYPE-CHECK NO BUILD
   typescript: {
     ignoreBuildErrors: true,
-  },
-
-  images: {
-    remotePatterns: supabaseHost
-      ? [{ protocol: "https", hostname: supabaseHost, pathname: "/storage/v1/object/**" }]
-      : [{ protocol: "https", hostname: "mmrzhazdbqrwipxpygbn.supabase.co", pathname: "/storage/v1/object/**" }],
   },
 };
 
