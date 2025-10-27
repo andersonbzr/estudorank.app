@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 
 const supabaseURL = process.env.NEXT_PUBLIC_SUPABASE_URL || "";
 let supabaseHost = "";
+
 try {
   supabaseHost = new URL(supabaseURL).hostname;
 } catch {
@@ -10,6 +11,15 @@ try {
 }
 
 const nextConfig: NextConfig = {
+  // 👇 Garante que erros de lint e types não quebrem o deploy
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
+  // 👇 Configuração para imagens do Supabase
   images: {
     remotePatterns: supabaseHost
       ? [
@@ -26,16 +36,6 @@ const nextConfig: NextConfig = {
             pathname: "/storage/v1/object/**",
           },
         ],
-  },
-
-  // 🔴 DESABILITA FALHA DE ESLINT NO BUILD (ainda roda, mas não quebra)
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-
-  // 🔴 DESABILITA FALHA DE TYPE-CHECK NO BUILD
-  typescript: {
-    ignoreBuildErrors: true,
   },
 };
 
