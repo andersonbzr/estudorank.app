@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/adsli/EstudoRank-patched-2025-10-22/estudorank/src/app/page.tsx"],"sourcesContent":["// src/app/page.tsx\r\nimport { redirect } from \"next/navigation\";\r\n\r\nexport default function Home() {\r\n  redirect(\"/login\");\r\n}\r\n"],"names":[],"mappings":"AAAA,mBAAmB;;;;;AACnB;AAAA;;AAEe,SAAS;IACtB,IAAA,iMAAQ,EAAC;AACX","debugId":null}}]
-}

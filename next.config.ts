@@ -12,31 +12,11 @@ try {
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: supabaseHost
-      ? [
-          {
-            protocol: "https",
-            hostname: supabaseHost,
-            pathname: "/storage/v1/object/**",
-          },
-        ]
-      : [
-          {
-            protocol: "https",
-            hostname: "mmrzhazdbqrwipxpygbn.supabase.co",
-            pathname: "/storage/v1/object/**",
-          },
-        ],
+      ? [{ protocol: "https", hostname: supabaseHost, pathname: "/storage/v1/object/**" }]
+      : [{ protocol: "https", hostname: "mmrzhazdbqrwipxpygbn.supabase.co", pathname: "/storage/v1/object/**" }],
   },
-
-  // 🔽 Pula ESLint no build da Vercel
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-
-  // 🔽 Pula type-check no build (deixa o TS só em dev/CI)
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
 };
 
 export default nextConfig;
