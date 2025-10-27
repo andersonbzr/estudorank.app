@@ -1,4 +1,3 @@
-// src/app/login/page.tsx
 "use client";
 
 import Image from "next/image";
@@ -62,19 +61,14 @@ export default function LoginPage() {
     });
   }, [router, supabase]);
 
-  /* 2) Redireciona quando o Supabase autenticar "ao vivo" (ex.: magic link / recovery) */
+  /* 2) Trata auth events (inclui PASSWORD_RECOVERY) */
   useEffect(() => {
     const { data: sub } = supabase.auth.onAuthStateChange((event) => {
-      // ✅ trata link de recuperação que possa abrir na /login
       if (event === "PASSWORD_RECOVERY") {
-        const qs =
-          typeof window !== "undefined" && window.location.search
-            ? window.location.search
-            : "";
+        const qs = typeof window !== "undefined" ? window.location.search : "";
         router.replace(`/reset-password${qs}`);
         return;
       }
-
       if (event === "SIGNED_IN") router.replace("/me");
     });
     return () => {
@@ -84,14 +78,14 @@ export default function LoginPage() {
     };
   }, [router, supabase]);
 
-  /* Autofocus inteligente ao trocar a aba (signin/signup) */
+  /* Autofocus ao trocar aba */
   useEffect(() => {
     setMsg(null);
     setPass("");
     emailRef.current?.focus();
   }, [mode]);
 
-  /* Submit ao pressionar Enter no campo de senha */
+  /* Submit com Enter na senha */
   function onKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
     if (e.key === "Enter") submit();
   }
@@ -147,7 +141,7 @@ export default function LoginPage() {
     }
   }
 
-  /* Forgot Password: chama o endpoint /api/auth/forgot-password */
+  /* Forgot Password: chama o Supabase direto COM redirectTo correto */
   async function onForgotPassword() {
     if (!isValidEmail(emailForgot)) {
       toast.push("Informe um e-mail válido.");
@@ -155,15 +149,13 @@ export default function LoginPage() {
     }
     setFpStatus("sending");
     try {
-      await fetch("/api/auth/forgot-password", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: emailForgot.trim() }),
-      });
-      // resposta sempre neutra
+      const redirectTo = `${window.location.origin}/reset-password`;
+      const { error } = await supabase.auth.resetPasswordForEmail(emailForgot.trim(), { redirectTo });
+      if (error) throw error;
       setFpStatus("sent");
       setCooldown(45);
-    } catch {
+    } catch (e) {
+      // Mantemos a resposta neutra, como boa prática
       setFpStatus("sent");
       setCooldown(45);
     }
@@ -172,7 +164,7 @@ export default function LoginPage() {
   /* ------------------------------- UI -------------------------------- */
   return (
     <main className="min-h-screen grid lg:grid-cols-2 overflow-hidden">
-      {/* Painel esquerdo — branding/atmosfera */}
+      {/* Painel esquerdo — branding */}
       <div className="hidden lg:flex relative items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(1200px_600px_at_-10%_-20%,rgba(163,230,53,0.12),transparent_60%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(1000px_500px_at_120%_110%,rgba(99,102,241,0.10),transparent_60%)]" />
@@ -200,6 +192,7 @@ export default function LoginPage() {
               height={190}
               priority
               className="mx-auto mb-6 drop-shadow-[0_0_28px_rgba(163,230,53,0.25)]"
+              style={{ height: "auto" }}
             />
           </motion.div>
           <motion.h2
@@ -335,7 +328,7 @@ export default function LoginPage() {
             )}
           </div>
 
-          {/* Botão principal com feedback embutido */}
+          {/* Botão principal */}
           <MotionButton
             onClick={submit}
             disabled={disabled}

@@ -137,7 +137,7 @@ function ResetPasswordPage() {
                 }
                 setErr("Link inválido ou expirado. Solicite um novo.");
                 setStage("error");
-            } catch (e) {
+            } catch  {
                 setErr("Falha ao validar o link. Tente novamente.");
                 setStage("error");
             }
@@ -216,7 +216,7 @@ function ResetPasswordPage() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                 type: "password",
-                placeholder: "Nova senha",
+                placeholder: "Nova senha (mín. 8)",
                 className: "input w-full rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2 outline-none focus:border-zinc-600",
                 value: pwd,
                 onChange: (e)=>setPwd(e.target.value)

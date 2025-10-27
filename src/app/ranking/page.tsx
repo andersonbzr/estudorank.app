@@ -1,7 +1,7 @@
-// src/app/ranking/page.tsx
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import AuthGuard from "@/components/AuthGuard";
 import AppShell from "@/components/shell/AppShell";
 import { motion } from "framer-motion";
@@ -15,7 +15,7 @@ import {
   MessageSquare,
   X,
 } from "lucide-react";
-// ⬇️ usa seu ChatDock
+import { supabaseBrowser } from "@/lib/supabase/client";
 import ChatDock from "@/components/chat/ChatDock";
 
 type Item = {
@@ -23,7 +23,7 @@ type Item = {
   name?: string | null;
   email?: string | null;
   points: number;
-  total: number; // alias
+  total: number;
 };
 
 type ApiResp = {
@@ -35,6 +35,7 @@ type ApiResp = {
   pages: number;
   via?: string;
   adminClient?: boolean;
+  error?: string;
 };
 
 function Pill({ children }: { children: React.ReactNode }) {
@@ -85,20 +86,26 @@ function Content() {
   const [pageSize] = useState(25);
   const [lastUpdate, setLastUpdate] = useState<Date | null>(null);
 
-  // filtros
   const [q, setQ] = useState("");
   const [orderDesc, setOrderDesc] = useState(true);
 
-  // chat (mobile drawer)
   const [chatOpen, setChatOpen] = useState(false);
+
+  const [meId, setMeId] = useState<string | null>(null);
+  useEffect(() => {
+    const sb = supabaseBrowser();
+    sb.auth.getUser().then(({ data }) => setMeId(data.user?.id ?? null));
+  }, []);
 
   async function load(p = page) {
     try {
       setLoading(true);
       setErr(null);
-      const res = await fetch(`/api/ranking?page=${p}&pageSize=${pageSize}`, { cache: "no-store" });
+      const res = await fetch(`/api/ranking?page=${p}&pageSize=${pageSize}`, {
+        cache: "no-store",
+      });
       const json: ApiResp = await res.json();
-      if (!res.ok || !json.ok) throw new Error(json?.["error"] || "Erro ao carregar ranking");
+      if (!res.ok || !json.ok) throw new Error(json?.error || "Erro ao carregar ranking");
       setData(json.leaderboard || []);
       setPages(json.pages || 1);
       setTotal(json.total || 0);
@@ -115,11 +122,10 @@ function Content() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // busca + ordenação client-side (sobre a página atual)
   const { filtered, maxPoints } = useMemo(() => {
     const arr = (data || []).filter((it) => {
-      const s = (it.name || it.email || "").toLowerCase();
-      return q.trim() ? s.includes(q.trim().toLowerCase()) : true;
+      const cand = `${it.name ?? ""} ${it.email ?? ""}`.toLowerCase();
+      return q.trim() ? cand.includes(q.trim().toLowerCase()) : true;
     });
     arr.sort((a, b) => (orderDesc ? b.points - a.points : a.points - b.points));
     const max = arr.reduce((m, it) => Math.max(m, it.points), 0);
@@ -137,7 +143,6 @@ function Content() {
 
   return (
     <div className="max-w-[1200px] mx-auto px-5 md:px-8 py-8 md:py-10">
-      {/* HERO */}
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
@@ -154,7 +159,7 @@ function Content() {
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2">
             <Pill>{updatedText}</Pill>
             <Pill>{total} participantes</Pill>
             <button
@@ -166,7 +171,6 @@ function Content() {
               Atualizar
             </button>
 
-            {/* Botão de abrir chat no mobile */}
             <button
               onClick={() => setChatOpen(true)}
               className="md:hidden inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm bg-white/10 hover:bg-white/15 border border-white/10"
@@ -178,7 +182,6 @@ function Content() {
           </div>
         </div>
 
-        {/* Filtros */}
         <div className="mt-4 flex flex-col md:flex-row gap-3">
           <label className="relative flex-1">
             <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40" />
@@ -187,6 +190,7 @@ function Content() {
               onChange={(e) => setQ(e.target.value)}
               placeholder="Buscar usuário…"
               className="w-full pl-9 pr-3 py-2 rounded-lg bg-white/5 border border-white/10 outline-none focus:border-white/20"
+              aria-label="Buscar no ranking"
             />
           </label>
 
@@ -232,11 +236,8 @@ function Content() {
         </div>
       </motion.div>
 
-      {/* GRID: Lista + Chat */}
       <div className="mt-6 grid md:grid-cols-[1fr,380px] gap-6">
-        {/* LISTA */}
         <div className="rounded-2xl overflow-hidden bg-white/[0.03] border border-white/10">
-          {/* header sticky */}
           <div className="sticky top-0 z-10 grid grid-cols-[72px,1fr,220px,120px] md:grid-cols-[80px,1fr,260px,130px] gap-3 px-5 py-3 text-xs uppercase tracking-wide text-white/60 border-b border-white/10 bg-black/60 backdrop-blur">
             <div>Posição</div>
             <div>Usuário</div>
@@ -262,14 +263,25 @@ function Content() {
           ) : (
             <div className="divide-y divide-white/10">
               {filtered.map((it, idx) => {
-                const pos = (page - 1) * pageSize + (idx + 1); // posição global
+                const pos = (page - 1) * pageSize + (idx + 1);
                 const showMedal = pos <= 3;
+                const isMe = meId && it.user_id === meId;
+                const label = it.name || it.email || "Usuário";
+
+                // 👇 Passa nome e email como hints para o perfil (fallback)
+                const href = `/u/${encodeURIComponent(it.user_id)}?n=${encodeURIComponent(
+                  label
+                )}${it.email ? `&e=${encodeURIComponent(it.email)}` : ""}`;
+
                 return (
-                  <div
-                    key={`${it.user_id}-${idx}`}
-                    className="grid grid-cols-[72px,1fr,220px,120px] md:grid-cols-[80px,1fr,260px,130px] gap-3 px-5 py-4 hover:bg-white/[0.04] transition-colors"
+                  <Link
+                    href={href}
+                    key={`${it.user_id}-${pos}`}
+                    className={`grid grid-cols-[72px,1fr,220px,120px] md:grid-cols-[80px,1fr,260px,130px] gap-3 px-5 py-4 transition-colors hover:bg-white/[0.04] focus:outline-none focus:ring-2 focus:ring-lime-400/30 ${
+                      isMe ? "bg-lime-400/[0.06]" : ""
+                    }`}
+                    aria-label={`Abrir perfil de ${label}`}
                   >
-                    {/* posição */}
                     <div className="flex items-center gap-2">
                       {showMedal ? (
                         <Medal
@@ -289,49 +301,50 @@ function Content() {
                       <span className="sr-only">Posição {pos}</span>
                     </div>
 
-                    {/* usuário */}
                     <div className="flex items-center gap-3 min-w-0">
-                      {/* avatar inicial baseado no nome */}
                       <div className="h-8 w-8 rounded-full bg-white/10 flex items-center justify-center text-xs text-white/70 border border-white/10">
-                        {(it.name || it.email || "U").slice(0, 1).toUpperCase()}
+                        {(label || "U").slice(0, 1).toUpperCase()}
                       </div>
                       <div className="truncate">
-                        <div className="font-medium text-white/90 truncate">
-                          {it.name || it.email || "Usuário"}
+                        <div className="font-medium text-white/90 truncate flex items-center gap-2">
+                          <span className="truncate">{label}</span>
+                          {/* {isMe && (
+                            <span className="text-[10px] px-1.5 py-0.5 rounded bg-lime-400/10 text-lime-300 border border-lime-400/30">
+                              você
+                            </span>
+                          )} */}
                         </div>
-                        <div className="text-xs text-white/50 truncate">{it.email || "—"}</div>
+                        <div className="text-xs text-white/50 truncate">
+                          {it.email || "—"}
+                        </div>
                       </div>
                     </div>
 
-                    {/* progresso relativo */}
                     <div className="flex items-center gap-3 self-center">
                       <RelativeBar value={it.points} max={maxPoints} />
                     </div>
 
-                    {/* pontos */}
-                    <div className="justify-self-end font-semibold text-white/90">{it.points}</div>
-                  </div>
+                    <div className="justify-self-end font-semibold text-white/90">
+                      {it.points.toLocaleString("pt-BR")}
+                    </div>
+                  </Link>
                 );
               })}
             </div>
           )}
         </div>
 
-        {/* CHAT (desktop) */}
         <aside className="hidden md:block rounded-2xl overflow-hidden bg-white/[0.03] border border-white/10">
-          {/* Cabeçalho do chat para manter padrão visual */}
           <div className="px-5 py-3 border-b border-white/10 flex items-center justify-between">
             <div className="font-medium">Chat do Ranking</div>
             <Pill>canal: ranking-global</Pill>
           </div>
-          {/* Usa o ChatDock */}
           <div className="h-[560px]">
             <ChatDock channel="ranking-global" height="560px" />
           </div>
         </aside>
       </div>
 
-      {/* Drawer de chat (mobile) */}
       {chatOpen && (
         <div className="fixed inset-0 z-50">
           <div

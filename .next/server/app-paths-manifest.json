@@ -1,7 +1,7 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/admin/courses/page": "app/admin/courses/page.js",
-  "/api/admin/chat/clear/route": "app/api/admin/chat/clear/route.js",
+  "/api/admin/users/delete/route": "app/api/admin/users/delete/route.js",
   "/api/admin/users/list/route": "app/api/admin/users/list/route.js",
   "/api/ranking/route": "app/api/ranking/route.js",
   "/config/page": "app/config/page.js",
@@ -9,7 +9,8 @@
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/login/page": "app/login/page.js",
   "/me/page": "app/me/page.js",
-  "/me/security/page": "app/me/security/page.js",
   "/page": "app/page.js",
-  "/ranking/page": "app/ranking/page.js"
+  "/ranking/page": "app/ranking/page.js",
+  "/reset-password/page": "app/reset-password/page.js",
+  "/u/[username]/page": "app/u/[username]/page.js"
 }

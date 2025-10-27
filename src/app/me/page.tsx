@@ -13,9 +13,16 @@ import Link from "next/link";
 /* Tipos */
 type Course = { id: string; title: string; description: string | null; is_active?: boolean };
 type Module = { id: string; course_id: string; title: string; sort_order: number; is_active?: boolean };
-type Prog = { id: string; module_id: string; completed: boolean; points: number; completed_at: string | null };
+type Prog = {
+  id: string;
+  module_id: string;
+  completed: boolean;
+  points: number | null;
+  completed_at: string | null;
+  user_id?: string;
+};
 
-/* Helpers */
+/* Helpers (mantidos para uso futuro) */
 function startOfWeek(d = new Date()) {
   const date = new Date(d);
   const day = (date.getDay() + 6) % 7;
@@ -30,7 +37,7 @@ function endOfWeek(d = new Date()) {
   return e;
 }
 
-/* Confetti elegante */
+/* Confetti elegante (opcional/futuro) */
 async function fireConfetti() {
   const confetti = (await import("canvas-confetti")).default;
   const bursts = [
@@ -46,11 +53,22 @@ async function fireConfetti() {
 }
 
 /* Donut progress moderno */
-function DonutProgress({ value, size = 140, stroke = 12 }: { value: number; size?: number; stroke?: number }) {
+function DonutProgress({
+  value,
+  size = 140,
+  stroke = 12,
+}: {
+  value: number;
+  size?: number;
+  stroke?: number;
+}) {
   const radius = (size - stroke) / 2;
   const circumference = 2 * Math.PI * radius;
   const progress = useSpring(0, { stiffness: 60, damping: 15 });
-  const strokeDashoffset = useTransform(progress, (v) => circumference - (v / 100) * circumference);
+  const strokeDashoffset = useTransform(
+    progress,
+    (v) => circumference - (v / 100) * circumference
+  );
 
   useEffect(() => {
     progress.set(value);
@@ -106,7 +124,7 @@ function DonutProgress({ value, size = 140, stroke = 12 }: { value: number; size
   );
 }
 
-/* Skeletons (shimmer) para a tabela de cursos */
+/* Skeletons */
 function SkeletonBlock({ className = "" }: { className?: string }) {
   return (
     <div className={`relative overflow-hidden rounded-md bg-white/10 ${className}`}>
@@ -173,7 +191,7 @@ function SkeletonCoursesTable({ rows = 3 }: { rows?: number }) {
   );
 }
 
-/* Linha de progresso horizontal (tabela) */
+/* Linha de progresso horizontal */
 function LineProgress({ value }: { value: number }) {
   const v = Math.min(100, Math.max(0, Math.round(value)));
   return (
@@ -219,6 +237,21 @@ function Content() {
   useEffect(() => {
     async function load() {
       setLoading(true);
+      setMsg(null);
+
+      // 1) Usuário atual
+      const { data: auth } = await supabase.auth.getUser();
+      const uid = auth?.user?.id ?? null;
+
+      if (!uid) {
+        setCourses([]);
+        setModules([]);
+        setProgress([]);
+        setLoading(false);
+        return;
+      }
+
+      // 2) Dados — PROGRESS sempre filtrado por user_id
       const [c1, m1, p1] = await Promise.all([
         supabase.from("courses").select("id, title, description, is_active").eq("is_active", true),
         supabase
@@ -226,14 +259,22 @@ function Content() {
           .select("id, course_id, title, sort_order, is_active")
           .eq("is_active", true)
           .order("sort_order", { ascending: true }),
-        supabase.from("progress").select("id, module_id, completed, points, completed_at"),
+        supabase
+          .from("progress")
+          .select("id, module_id, completed, points, completed_at, user_id")
+          .eq("user_id", uid),
       ]);
-      if (c1.error || m1.error || p1.error) setMsg(c1.error?.message || m1.error?.message || p1.error?.message);
+
+      if (c1.error || m1.error || p1.error) {
+        setMsg(c1.error?.message || m1.error?.message || p1.error?.message || "Erro ao carregar");
+      }
+
       setCourses((c1.data as Course[]) ?? []);
       setModules((m1.data as Module[]) ?? []);
       setProgress((p1.data as Prog[]) ?? []);
       setLoading(false);
     }
+
     load();
   }, [supabase]);
 
@@ -243,7 +284,9 @@ function Content() {
     return map;
   }, [progress]);
 
-  const totalPoints = progress.reduce((acc, p) => acc + (p.points ?? 0), 0);
+  // Pontos: só soma módulos concluídos (evita “pontos fantasmas”)
+  const totalPoints = progress.reduce((acc, p) => acc + ((p.completed ? p.points : 0) ?? 0), 0);
+
   const activeModules = modules.filter((m) => m.is_active !== false);
   const completedCount = activeModules.filter((m) => progByModule.get(m.id)?.completed).length;
   const totalCount = activeModules.length || 1;
@@ -332,8 +375,8 @@ function Content() {
           <ul className="divide-y divide-white/10">
             {courses.map((c) => {
               const courseModules = modules.filter((m) => m.course_id === c.id);
-              const totalRaw = courseModules.length;       // total real de módulos
-              const total = totalRaw || 1;                 // evita divisão por zero no %
+              const totalRaw = courseModules.length; // total real de módulos
+              const total = totalRaw || 1; // evita divisão por zero no %
               const doneCount = courseModules.filter((m) => progByModule.get(m.id)?.completed).length;
               const pcent = Math.round((doneCount / total) * 100);
 
@@ -370,10 +413,7 @@ function Content() {
                       </svg>
                     </span>
                     <div>
-                      <Link
-                        href={`/curso/${c.id}`}
-                        className="font-medium text-white/90 hover:underline"
-                      >
+                      <Link href={`/curso/${c.id}`} className="font-medium text-white/90 hover:underline">
                         {c.title}
                       </Link>
                       {c.description && <div className="text-sm text-white/60">{c.description}</div>}
@@ -388,7 +428,7 @@ function Content() {
                           ? "text-lime-300"
                           : status === "EM ANDAMENTO"
                           ? "text-white/70"
-                          : "text-white/50" // NÃO INICIADO
+                          : "text-white/50"
                       }`}
                     >
                       {status}

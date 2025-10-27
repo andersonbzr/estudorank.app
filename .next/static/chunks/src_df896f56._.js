@@ -639,12 +639,17 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Sidebar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Sidebar.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/menu.js [app-client] (ecmascript) <export default as Menu>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-out.js [app-client] (ecmascript) <export default as LogOut>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$supabase$2f$client$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/supabase/client.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Sidebar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Sidebar.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$supabase$2f$client$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/supabase/client.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$I18nProvider$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/I18nProvider.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@headlessui/react/dist/components/menu/menu.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$transition$2f$transition$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@headlessui/react/dist/components/transition/transition.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/menu.js [app-client] (ecmascript) <export default as Menu>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-client] (ecmascript) <export default as ShieldCheck>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-out.js [app-client] (ecmascript) <export default as LogOut>");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -654,16 +659,26 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-const LS_KEY = "ui.sidebar.open"; // "1" = aberta | "0" = rail
+;
+;
+;
+/** Mapeia pathname -> título do header */ const titleMap = {
+    "/me": "Meu Painel",
+    "/ranking": "Ranking",
+    "/config": "Configurações",
+    "/me/security": "Segurança",
+    "/admin/courses": "Administração"
+};
 function AppShell(param) {
     let { children } = param;
+    var _displayName_trim_charAt, _displayName_trim;
     _s();
-    const [open, setOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true); // desktop: expandida (true) / rail (false)
-    const [mobileOpen, setMobileOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false); // mobile drawer
-    const [displayName, setDisplayName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    /** layout */ const [open, setOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true); // desktop: aberta/rail
+    const [mobileOpen, setMobileOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    /** usuário */ const [displayName, setDisplayName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [isAdmin, setIsAdmin] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    // carregar perfil + flag admin
+    const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "AppShell.useEffect": ()=>{
             const supabase = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$supabase$2f$client$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabaseBrowser"])();
@@ -671,75 +686,17 @@ function AppShell(param) {
                 "AppShell.useEffect": async (param)=>{
                     let { data } = param;
                     const u = data.user;
-                    if (u) {
-                        const { data: prof } = await supabase.from("profiles").select("is_admin, full_name, name").eq("id", u.id).single();
-                        setIsAdmin(!!(prof === null || prof === void 0 ? void 0 : prof.is_admin));
-                        const name = (prof === null || prof === void 0 ? void 0 : prof.full_name) && String(prof.full_name).trim() || (prof === null || prof === void 0 ? void 0 : prof.name) && String(prof.name).trim() || u.email || null;
-                        setDisplayName(name);
-                    } else {
+                    if (!u) {
                         setIsAdmin(false);
                         setDisplayName(null);
+                        return;
                     }
+                    const { data: prof } = await supabase.from("profiles").select("is_admin, full_name, name").eq("id", u.id).single();
+                    setIsAdmin(!!(prof === null || prof === void 0 ? void 0 : prof.is_admin));
+                    const name = (prof === null || prof === void 0 ? void 0 : prof.full_name) && String(prof.full_name).trim() || (prof === null || prof === void 0 ? void 0 : prof.name) && String(prof.name).trim() || u.email || null;
+                    setDisplayName(name);
                 }
             }["AppShell.useEffect"]);
-        }
-    }["AppShell.useEffect"], []);
-    // carregar preferência da sidebar
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "AppShell.useEffect": ()=>{
-            try {
-                const v = localStorage.getItem(LS_KEY);
-                if (v === "0") setOpen(false);
-                if (v === "1") setOpen(true);
-            } catch (e) {}
-        }
-    }["AppShell.useEffect"], []);
-    // salvar preferência
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "AppShell.useEffect": ()=>{
-            try {
-                localStorage.setItem(LS_KEY, open ? "1" : "0");
-            } catch (e) {}
-        }
-    }["AppShell.useEffect"], [
-        open
-    ]);
-    // ouve evento global para alternar/open/close (ex.: disparado pelo HeaderMinimal)
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "AppShell.useEffect": ()=>{
-            function onEvt(e) {
-                const detail = e.detail;
-                setOpen({
-                    "AppShell.useEffect.onEvt": (cur)=>{
-                        if (detail === "toggle") return !cur;
-                        if (detail === "open") return true;
-                        if (detail === "close") return false;
-                        return cur;
-                    }
-                }["AppShell.useEffect.onEvt"]);
-            }
-            window.addEventListener("estudorank:sidebar", onEvt);
-            return ({
-                "AppShell.useEffect": ()=>window.removeEventListener("estudorank:sidebar", onEvt)
-            })["AppShell.useEffect"];
-        }
-    }["AppShell.useEffect"], []);
-    // atalho de teclado: Ctrl/Cmd + B
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "AppShell.useEffect": ()=>{
-            function onKey(e) {
-                const isMod = e.metaKey || e.ctrlKey;
-                if (isMod && (e.key === "b" || e.key === "B")) {
-                    e.preventDefault();
-                    setOpen({
-                        "AppShell.useEffect.onKey": (v)=>!v
-                    }["AppShell.useEffect.onKey"]);
-                }
-            }
-            window.addEventListener("keydown", onKey);
-            return ({
-                "AppShell.useEffect": ()=>window.removeEventListener("keydown", onKey)
-            })["AppShell.useEffect"];
         }
     }["AppShell.useEffect"], []);
     async function signOut() {
@@ -747,11 +704,13 @@ function AppShell(param) {
         await supabase.auth.signOut();
         router.replace("/login");
     }
-    const handleNavigate = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
-        "AppShell.useCallback[handleNavigate]": ()=>setMobileOpen(false)
-    }["AppShell.useCallback[handleNavigate]"], []);
-    // Largura da 1ª coluna no desktop
+    function handleNavigate() {
+        setMobileOpen(false);
+    }
     const desktopCol = open ? "18rem" : "4rem";
+    var _titleMap_pathname;
+    const headerTitle = (_titleMap_pathname = titleMap[pathname]) !== null && _titleMap_pathname !== void 0 ? _titleMap_pathname : (pathname === null || pathname === void 0 ? void 0 : pathname.startsWith("/u/")) ? "Perfil" : "EstudoRank";
+    const initial = (displayName === null || displayName === void 0 ? void 0 : (_displayName_trim = displayName.trim()) === null || _displayName_trim === void 0 ? void 0 : (_displayName_trim_charAt = _displayName_trim.charAt(0)) === null || _displayName_trim_charAt === void 0 ? void 0 : _displayName_trim_charAt.toUpperCase()) || "U";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$I18nProvider$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["I18nProvider"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "min-h-screen w-full grid",
@@ -761,38 +720,17 @@ function AppShell(param) {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "hidden lg:block border-r border-white/10 bg-[var(--surface)]/70 backdrop-blur-xl",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            // container para animar largura suavemente
-                            className: "h-screen sticky top-0 transition-[width] duration-300 ease-out",
-                            style: {
-                                width: desktopCol
-                            },
-                            "aria-hidden": true
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/shell/AppShell.tsx",
-                            lineNumber: 110,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "h-screen sticky top-0 -mt-[100vh]",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Sidebar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                isAdmin: isAdmin,
-                                collapsed: !open
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/shell/AppShell.tsx",
-                                lineNumber: 117,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/shell/AppShell.tsx",
-                            lineNumber: 116,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Sidebar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        isAdmin: isAdmin,
+                        collapsed: !open
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/shell/AppShell.tsx",
+                        lineNumber: 85,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
                     fileName: "[project]/src/components/shell/AppShell.tsx",
-                    lineNumber: 109,
+                    lineNumber: 84,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -812,83 +750,187 @@ function AppShell(param) {
                                                 size: 18
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/shell/AppShell.tsx",
-                                                lineNumber: 132,
+                                                lineNumber: 99,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/shell/AppShell.tsx",
-                                            lineNumber: 127,
+                                            lineNumber: 94,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             className: "btn-icon hidden lg:inline-flex",
                                             onClick: ()=>setOpen((v)=>!v),
                                             "aria-label": open ? "Recolher menu" : "Expandir menu",
-                                            "aria-pressed": open,
                                             title: open ? "Recolher menu" : "Expandir menu",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
                                                 size: 18
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/shell/AppShell.tsx",
-                                                lineNumber: 143,
+                                                lineNumber: 109,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/shell/AppShell.tsx",
-                                            lineNumber: 136,
+                                            lineNumber: 103,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-sm opacity-80 hidden sm:block",
-                                            children: displayName ? "Bem-vindo, ".concat(displayName) : "Bem-vindo"
+                                            className: "text-sm opacity-90 font-medium",
+                                            children: headerTitle
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/shell/AppShell.tsx",
-                                            lineNumber: 146,
+                                            lineNumber: 113,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/shell/AppShell.tsx",
-                                    lineNumber: 125,
+                                    lineNumber: 92,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-2",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: signOut,
-                                        className: "btn btn-outline",
-                                        title: "Sair",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
-                                                size: 16
-                                            }, void 0, false, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Menu"], {
+                                    as: "div",
+                                    className: "relative",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Menu"].Button, {
+                                            className: "inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-2.5 h-9 hover:bg-white/10 transition",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "inline-grid place-items-center h-6 w-6 rounded-full bg-white/10 border border-white/15 text-xs",
+                                                    children: initial
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/shell/AppShell.tsx",
+                                                    lineNumber: 121,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "max-w-[160px] truncate text-sm",
+                                                    children: displayName !== null && displayName !== void 0 ? displayName : "Conta"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/shell/AppShell.tsx",
+                                                    lineNumber: 124,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    "aria-hidden": true,
+                                                    width: "16",
+                                                    height: "16",
+                                                    viewBox: "0 0 24 24",
+                                                    className: "opacity-70",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                        fill: "currentColor",
+                                                        d: "M7 10l5 5 5-5z"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/shell/AppShell.tsx",
+                                                        lineNumber: 134,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/shell/AppShell.tsx",
+                                                    lineNumber: 127,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/shell/AppShell.tsx",
+                                            lineNumber: 120,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$transition$2f$transition$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Transition"], {
+                                            as: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"],
+                                            enter: "transition ease-out duration-120",
+                                            enterFrom: "opacity-0 translate-y-1",
+                                            enterTo: "opacity-100 translate-y-0",
+                                            leave: "transition ease-in duration-100",
+                                            leaveFrom: "opacity-100 translate-y-0",
+                                            leaveTo: "opacity-0 translate-y-1",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Menu"].Items, {
+                                                className: "absolute right-0 mt-2 w-56 origin-top-right rounded-xl border border-white/10 bg-[var(--surface)]/98 backdrop-blur shadow-2xl focus:outline-none p-1",
+                                                children: [
+                                                    isAdmin && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Menu"].Item, {
+                                                        children: (param)=>{
+                                                            let { active } = param;
+                                                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                                href: "/admin/courses",
+                                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("flex items-center gap-2 rounded-lg px-3 py-2 text-sm", active ? "bg-white/10" : "bg-transparent"),
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"], {
+                                                                        size: 16,
+                                                                        className: "text-lime-300"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/shell/AppShell.tsx",
+                                                                        lineNumber: 161,
+                                                                        columnNumber: 27
+                                                                    }, this),
+                                                                    "Administração"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/components/shell/AppShell.tsx",
+                                                                lineNumber: 154,
+                                                                columnNumber: 25
+                                                            }, this);
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/shell/AppShell.tsx",
+                                                        lineNumber: 152,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "my-1 h-px bg-white/10"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/shell/AppShell.tsx",
+                                                        lineNumber: 168,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Menu"].Item, {
+                                                        children: (param)=>{
+                                                            let { active } = param;
+                                                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                onClick: signOut,
+                                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("w-full flex items-center gap-2 rounded-lg px-3 py-2 text-left text-sm", active ? "bg-white/10" : "bg-transparent"),
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
+                                                                        size: 16
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/shell/AppShell.tsx",
+                                                                        lineNumber: 179,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    "Sair"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/components/shell/AppShell.tsx",
+                                                                lineNumber: 172,
+                                                                columnNumber: 23
+                                                            }, this);
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/shell/AppShell.tsx",
+                                                        lineNumber: 170,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/components/shell/AppShell.tsx",
-                                                lineNumber: 155,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "hidden sm:inline",
-                                                children: "Sair"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/shell/AppShell.tsx",
-                                                lineNumber: 156,
+                                                lineNumber: 150,
                                                 columnNumber: 17
                                             }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/shell/AppShell.tsx",
-                                        lineNumber: 154,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/shell/AppShell.tsx",
+                                            lineNumber: 141,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/shell/AppShell.tsx",
-                                    lineNumber: 152,
+                                    lineNumber: 119,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/shell/AppShell.tsx",
-                            lineNumber: 124,
+                            lineNumber: 91,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -896,13 +938,13 @@ function AppShell(param) {
                             children: children
                         }, void 0, false, {
                             fileName: "[project]/src/components/shell/AppShell.tsx",
-                            lineNumber: 161,
+                            lineNumber: 189,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/shell/AppShell.tsx",
-                    lineNumber: 122,
+                    lineNumber: 89,
                     columnNumber: 9
                 }, this),
                 mobileOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -914,48 +956,46 @@ function AppShell(param) {
                             "aria-label": "Fechar menu"
                         }, void 0, false, {
                             fileName: "[project]/src/components/shell/AppShell.tsx",
-                            lineNumber: 168,
+                            lineNumber: 196,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "absolute left-0 top-0 h-full w-72 bg-[var(--surface)]/90 border-r border-white/10 shadow-xl",
-                            role: "dialog",
-                            "aria-modal": "true",
-                            "aria-label": "Menu lateral",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Sidebar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 isAdmin: isAdmin,
                                 onNavigate: handleNavigate
                             }, void 0, false, {
                                 fileName: "[project]/src/components/shell/AppShell.tsx",
-                                lineNumber: 179,
+                                lineNumber: 202,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/shell/AppShell.tsx",
-                            lineNumber: 173,
+                            lineNumber: 201,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/shell/AppShell.tsx",
-                    lineNumber: 166,
+                    lineNumber: 194,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/shell/AppShell.tsx",
-            lineNumber: 104,
+            lineNumber: 79,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/shell/AppShell.tsx",
-        lineNumber: 103,
+        lineNumber: 78,
         columnNumber: 5
     }, this);
 }
-_s(AppShell, "Pbv8z+r3fd/A5qz00tVYbP2J2X4=", false, function() {
+_s(AppShell, "IxpJwV73kCfW2JGgFmNCP62twKU=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"]
     ];
 });
 _c = AppShell;
@@ -968,7 +1008,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/app/config/page.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// src/app/settings/page.tsx
 __turbopack_context__.s([
     "default",
     ()=>SettingsPage
@@ -980,8 +1019,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AuthGua
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shell$2f$AppShell$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/shell/AppShell.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$supabase$2f$client$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/supabase/client.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Toast$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Toast.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldAlert$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-alert.js [app-client] (ecmascript) <export default as ShieldAlert>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trash-2.js [app-client] (ecmascript) <export default as Trash2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/eye.js [app-client] (ecmascript) <export default as Eye>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/eye-off.js [app-client] (ecmascript) <export default as EyeOff>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2d$keyhole$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LockKeyhole$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/lock-keyhole.js [app-client] (ecmascript) <export default as LockKeyhole>");
@@ -996,7 +1033,6 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 /* ---------- helpers ---------- */ function scorePassword(pw) {
-    // medidor simples: tamanho + variedade
     let score = 0;
     if (!pw) return 0;
     const letters = {};
@@ -1012,8 +1048,7 @@ var _s = __turbopack_context__.k.signature();
     };
     const variationCount = Object.values(variations).filter(Boolean).length;
     score += (variationCount - 1) * 10;
-    score = Math.min(100, Math.round(score));
-    return score;
+    return Math.min(100, Math.round(score));
 }
 function strengthLabel(score) {
     if (score >= 80) return "forte";
@@ -1027,17 +1062,17 @@ function SettingsPage() {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shell$2f$AppShell$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Content, {}, void 0, false, {
                 fileName: "[project]/src/app/config/page.tsx",
-                lineNumber: 53,
+                lineNumber: 42,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/config/page.tsx",
-            lineNumber: 52,
+            lineNumber: 41,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/config/page.tsx",
-        lineNumber: 51,
+        lineNumber: 40,
         columnNumber: 5
     }, this);
 }
@@ -1063,9 +1098,6 @@ function Content() {
     const [showNew, setShowNew] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [showConf, setShowConf] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [changing, setChanging] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    // danger zone
-    const [confirmText, setConfirmText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [deleting, setDeleting] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     /* load */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Content.useEffect": ()=>{
             let cancel = false;
@@ -1172,28 +1204,6 @@ function Content() {
             setChanging(false);
         }
     }
-    /* excluir conta */ async function onDelete() {
-        if (confirmText !== "DELETAR") {
-            toast.push('Digite "DELETAR" para confirmar.');
-            return;
-        }
-        setDeleting(true);
-        try {
-            const res = await fetch("/api/account/delete", {
-                method: "POST"
-            });
-            const json = await res.json();
-            if (!(json === null || json === void 0 ? void 0 : json.ok)) throw new Error((json === null || json === void 0 ? void 0 : json.error) || "Erro ao excluir conta.");
-            toast.push("Conta excluída.");
-            await supabase.auth.signOut();
-            window.location.href = "/login";
-        } catch (e) {
-            var _e_message;
-            toast.push((_e_message = e === null || e === void 0 ? void 0 : e.message) !== null && _e_message !== void 0 ? _e_message : "Falha ao excluir conta.");
-        } finally{
-            setDeleting(false);
-        }
-    }
     const newScore = scorePassword(newPw);
     const strength = strengthLabel(newScore);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].main, {
@@ -1213,7 +1223,7 @@ function Content() {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-3xl mx-auto",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "   relative overflow-hidden rounded-3xl p-6 md:p-8   bg-gradient-to-b from-neutral-900/95 to-black/90   backdrop-blur-md   shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)]   border border-white/10   ",
+                className: "relative overflow-hidden rounded-3xl p-6 md:p-8 bg-gradient-to-b from-neutral-900/95 to-black/90 backdrop-blur-md shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)] border border-white/10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         className: "pointer-events-none absolute -top-28 left-1/2 -translate-x-1/2 h-72 w-72 rounded-full blur-3xl",
@@ -1241,7 +1251,7 @@ function Content() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/config/page.tsx",
-                        lineNumber: 214,
+                        lineNumber: 190,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1252,21 +1262,21 @@ function Content() {
                                 children: "Configurações"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/config/page.tsx",
-                                lineNumber: 224,
+                                lineNumber: 200,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "mt-1 text-sm text-white/70",
-                                children: "Perfil, segurança e preferências."
+                                children: "Perfil e segurança."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/config/page.tsx",
-                                lineNumber: 227,
+                                lineNumber: 203,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/config/page.tsx",
-                        lineNumber: 223,
+                        lineNumber: 199,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1277,7 +1287,7 @@ function Content() {
                                 children: "Perfil"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/config/page.tsx",
-                                lineNumber: 232,
+                                lineNumber: 208,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1291,23 +1301,23 @@ function Content() {
                                                 children: "E-mail"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/config/page.tsx",
-                                                lineNumber: 235,
+                                                lineNumber: 211,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 id: "email",
                                                 value: email,
                                                 readOnly: true,
-                                                className: "w-full h-11 text-[14px] rounded-xl bg-white/5 border border-white/10 px-3   opacity-70 cursor-not-allowed"
+                                                className: "w-full h-11 text-[14px] rounded-xl bg-white/5 border border-white/10 px-3 opacity-70 cursor-not-allowed"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/config/page.tsx",
-                                                lineNumber: 236,
+                                                lineNumber: 214,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/config/page.tsx",
-                                        lineNumber: 234,
+                                        lineNumber: 210,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1318,7 +1328,7 @@ function Content() {
                                                 children: "Nome de exibição"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/config/page.tsx",
-                                                lineNumber: 246,
+                                                lineNumber: 223,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1328,27 +1338,27 @@ function Content() {
                                                     value: displayName,
                                                     onChange: (e)=>setDisplayName(e.target.value),
                                                     placeholder: "Como você quer aparecer",
-                                                    className: "w-full h-11 text-[14px] rounded-xl bg-white/5 border border-white/10 outline-none   focus:border-lime-400 focus:ring-2 focus:ring-lime-400/25 px-3 transition"
+                                                    className: "w-full h-11 text-[14px] rounded-xl bg-white/5 border border-white/10 outline-none focus:border-lime-400 focus:ring-2 focus:ring-lime-400/25 px-3 transition"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/config/page.tsx",
-                                                    lineNumber: 248,
+                                                    lineNumber: 227,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/config/page.tsx",
-                                                lineNumber: 247,
+                                                lineNumber: 226,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/config/page.tsx",
-                                        lineNumber: 245,
+                                        lineNumber: 222,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/config/page.tsx",
-                                lineNumber: 233,
+                                lineNumber: 209,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1359,22 +1369,22 @@ function Content() {
                                     },
                                     onClick: onSave,
                                     disabled: saving,
-                                    className: "inline-flex items-center justify-center h-10 px-4 rounded-xl text-sm\n                  ".concat(saving ? "bg-white/5 text-white/50" : "bg-lime-400/10 text-lime-300 hover:bg-lime-400/20 hover:shadow-[0_0_10px_rgba(163,230,53,0.25)] hover:scale-[1.02] transition"),
+                                    className: "inline-flex items-center justify-center h-10 px-4 rounded-xl text-sm ".concat(saving ? "bg-white/5 text-white/50" : "bg-lime-400/10 text-lime-300 hover:bg-lime-400/20 hover:shadow-[0_0_10px_rgba(163,230,53,0.25)] hover:scale-[1.02] transition"),
                                     children: saving ? "Salvando..." : savedTick > 0 ? "Salvo ✓" : "Salvar alterações"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/config/page.tsx",
-                                    lineNumber: 262,
+                                    lineNumber: 240,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/config/page.tsx",
-                                lineNumber: 261,
+                                lineNumber: 239,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/config/page.tsx",
-                        lineNumber: 231,
+                        lineNumber: 207,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1388,14 +1398,14 @@ function Content() {
                                         className: "text-lime-300"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/config/page.tsx",
-                                        lineNumber: 280,
+                                        lineNumber: 258,
                                         columnNumber: 15
                                     }, this),
                                     "Segurança"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/config/page.tsx",
-                                lineNumber: 279,
+                                lineNumber: 257,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1409,7 +1419,7 @@ function Content() {
                                                 children: "Senha atual"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/config/page.tsx",
-                                                lineNumber: 287,
+                                                lineNumber: 265,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1420,46 +1430,46 @@ function Content() {
                                                         type: showCur ? "text" : "password",
                                                         value: currentPw,
                                                         onChange: (e)=>setCurrentPw(e.target.value),
-                                                        className: "w-full h-11 text-[14px] rounded-xl bg-white/5 border border-white/10 outline-none   focus:border-lime-400 focus:ring-2 focus:ring-lime-400/25 px-3 pr-11 transition",
+                                                        className: "w-full h-11 text-[14px] rounded-xl bg-white/5 border border-white/10 outline-none focus:border-lime-400 focus:ring-2 focus:ring-lime-400/25 px-3 pr-11 transition",
                                                         autoComplete: "current-password"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/config/page.tsx",
-                                                        lineNumber: 289,
+                                                        lineNumber: 269,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                         type: "button",
                                                         onClick: ()=>setShowCur((s)=>!s),
-                                                        className: "absolute right-1.5 top-1/2 -translate-y-1/2 p-2 rounded-md text-white/70 hover:text-white   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/30",
+                                                        className: "absolute right-1.5 top-1/2 -translate-y-1/2 p-2 rounded-md text-white/70 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/30",
                                                         "aria-label": showCur ? "Ocultar senha" : "Mostrar senha",
                                                         children: showCur ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__["EyeOff"], {
                                                             size: 16
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/config/page.tsx",
-                                                            lineNumber: 305,
+                                                            lineNumber: 283,
                                                             columnNumber: 32
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
                                                             size: 16
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/config/page.tsx",
-                                                            lineNumber: 305,
+                                                            lineNumber: 283,
                                                             columnNumber: 55
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/config/page.tsx",
-                                                        lineNumber: 298,
+                                                        lineNumber: 277,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/config/page.tsx",
-                                                lineNumber: 288,
+                                                lineNumber: 268,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/config/page.tsx",
-                                        lineNumber: 286,
+                                        lineNumber: 264,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1470,7 +1480,7 @@ function Content() {
                                                 children: "Nova senha"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/config/page.tsx",
-                                                lineNumber: 312,
+                                                lineNumber: 290,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1481,41 +1491,41 @@ function Content() {
                                                         type: showNew ? "text" : "password",
                                                         value: newPw,
                                                         onChange: (e)=>setNewPw(e.target.value),
-                                                        className: "w-full h-11 text-[14px] rounded-xl bg-white/5 border border-white/10 outline-none   focus:border-lime-400 focus:ring-2 focus:ring-lime-400/25 px-3 pr-11 transition",
+                                                        className: "w-full h-11 text-[14px] rounded-xl bg-white/5 border border-white/10 outline-none focus:border-lime-400 focus:ring-2 focus:ring-lime-400/25 px-3 pr-11 transition",
                                                         autoComplete: "new-password",
                                                         placeholder: "Mínimo de 8 caracteres"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/config/page.tsx",
-                                                        lineNumber: 314,
+                                                        lineNumber: 294,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                         type: "button",
                                                         onClick: ()=>setShowNew((s)=>!s),
-                                                        className: "absolute right-1.5 top-1/2 -translate-y-1/2 p-2 rounded-md text-white/70 hover:text-white   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/30",
+                                                        className: "absolute right-1.5 top-1/2 -translate-y-1/2 p-2 rounded-md text-white/70 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/30",
                                                         "aria-label": showNew ? "Ocultar senha" : "Mostrar senha",
                                                         children: showNew ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__["EyeOff"], {
                                                             size: 16
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/config/page.tsx",
-                                                            lineNumber: 331,
+                                                            lineNumber: 309,
                                                             columnNumber: 32
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
                                                             size: 16
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/config/page.tsx",
-                                                            lineNumber: 331,
+                                                            lineNumber: 309,
                                                             columnNumber: 55
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/config/page.tsx",
-                                                        lineNumber: 324,
+                                                        lineNumber: 303,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/config/page.tsx",
-                                                lineNumber: 313,
+                                                lineNumber: 293,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1532,13 +1542,13 @@ function Content() {
                                                                 className: "h-2.5 w-12 rounded-full transition-colors ".concat(cls)
                                                             }, i, false, {
                                                                 fileName: "[project]/src/app/config/page.tsx",
-                                                                lineNumber: 347,
-                                                                columnNumber: 30
+                                                                lineNumber: 326,
+                                                                columnNumber: 25
                                                             }, this);
                                                         })
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/config/page.tsx",
-                                                        lineNumber: 337,
+                                                        lineNumber: 315,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1550,25 +1560,25 @@ function Content() {
                                                                 children: strength
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/config/page.tsx",
-                                                                lineNumber: 351,
+                                                                lineNumber: 334,
                                                                 columnNumber: 28
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/config/page.tsx",
-                                                        lineNumber: 350,
+                                                        lineNumber: 333,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/config/page.tsx",
-                                                lineNumber: 336,
+                                                lineNumber: 314,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/config/page.tsx",
-                                        lineNumber: 311,
+                                        lineNumber: 289,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1579,7 +1589,7 @@ function Content() {
                                                 children: "Confirmar nova senha"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/config/page.tsx",
-                                                lineNumber: 358,
+                                                lineNumber: 341,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1590,40 +1600,40 @@ function Content() {
                                                         type: showConf ? "text" : "password",
                                                         value: confirmPw,
                                                         onChange: (e)=>setConfirmPw(e.target.value),
-                                                        className: "w-full h-11 text-[14px] rounded-xl bg-white/5 border border-white/10 outline-none   focus:border-lime-400 focus:ring-2 focus:ring-lime-400/25 px-3 pr-11 transition",
+                                                        className: "w-full h-11 text-[14px] rounded-xl bg-white/5 border border-white/10 outline-none focus:border-lime-400 focus:ring-2 focus:ring-lime-400/25 px-3 pr-11 transition",
                                                         autoComplete: "new-password"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/config/page.tsx",
-                                                        lineNumber: 360,
+                                                        lineNumber: 345,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                         type: "button",
                                                         onClick: ()=>setShowConf((s)=>!s),
-                                                        className: "absolute right-1.5 top-1/2 -translate-y-1/2 p-2 rounded-md text-white/70 hover:text-white   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/30",
+                                                        className: "absolute right-1.5 top-1/2 -translate-y-1/2 p-2 rounded-md text-white/70 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/30",
                                                         "aria-label": showConf ? "Ocultar senha" : "Mostrar senha",
                                                         children: showConf ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__["EyeOff"], {
                                                             size: 16
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/config/page.tsx",
-                                                            lineNumber: 376,
+                                                            lineNumber: 359,
                                                             columnNumber: 33
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
                                                             size: 16
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/config/page.tsx",
-                                                            lineNumber: 376,
+                                                            lineNumber: 359,
                                                             columnNumber: 56
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/config/page.tsx",
-                                                        lineNumber: 369,
+                                                        lineNumber: 353,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/config/page.tsx",
-                                                lineNumber: 359,
+                                                lineNumber: 344,
                                                 columnNumber: 17
                                             }, this),
                                             confirmPw && confirmPw !== newPw && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1631,19 +1641,19 @@ function Content() {
                                                 children: "As senhas não conferem."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/config/page.tsx",
-                                                lineNumber: 380,
+                                                lineNumber: 363,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/config/page.tsx",
-                                        lineNumber: 357,
+                                        lineNumber: 340,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/config/page.tsx",
-                                lineNumber: 284,
+                                lineNumber: 262,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1654,152 +1664,42 @@ function Content() {
                                     },
                                     onClick: changePassword,
                                     disabled: changing,
-                                    className: "inline-flex items-center justify-center h-10 px-4 rounded-xl text-sm\n                  ".concat(changing ? "bg-white/5 text-white/50" : "bg-lime-400/10 text-lime-300 hover:bg-lime-400/20 hover:shadow-[0_0_10px_rgba(163,230,53,0.25)] hover:scale-[1.02] transition"),
+                                    className: "inline-flex items-center justify-center h-10 px-4 rounded-xl text-sm ".concat(changing ? "bg-white/5 text-white/50" : "bg-lime-400/10 text-lime-300 hover:bg-lime-400/20 hover:shadow-[0_0_10px_rgba(163,230,53,0.25)] hover:scale-[1.02] transition"),
                                     children: changing ? "Alterando..." : "Alterar senha"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/config/page.tsx",
-                                    lineNumber: 387,
+                                    lineNumber: 370,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/config/page.tsx",
-                                lineNumber: 386,
+                                lineNumber: 369,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/config/page.tsx",
-                        lineNumber: 278,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative z-10 border-t border-white/5 mt-6 pt-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-lime-300/90 font-semibold text-base mb-3",
-                                children: "Zona de perigo"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/config/page.tsx",
-                                lineNumber: 404,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "rounded-2xl bg-red-950/35 border border-red-900/25 p-4 shadow-inner",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-start gap-3",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldAlert$3e$__["ShieldAlert"], {
-                                            className: "text-red-400 mt-0.5",
-                                            size: 18
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/config/page.tsx",
-                                            lineNumber: 407,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex-1",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sm text-red-200/90",
-                                                    children: [
-                                                        "Excluir sua conta é ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-semibold",
-                                                            children: "irreversível"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/config/page.tsx",
-                                                            lineNumber: 410,
-                                                            columnNumber: 41
-                                                        }, this),
-                                                        ". Todos os seus dados pessoais poderão ser removidos."
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/app/config/page.tsx",
-                                                    lineNumber: 409,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "mt-3 flex flex-col sm:flex-row gap-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                            value: confirmText,
-                                                            onChange: (e)=>setConfirmText(e.target.value),
-                                                            placeholder: 'Digite "DELETAR" para confirmar',
-                                                            className: "flex-1 h-10 rounded-xl bg-white/5 border border-white/10 px-3 text-sm outline-none focus:ring-2 focus:ring-red-500/30"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/config/page.tsx",
-                                                            lineNumber: 413,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                            whileTap: {
-                                                                scale: 0.98
-                                                            },
-                                                            onClick: onDelete,
-                                                            disabled: deleting || confirmText !== "DELETAR",
-                                                            className: "inline-flex items-center justify-center gap-2 h-10 px-4 rounded-xl bg-red-600/85 hover:bg-red-500 text-white text-sm transition disabled:opacity-60",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
-                                                                    size: 16
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/config/page.tsx",
-                                                                    lineNumber: 425,
-                                                                    columnNumber: 23
-                                                                }, this),
-                                                                deleting ? "Excluindo..." : "Excluir conta"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/config/page.tsx",
-                                                            lineNumber: 419,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/app/config/page.tsx",
-                                                    lineNumber: 412,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/config/page.tsx",
-                                            lineNumber: 408,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/app/config/page.tsx",
-                                    lineNumber: 406,
-                                    columnNumber: 15
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/config/page.tsx",
-                                lineNumber: 405,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/config/page.tsx",
-                        lineNumber: 403,
+                        lineNumber: 256,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/config/page.tsx",
-                lineNumber: 204,
+                lineNumber: 188,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/config/page.tsx",
-            lineNumber: 203,
+            lineNumber: 187,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/config/page.tsx",
-        lineNumber: 197,
+        lineNumber: 181,
         columnNumber: 5
     }, this);
 }
-_s(Content, "EbQ69pK3k7zlOE86xzgpRMB6hAQ=", false, function() {
+_s(Content, "0US9oSQ7ewUsqLSBZjGPXxv1BeQ=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Toast$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"]
     ];

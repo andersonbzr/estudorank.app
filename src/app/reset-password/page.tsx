@@ -44,7 +44,7 @@ export default function ResetPasswordPage() {
 
         setErr("Link inválido ou expirado. Solicite um novo.");
         setStage("error");
-      } catch (e) {
+      } catch {
         setErr("Falha ao validar o link. Tente novamente.");
         setStage("error");
       }
@@ -80,7 +80,7 @@ export default function ResetPasswordPage() {
 
       <input
         type="password"
-        placeholder="Nova senha"
+        placeholder="Nova senha (mín. 8)"
         className="input w-full rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2 outline-none focus:border-zinc-600"
         value={pwd}
         onChange={(e) => setPwd(e.target.value)}

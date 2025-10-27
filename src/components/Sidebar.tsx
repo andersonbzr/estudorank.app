@@ -10,7 +10,6 @@ import clsx from "clsx";
 type Props = {
   onNavigate?: () => void;
   isAdmin?: boolean;
-  /** Quando true, renderiza mini-rail (ícones apenas) no desktop */
   collapsed?: boolean;
 };
 
@@ -31,33 +30,48 @@ export default function Sidebar({ onNavigate, isAdmin, collapsed = false }: Prop
 
   return (
     <aside className="h-screen sticky top-0 bg-[var(--surface)]/80 backdrop-blur-xl border-r border-white/10 flex flex-col">
-      {/* Header */}
+      {/* Header / Logo */}
       <div
         className={clsx(
-          "h-14 border-b border-white/10 px-4 flex items-center gap-2",
+          "h-12 border-b border-white/10 px-3 flex items-center",
           collapsed && "justify-center px-0"
         )}
       >
         <Link
-          href="/"
+          href="/me"
           className={clsx(
-            "flex items-center gap-2 transition-transform hover:scale-[1.02]",
-            collapsed && "justify-center"
+            "flex items-center gap-2 rounded-lg hover:bg-white/5 px-2 py-1 transition",
+            collapsed && "justify-center px-1"
           )}
           onClick={onNavigate}
-          aria-label="Ir para a página inicial"
+          aria-label="Ir para o painel"
+          title="EstudoRank"
         >
-          <Image
-            src="/logo.png"
-            alt="EstudoRank"
-            width={collapsed ? 22 : 28}
-            height={collapsed ? 22 : 28}
-            className="rounded-sm drop-shadow-[0_0_6px_rgba(163,230,53,0.30)]"
-            priority
-          />
-          {!collapsed && (
-            <span className="font-semibold tracking-tight">EstudoRank</span>
+          {!collapsed ? (
+            <Image
+              src="/logo.png"
+              alt="EstudoRank"
+              width={200}
+              height={60}
+              priority
+              className="h-7 md:h-8 lg:h-9 w-auto object-contain drop-shadow-[0_0_5px_rgba(163,230,53,0.25)]"
+            />
+          ) : (
+            <Image
+              src="/logo.col.png"
+              alt="ER"
+              width={200}
+              height={60}
+              priority
+              className="h-6 w-auto object-contain drop-shadow-[0_0_4px_rgba(163,230,53,0.30)]"
+            />
           )}
+
+          {/* {!collapsed && (
+            <span className="ml-1 font-semibold text-sm tracking-tight text-white/90">
+              Estudo<span className="text-lime-300">Rank</span>
+            </span>
+          )} */}
         </Link>
       </div>
 
@@ -83,11 +97,11 @@ export default function Sidebar({ onNavigate, isAdmin, collapsed = false }: Prop
 
       {/* Footer */}
       {!collapsed ? (
-        <div className="px-3 py-3 text-xs opacity-60 border-t border-white/10">
+        <div className="px-3 py-2 text-xs opacity-60 border-t border-white/10">
           © {new Date().getFullYear()} EstudoRank
         </div>
       ) : (
-        <div className="py-3 border-t border-white/10 text-center text-[10px] opacity-50 select-none">
+        <div className="py-2 border-t border-white/10 text-center text-[10px] opacity-50 select-none">
           © {new Date().getFullYear()}
         </div>
       )}
@@ -111,18 +125,14 @@ function Section({
   return (
     <div className="space-y-2">
       {title && !collapsed && (
-        <div className="px-3 pt-2 text-[11px] uppercase tracking-wide text-white/40">
+        <div className="px-3 pt-1 text-[11px] uppercase tracking-wide text-white/40">
           {title}
         </div>
       )}
-      <ul className="space-y-2">
+      <ul className="space-y-1.5">
         {items.map((it) => (
           <li key={it.href}>
-            <NavItem
-              item={it}
-              collapsed={collapsed}
-              onNavigate={onNavigate}
-            />
+            <NavItem item={it} collapsed={collapsed} onNavigate={onNavigate} />
           </li>
         ))}
       </ul>
@@ -149,21 +159,20 @@ function NavItem({
       onClick={onNavigate}
       aria-current={active ? "page" : undefined}
       className={clsx(
-        "group relative flex items-center gap-2 rounded-2xl border transition-all duration-200 outline-none focus-visible:ring-2 focus-visible:ring-lime-400/30",
-        collapsed ? "justify-center p-2" : "px-3 py-2",
+        "group relative flex items-center gap-2 rounded-xl border transition-all duration-200 outline-none focus-visible:ring-2 focus-visible:ring-lime-400/30",
+        collapsed ? "justify-center p-1.5" : "px-2.5 py-1.5",
         active
-          ? "bg-white/7 border-white/15 text-lime-200 shadow-[0_0_0_1px_rgba(255,255,255,0.06)]"
+          ? "bg-white/7 border-white/15 text-lime-200"
           : "bg-white/5 hover:bg-white/10 border-white/10 text-white/85 hover:text-white"
       )}
     >
       <Icon
-        size={18}
+        size={17}
         className={clsx("transition-transform", active ? "scale-[1.02]" : "group-hover:scale-105")}
         aria-hidden
       />
-      {!collapsed && <span className="text-sm">{item.label}</span>}
+      {!collapsed && <span className="text-[13px]">{item.label}</span>}
 
-      {/* Tooltip no modo colapsado */}
       {collapsed && (
         <span
           className={clsx(
